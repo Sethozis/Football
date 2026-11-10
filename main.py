@@ -33,7 +33,6 @@ API_KEY_FILE = "API_FOOTBALL_KEY"
 DEFAULT_OUTPUT = "football_matches.json"
 DEFAULT_TEAM_CACHE = "team_codes.json"
 DEFAULT_DAYS = 365
-NEXT_FIXTURES = 100
 MAX_TEAM_GROUPS_PER_RUN = 2
 REQUEST_INTERVAL_SECONDS = 2.2
 
@@ -195,32 +194,44 @@ class ApiClient:
         return None
 
 
-def request_next_fixtures(
+def request_fixtures_in_range(
     client: ApiClient,
     league_id: int,
+    start_date: datetime,
+    end_date: datetime,
 ) -> Tuple[Optional[List[Dict[str, Any]]], bool]:
-    """Return fixtures and whether at least one API request succeeded."""
-    for next_count in (NEXT_FIXTURES, 50, 10):
-        payload = client.get(
-            "fixtures",
-            {"league": league_id, "next": next_count},
+    """Return fixtures and whether at least one API request succeeded.
+
+    Free API-Football plans do not allow the ``next`` parameter, so use an
+    explicit date range. The public API accepts ``league``, ``from`` and
+    ``to`` without a season.
+    """
+    payload = client.get(
+        "fixtures",
+        {
+            "league": league_id,
+            "from": start_date.date().isoformat(),
+            "to": end_date.date().isoformat(),
+            "timezone": "UTC",
+        },
+    )
+    if payload is None:
+        return None, False
+
+    errors = payload.get("errors")
+    if errors:
+        logging.warning(
+            "Fixtures request for league %s (%s..%s): %s",
+            league_id,
+            start_date.date().isoformat(),
+            end_date.date().isoformat(),
+            errors,
         )
-        if payload is None:
-            continue
+        return None, False
 
-        errors = payload.get("errors")
-        if errors:
-            logging.warning(
-                "Fixtures request for league %s with next=%s: %s",
-                league_id,
-                next_count,
-                errors,
-            )
-            continue
-
-        response = payload.get("response")
-        if isinstance(response, list):
-            return response, True
+    response = payload.get("response")
+    if isinstance(response, list):
+        return response, True
 
     return None, False
 
@@ -413,7 +424,12 @@ def main() -> int:
 
     for league_id, league_name in LEAGUES.items():
         logging.info("Fetching league %s (%s)", league_id, league_name)
-        fixtures, succeeded = request_next_fixtures(client, league_id)
+        fixtures, succeeded = request_fixtures_in_range(
+            client,
+            league_id,
+            now,
+            horizon,
+        )
         if succeeded:
             successful_fixture_requests += 1
         if not fixtures:
