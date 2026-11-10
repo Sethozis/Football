@@ -20,15 +20,25 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: python -m pip install --disable-pip-version-check requests
+        run: python -m pip install --disable-pip-version-check -r requirements.txt
+
+      - name: Validate API key
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          if [ -z "$API_FOOTBALL_KEY" ]; then
+            echo "::error::Secret API_FOOTBALL_KEY is empty or not available to this job"
+            exit 1
+          fi
+          echo "API key is present (${#API_FOOTBALL_KEY} characters)"
 
       - name: Fetch matches
         env:
