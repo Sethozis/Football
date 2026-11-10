@@ -34,7 +34,7 @@ DEFAULT_OUTPUT = "football_matches.json"
 DEFAULT_TEAM_CACHE = "team_codes.json"
 DEFAULT_DAYS = 365
 MAX_TEAM_GROUPS_PER_RUN = 2
-REQUEST_INTERVAL_SECONDS = 2.2
+REQUEST_INTERVAL_SECONDS = 7.0
 
 # The order is not important. Keep this list explicit so coverage is
 # predictable and the number of API requests stays within the free tier.
@@ -194,22 +194,52 @@ class ApiClient:
         return None
 
 
-def request_fixtures_in_range(
+def request_all_fixtures_in_range(
     client: ApiClient,
-    league_id: int,
     start_date: datetime,
     end_date: datetime,
 ) -> Tuple[Optional[List[Dict[str, Any]]], bool]:
-    """Return fixtures and whether at least one API request succeeded.
+    """Try one global date-range request without league/season.
 
-    Free API-Football plans do not allow the ``next`` parameter, so use an
-    explicit date range. The public API accepts ``league``, ``from`` and
-    ``to`` without a season.
+    Free API-Football plans reject ``next`` and require a season when a
+    league is supplied. A global date-range query avoids both restrictions.
     """
     payload = client.get(
         "fixtures",
         {
+            "from": start_date.date().isoformat(),
+            "to": end_date.date().isoformat(),
+            "timezone": "UTC",
+        },
+    )
+    if payload is None:
+        return None, False
+
+    errors = payload.get("errors")
+    if errors:
+        logging.warning("Global fixtures request: %s", errors)
+        return None, False
+
+    response = payload.get("response")
+    if isinstance(response, list):
+        return response, True
+
+    return None, False
+
+
+def request_league_fixtures_in_range(
+    client: ApiClient,
+    league_id: int,
+    season: int,
+    start_date: datetime,
+    end_date: datetime,
+) -> Tuple[Optional[List[Dict[str, Any]]], bool]:
+    """Fallback: load one league/season for the requested date range."""
+    payload = client.get(
+        "fixtures",
+        {
             "league": league_id,
+            "season": season,
             "from": start_date.date().isoformat(),
             "to": end_date.date().isoformat(),
             "timezone": "UTC",
@@ -221,10 +251,9 @@ def request_fixtures_in_range(
     errors = payload.get("errors")
     if errors:
         logging.warning(
-            "Fixtures request for league %s (%s..%s): %s",
+            "Fixtures request for league %s season %s: %s",
             league_id,
-            start_date.date().isoformat(),
-            end_date.date().isoformat(),
+            season,
             errors,
         )
         return None, False
@@ -422,44 +451,85 @@ def main() -> int:
     team_groups: Dict[Tuple[int, int], Set[int]] = {}
     successful_fixture_requests = 0
 
-    for league_id, league_name in LEAGUES.items():
-        logging.info("Fetching league %s (%s)", league_id, league_name)
-        fixtures, succeeded = request_fixtures_in_range(
-            client,
-            league_id,
-            now,
-            horizon,
+    logging.info(
+        "Fetching all fixtures in %s..%s",
+        now.date().isoformat(),
+        horizon.date().isoformat(),
+    )
+    global_fixtures, global_succeeded = request_all_fixtures_in_range(
+        client,
+        now,
+        horizon,
+    )
+
+    if global_succeeded and global_fixtures is not None:
+        successful_fixture_requests = 1
+        source_fixtures = [
+            row
+            for row in global_fixtures
+            if (row.get("league") or {}).get("id") in LEAGUES
+        ]
+        logging.info(
+            "Global response: %s fixtures, %s in selected leagues",
+            len(global_fixtures),
+            len(source_fixtures),
         )
-        if succeeded:
-            successful_fixture_requests += 1
-        if not fixtures:
+    else:
+        # Some plans require a season when a league is supplied. Query each
+        # selected league for the current season as a fallback.
+        logging.warning(
+            "Global fixture request unavailable; falling back to leagues"
+        )
+        source_fixtures = []
+        fallback_season = now.year
+
+        for league_id, league_name in LEAGUES.items():
+            logging.info(
+                "Fetching league %s (%s), season %s",
+                league_id,
+                league_name,
+                fallback_season,
+            )
+            fixtures, succeeded = request_league_fixtures_in_range(
+                client,
+                league_id,
+                fallback_season,
+                now,
+                horizon,
+            )
+            if succeeded:
+                successful_fixture_requests += 1
+            if fixtures:
+                source_fixtures.extend(fixtures)
+
+    for row in source_fixtures:
+        league = row.get("league") or {}
+        league_id = league.get("id")
+        season = league.get("season")
+        fixture = row.get("fixture") or {}
+        kickoff = parse_kickoff(fixture.get("date"))
+        if kickoff is None or kickoff <= now or kickoff > horizon:
+            continue
+        if league_id not in LEAGUES:
             continue
 
-        for row in fixtures:
-            league = row.get("league") or {}
-            season = league.get("season")
-            fixture = row.get("fixture") or {}
-            kickoff = parse_kickoff(fixture.get("date"))
-            if kickoff is None or kickoff <= now or kickoff > horizon:
-                continue
+        all_fixtures.append(row)
 
-            all_fixtures.append(row)
-
-            if isinstance(season, int):
-                teams = row.get("teams") or {}
-                for side in ("home", "away"):
-                    team = teams.get(side) or {}
-                    team_id = team.get("id")
-                    if team_id is None:
-                        continue
-                    if team_code_from_api(team) is not None:
-                        continue
-                    if str(team_id) in team_codes:
-                        continue
-                    team_groups.setdefault(
-                        (league_id, season),
-                        set(),
-                    ).add(int(team_id))
+        if isinstance(season, int):
+            teams = row.get("teams") or {}
+            for side in ("home", "away"):
+                team = teams.get(side) or {}
+                team_id = team.get("id")
+                if team_id is None:
+                    continue
+                if team_code_from_api(team) is not None:
+                    continue
+                if str(team_id) in team_codes:
+                    continue
+                team_groups.setdefault(
+                    (league_id, season),
+                    set(),
+                ).add(int(team_id))
 
     if successful_fixture_requests == 0:
         logging.error("No successful API requests; keeping the previous JSON.")
