@@ -275,6 +275,109 @@ def load_event(slug: str, event_id: str) -> Optional[Dict[str, Any]]:
     return get_json(url)
 
 
+def short_team_code(team: Dict[str, Any]) -> str:
+    raw = (
+        team.get("abbreviation")
+        or team.get("shortDisplayName")
+        or team.get("displayName")
+        or ""
+    )
+    letters = re.sub(r"[^A-Za-zА-Яа-яЁё0-9]", "", str(raw)).upper()
+    return letters[:3].ljust(3, "X") if letters else "XXX"
+
+
+def merge_team(
+    directory: Dict[str, Dict[str, Any]],
+    team: Dict[str, Any],
+    country: str,
+    is_national: bool,
+) -> None:
+    team_id = team.get("id")
+    if team_id is None:
+        return
+
+    key = str(team_id)
+    name = team.get("displayName") or team.get("name") or ""
+    code = short_team_code(team)
+    row = {
+        "id": key,
+        "name": name,
+        "code": code,
+        "country": country,
+        "is_national": bool(is_national),
+    }
+
+    if key not in directory:
+        directory[key] = row
+        return
+
+    existing = directory[key]
+    if not existing.get("country") and country:
+        existing["country"] = country
+    if not existing.get("name") and name:
+        existing["name"] = name
+    if not existing.get("code") and code:
+        existing["code"] = code
+    existing["is_national"] = bool(existing.get("is_national")) or bool(is_national)
+
+
+def collect_event_teams(
+    event: Dict[str, Any],
+    slug: str,
+    directory: Dict[str, Dict[str, Any]],
+    unknown_context: Dict[str, Tuple[str, int]],
+) -> None:
+    tournament, league_country, is_national = LEAGUES[slug]
+    del tournament
+
+    header = event.get("header") or {}
+    competitions = header.get("competitions") or []
+    if not competitions:
+        return
+    competition = competitions[0]
+    season = (header.get("season") or {}).get("year")
+    venue = competition.get("venue") or {}
+    venue_country = (venue.get("address") or {}).get("country") or ""
+
+    for competitor in competition.get("competitors") or []:
+        team = competitor.get("team") or {}
+        if is_national:
+            country = team.get("displayName") or team.get("name") or ""
+        elif league_country not in ("Europe", "World"):
+            country = league_country
+        elif competitor.get("homeAway") == "home" and venue_country:
+            country = venue_country
+        else:
+            country = ""
+
+        merge_team(directory, team, country, is_national)
+
+        team_id = team.get("id")
+        if (
+            not is_national
+            and country == ""
+            and team_id is not None
+            and isinstance(season, int)
+        ):
+            unknown_context.setdefault(
+                str(team_id),
+                (slug, season),
+            )
+
+
+def load_team_country(slug: str, season: int, team_id: str) -> str:
+    url = (
+        f"{ESPN_CORE}/soccer/leagues/{urllib.parse.quote(slug)}"
+        f"/seasons/{season}/teams/{urllib.parse.quote(team_id)}"
+        "?lang=en&region=us"
+    )
+    payload = get_json(url)
+    if not payload:
+        return ""
+    venue = payload.get("venue") or {}
+    return (venue.get("address") or {}).get("country") or ""
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fetch upcoming football fixtures from ESPN."
@@ -328,6 +431,8 @@ def main() -> int:
     logging.info("Fetching %s event details", len(references))
 
     matches: List[Dict[str, Any]] = []
+    team_directory: Dict[str, Dict[str, Any]] = {}
+    unknown_team_context: Dict[str, Tuple[str, int]] = {}
     successful_details = 0
     completed = 0
     workers = max(1, min(args.workers, 48))
@@ -351,6 +456,13 @@ def main() -> int:
                 continue
             successful_details += 1
 
+            collect_event_teams(
+                event,
+                slug,
+                team_directory,
+                unknown_team_context,
+            )
+
             tournament, country, _ = LEAGUES[slug]
             parsed = parse_event(event, slug, tournament, country, now, horizon)
             if parsed is not None:
@@ -363,6 +475,30 @@ def main() -> int:
                     len(references),
                     len(matches),
                 )
+
+    missing_team_ids = [
+        team_id
+        for team_id, row in team_directory.items()
+        if not row.get("country") and team_id in unknown_team_context
+    ]
+
+    if missing_team_ids:
+        logging.info(
+            "Fetching countries for %s teams",
+            len(missing_team_ids),
+        )
+
+        def resolve_country(team_id: str) -> Tuple[str, str]:
+            slug, season = unknown_team_context[team_id]
+            return team_id, load_team_country(slug, season, team_id)
+
+        with ThreadPoolExecutor(max_workers=16) as executor:
+            for team_id, country in executor.map(
+                resolve_country,
+                missing_team_ids,
+            ):
+                if country:
+                    team_directory[team_id]["country"] = country
 
     if not matches and successful_details == 0:
         logging.error("No successful ESPN requests; keeping the previous JSON.")
@@ -381,6 +517,10 @@ def main() -> int:
         "timezone": "UTC",
         "source": "ESPN",
         "upcoming_days": args.days,
+        "teams": sorted(
+            team_directory.values(),
+            key=lambda row: row.get("name") or "",
+        ),
         "matches": matches,
     }
 
