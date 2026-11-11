@@ -80,23 +80,6 @@ LEAGUES: Dict[str, Tuple[str, str, bool]] = {
     "ksa.kings.cup": ("Saudi King's Cup", "Saudi Arabia", False),
 }
 
-# Клубы для справочника берём только из матчей чемпионатов.
-# Кубковые матчи (включая еврокубки) не должны добавлять клубы в этот список.
-CLUB_LEAGUE_SLUGS: Set[str] = {
-    "eng.1",
-    "eng.2",
-    "esp.1",
-    "esp.2",
-    "ita.1",
-    "ita.2",
-    "ger.1",
-    "ger.2",
-    "fra.1",
-    "fra.2",
-    "rus.1",
-    "ksa.1",
-}
-
 _request_lock = threading.Lock()
 _request_count = 0
 
@@ -353,9 +336,6 @@ def collect_event_teams(
 ) -> None:
     tournament, league_country, is_national = LEAGUES[slug]
     del tournament
-
-    if not is_national and slug not in CLUB_LEAGUE_SLUGS:
-        return
 
     header = event.get("header") or {}
     competitions = header.get("competitions") or []
