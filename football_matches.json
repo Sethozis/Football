@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T13:18:28.927776Z",
+  "generated_at": "2026-11-11T17:51:13.353013Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -40,6 +40,20 @@
       "is_national": false
     },
     {
+      "id": "887",
+      "name": "AEK Athens",
+      "code": "AEK",
+      "country": "Greece",
+      "is_national": false
+    },
+    {
+      "id": "21817",
+      "name": "AF Virois",
+      "code": "VIR",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "349",
       "name": "AFC Bournemouth",
       "code": "BOU",
@@ -47,9 +61,30 @@
       "is_national": false
     },
     {
+      "id": "13884",
+      "name": "AFC Fylde",
+      "code": "FYL",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "7853",
+      "name": "AGF",
+      "code": "AGF",
+      "country": "Denmark",
+      "is_national": false
+    },
+    {
       "id": "172",
       "name": "AJ Auxerre",
       "code": "AUX",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "21306",
+      "name": "AS Cannes",
+      "code": "ASC",
       "country": "France",
       "is_national": false
     },
@@ -75,10 +110,31 @@
       "is_national": false
     },
     {
+      "id": "134076",
+      "name": "AS Tefana",
+      "code": "TEF",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "140",
+      "name": "AZ Alkmaar",
+      "code": "AZX",
+      "country": "Netherlands",
+      "is_national": false
+    },
+    {
       "id": "21833",
       "name": "Abha",
       "code": "ABH",
       "country": "Saudi Arabia",
+      "is_national": false
+    },
+    {
+      "id": "139",
+      "name": "Ajax Amsterdam",
+      "code": "AJA",
+      "country": "Netherlands",
       "is_national": false
     },
     {
@@ -159,6 +215,13 @@
       "is_national": false
     },
     {
+      "id": "22024",
+      "name": "Al Jabalain",
+      "code": "JAB",
+      "country": "Saudi Arabia",
+      "is_national": false
+    },
+    {
       "id": "21829",
       "name": "Al Khaleej",
       "code": "KHA",
@@ -176,6 +239,20 @@
       "id": "817",
       "name": "Al Nassr",
       "code": "NSR",
+      "country": "Saudi Arabia",
+      "is_national": false
+    },
+    {
+      "id": "21966",
+      "name": "Al Okhdood",
+      "code": "OKH",
+      "country": "Saudi Arabia",
+      "is_national": false
+    },
+    {
+      "id": "22029",
+      "name": "Al Orobah",
+      "code": "ORO",
       "country": "Saudi Arabia",
       "is_national": false
     },
@@ -208,6 +285,20 @@
       "is_national": false
     },
     {
+      "id": "131747",
+      "name": "Al Ula",
+      "code": "ULA",
+      "country": "Saudi Arabia",
+      "is_national": false
+    },
+    {
+      "id": "21835",
+      "name": "Al Wehda",
+      "code": "WEH",
+      "country": "Saudi Arabia",
+      "is_national": false
+    },
+    {
       "id": "96",
       "name": "Alavés",
       "code": "ALA",
@@ -229,10 +320,38 @@
       "is_national": true
     },
     {
+      "id": "6827",
+      "name": "Alcoyano",
+      "code": "ALC",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
       "id": "6832",
       "name": "Almería",
       "code": "ALM",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "18120",
+      "name": "Am. du Personnel Municipal Metz",
+      "code": "MET",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7725",
+      "name": "Amneville",
+      "code": "AMN",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "441",
+      "name": "Anderlecht",
+      "code": "AND",
+      "country": "Belgium",
       "is_national": false
     },
     {
@@ -250,10 +369,31 @@
       "is_national": false
     },
     {
+      "id": "17621",
+      "name": "Anglet Genets",
+      "code": "ANG",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7720",
+      "name": "Angouleme",
+      "code": "ANG",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "18066",
       "name": "Annecy",
       "code": "ANN",
       "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "20024",
+      "name": "Ararat-Armenia",
+      "code": "ARA",
+      "country": "",
       "is_national": false
     },
     {
@@ -292,6 +432,13 @@
       "is_national": false
     },
     {
+      "id": "134090",
+      "name": "Asptt Dijon",
+      "code": "ASP",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "362",
       "name": "Aston Villa",
       "code": "AVL",
@@ -313,6 +460,13 @@
       "is_national": false
     },
     {
+      "id": "134096",
+      "name": "Atlas Paillade",
+      "code": "PAI",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "1068",
       "name": "Atlético Madrid",
       "code": "ATM",
@@ -327,6 +481,20 @@
       "is_national": true
     },
     {
+      "id": "14381",
+      "name": "Avenir Foot Lozere",
+      "code": "AVF",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "9017",
+      "name": "Avranches",
+      "code": "AVR",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "581",
       "name": "Azerbaijan",
       "code": "AZE",
@@ -334,10 +502,66 @@
       "is_national": true
     },
     {
+      "id": "5535",
+      "name": "Badajoz",
+      "code": "BDJ",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "134128",
+      "name": "Balagne",
+      "code": "BAL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "10680",
+      "name": "Balma",
+      "code": "BAL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "5421",
+      "name": "Barakaldo",
+      "code": "BAR",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
       "id": "83",
       "name": "Barcelona",
       "code": "BAR",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "280",
+      "name": "Barnet",
+      "code": "BAR",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "397",
+      "name": "Barnsley",
+      "code": "BAR",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "642",
+      "name": "Barrow",
+      "code": "BRW",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134110",
+      "name": "Baume-Les-Dames",
+      "code": "BAU",
+      "country": "France",
       "is_national": false
     },
     {
@@ -352,6 +576,13 @@
       "name": "Bayern Munich",
       "code": "MUN",
       "country": "Germany",
+      "is_national": false
+    },
+    {
+      "id": "7733",
+      "name": "Bayonne",
+      "code": "BAY",
+      "country": "France",
       "is_national": false
     },
     {
@@ -376,6 +607,27 @@
       "is_national": false
     },
     {
+      "id": "1929",
+      "name": "Benfica",
+      "code": "SLB",
+      "country": "Portugal",
+      "is_national": false
+    },
+    {
+      "id": "1895",
+      "name": "Besiktas",
+      "code": "BES",
+      "country": "Türkiye",
+      "is_national": false
+    },
+    {
+      "id": "18901",
+      "name": "Biesheim",
+      "code": "BIE",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "392",
       "name": "Birmingham City",
       "code": "BIR",
@@ -390,6 +642,20 @@
       "is_national": false
     },
     {
+      "id": "346",
+      "name": "Blackpool",
+      "code": "BLP",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "2980",
+      "name": "Bodo/Glimt",
+      "code": "BOD",
+      "country": "Norway",
+      "is_national": false
+    },
+    {
       "id": "107",
       "name": "Bologna",
       "code": "BOL",
@@ -401,6 +667,13 @@
       "name": "Bolton Wanderers",
       "code": "BOL",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "20710",
+      "name": "Borac Banja Luka",
+      "code": "BBL",
+      "country": "",
       "is_national": false
     },
     {
@@ -425,6 +698,13 @@
       "is_national": true
     },
     {
+      "id": "134107",
+      "name": "Boulazac",
+      "code": "BOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "7869",
       "name": "Boulogne",
       "code": "BOU",
@@ -432,10 +712,45 @@
       "is_national": false
     },
     {
+      "id": "11895",
+      "name": "Bourg-Peronnas",
+      "code": "FBB",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "18085",
+      "name": "Bourges Foot",
+      "code": "BOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "387",
+      "name": "Bradford City",
+      "code": "BRD",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "2994",
+      "name": "Braga",
+      "code": "SCB",
+      "country": "Portugal",
+      "is_national": false
+    },
+    {
       "id": "337",
       "name": "Brentford",
       "code": "BRE",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "16925",
+      "name": "Bressuire",
+      "code": "BRE",
+      "country": "France",
       "is_national": false
     },
     {
@@ -460,6 +775,20 @@
       "is_national": false
     },
     {
+      "id": "308",
+      "name": "Bristol Rovers",
+      "code": "BRI",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134149",
+      "name": "Brive",
+      "code": "BRI",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "462",
       "name": "Bulgaria",
       "code": "BUL",
@@ -481,9 +810,44 @@
       "is_national": false
     },
     {
+      "id": "2567",
+      "name": "Burton Albion",
+      "code": "BRT",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134069",
+      "name": "CA Boulay",
+      "code": "CAX",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "19288",
+      "name": "CD Artistico Navalcarnero",
+      "code": "NAV",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "22437",
+      "name": "CD Minera",
+      "code": "MIN",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
       "id": "11487",
       "name": "CD Sabadell",
       "code": "CDS",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "133837",
+      "name": "CD Tarancon",
+      "code": "CDT",
       "country": "Spain",
       "is_national": false
     },
@@ -495,10 +859,45 @@
       "is_national": false
     },
     {
+      "id": "10834",
+      "name": "CSKA Sofia",
+      "code": "CSK",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "8089",
+      "name": "CSU Craiova",
+      "code": "UCR",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "2927",
+      "name": "Caen",
+      "code": "CAN",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "2925",
       "name": "Cagliari",
       "code": "CAG",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "4744",
+      "name": "Calais",
+      "code": "CAL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "21291",
+      "name": "Calvo Sotelo",
+      "code": "CSP",
+      "country": "Spain",
       "is_national": false
     },
     {
@@ -509,10 +908,24 @@
       "is_national": false
     },
     {
+      "id": "322",
+      "name": "Carlisle United",
+      "code": "CAR",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "3988",
       "name": "Carrarese",
       "code": "CAR",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "134106",
+      "name": "Castanet",
+      "code": "CAS",
+      "country": "France",
       "is_national": false
     },
     {
@@ -537,6 +950,20 @@
       "is_national": false
     },
     {
+      "id": "256",
+      "name": "Celtic",
+      "code": "CEL",
+      "country": "Scotland",
+      "is_national": false
+    },
+    {
+      "id": "134068",
+      "name": "Cercle Paul Bert Brequigny Football",
+      "code": "CER",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3337",
       "name": "Cesena",
       "code": "CES",
@@ -551,10 +978,59 @@
       "is_national": false
     },
     {
+      "id": "134147",
+      "name": "Chalon-sur-Saone",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134117",
+      "name": "Chambéry Savoie",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "3200",
+      "name": "Chamois Niortais FC",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "372",
       "name": "Charlton Athletic",
       "code": "CHA",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134063",
+      "name": "Chassieu Declines FC",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7729",
+      "name": "Chateaubriant",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134123",
+      "name": "Chatou",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "10225",
+      "name": "Chauny",
+      "code": "CHA",
+      "country": "France",
       "is_national": false
     },
     {
@@ -565,6 +1041,34 @@
       "is_national": false
     },
     {
+      "id": "320",
+      "name": "Cheltenham Town",
+      "code": "CHL",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "343",
+      "name": "Chesterfield",
+      "code": "CHE",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134091",
+      "name": "Choisy Au Bac",
+      "code": "CHO",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134130",
+      "name": "Claira / St Laurent",
+      "code": "CLA",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3171",
       "name": "Clermont Foot",
       "code": "CLE",
@@ -572,10 +1076,45 @@
       "is_national": false
     },
     {
+      "id": "570",
+      "name": "Club Brugge",
+      "code": "BRU",
+      "country": "Belgium",
+      "is_national": false
+    },
+    {
+      "id": "339",
+      "name": "Colchester United",
+      "code": "COL",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "2572",
       "name": "Como",
       "code": "COM",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "7718",
+      "name": "Concarneau",
+      "code": "CON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134080",
+      "name": "Contres",
+      "code": "CON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134134",
+      "name": "Cournon",
+      "code": "COU",
+      "country": "France",
       "is_national": false
     },
     {
@@ -590,6 +1129,13 @@
       "name": "Cremonese",
       "code": "CRE",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "396",
+      "name": "Crewe Alexandra",
+      "code": "CAX",
+      "country": "England",
       "is_national": false
     },
     {
@@ -656,6 +1202,13 @@
       "is_national": false
     },
     {
+      "id": "21804",
+      "name": "Diables Noirs",
+      "code": "DBN",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3170",
       "name": "Dijon FCO",
       "code": "DIJ",
@@ -667,6 +1220,20 @@
       "name": "Dinamo Moscow",
       "code": "DMO",
       "country": "Russia",
+      "is_national": false
+    },
+    {
+      "id": "597",
+      "name": "Dinamo Zagreb",
+      "code": "DZG",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "293",
+      "name": "Dover Athletic",
+      "code": "DOV",
+      "country": "England",
       "is_national": false
     },
     {
@@ -688,6 +1255,41 @@
       "name": "Dynamo Makhachkala",
       "code": "DMA",
       "country": "Russia",
+      "is_national": false
+    },
+    {
+      "id": "134118",
+      "name": "ES Buxerolles",
+      "code": "BUX",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "21303",
+      "name": "ES Thaon",
+      "code": "EST",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "20275",
+      "name": "ESA Linas-Montlhery",
+      "code": "ELM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134066",
+      "name": "ESAP Metz",
+      "code": "ESA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "21943",
+      "name": "Egnatia",
+      "code": "EGN",
+      "country": "",
       "is_national": false
     },
     {
@@ -740,6 +1342,20 @@
       "is_national": true
     },
     {
+      "id": "134067",
+      "name": "Entente Crest-Aouste",
+      "code": "ENT",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "9010",
+      "name": "Epinal",
+      "code": "EPI",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "88",
       "name": "Espanyol",
       "code": "ESP",
@@ -758,6 +1374,20 @@
       "name": "Everton",
       "code": "EVE",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "324",
+      "name": "Exeter City",
+      "code": "EXE",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "909",
+      "name": "F.C. København",
+      "code": "KBH",
+      "country": "Denmark",
       "is_national": false
     },
     {
@@ -782,10 +1412,94 @@
       "is_national": false
     },
     {
+      "id": "5419",
+      "name": "FC Cartagena",
+      "code": "CAR",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "20272",
+      "name": "FC Challans",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "11880",
+      "name": "FC Chambly",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "122",
       "name": "FC Cologne",
       "code": "KOE",
       "country": "Germany",
+      "is_national": false
+    },
+    {
+      "id": "18400",
+      "name": "FC Fleury 91",
+      "code": "F91",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "19388",
+      "name": "FC Limonest",
+      "code": "LIM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134122",
+      "name": "FC Lourdes",
+      "code": "LOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7672",
+      "name": "FC Lugano",
+      "code": "LUG",
+      "country": "Switzerland",
+      "is_national": false
+    },
+    {
+      "id": "572",
+      "name": "FC Midtjylland",
+      "code": "MID",
+      "country": "Denmark",
+      "is_national": false
+    },
+    {
+      "id": "3101",
+      "name": "FC Nordsjælland",
+      "code": "FCN",
+      "country": "Denmark",
+      "is_national": false
+    },
+    {
+      "id": "437",
+      "name": "FC Porto",
+      "code": "FCP",
+      "country": "Portugal",
+      "is_national": false
+    },
+    {
+      "id": "3024",
+      "name": "FC Thun",
+      "code": "THU",
+      "country": "Switzerland",
+      "is_national": false
+    },
+    {
+      "id": "152",
+      "name": "FC Twente",
+      "code": "TWE",
+      "country": "Netherlands",
       "is_national": false
     },
     {
@@ -803,6 +1517,27 @@
       "is_national": true
     },
     {
+      "id": "436",
+      "name": "Fenerbahce",
+      "code": "FEN",
+      "country": "Türkiye",
+      "is_national": false
+    },
+    {
+      "id": "622",
+      "name": "Ferencvaros",
+      "code": "FER",
+      "country": "Hungary",
+      "is_national": false
+    },
+    {
+      "id": "142",
+      "name": "Feyenoord Rotterdam",
+      "code": "FEY",
+      "country": "Netherlands",
+      "is_national": false
+    },
+    {
       "id": "458",
       "name": "Finland",
       "code": "FIN",
@@ -817,11 +1552,39 @@
       "is_national": false
     },
     {
+      "id": "134108",
+      "name": "Firminy",
+      "code": "FIR",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "3891",
+      "name": "Fleetwood Town",
+      "code": "FLE",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "11313",
+      "name": "Fontenay Foot",
+      "code": "FON",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "478",
       "name": "France",
       "code": "FRA",
       "country": "France",
       "is_national": true
+    },
+    {
+      "id": "9021",
+      "name": "Frejus",
+      "code": "FRE",
+      "country": "France",
+      "is_national": false
     },
     {
       "id": "4057",
@@ -835,6 +1598,27 @@
       "name": "Fulham",
       "code": "FUL",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134119",
+      "name": "Furiani-Agliani",
+      "code": "FUR",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "19393",
+      "name": "GSI Pontivy",
+      "code": "PON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "432",
+      "name": "Galatasaray",
+      "code": "GAL",
+      "country": "Türkiye",
       "is_national": false
     },
     {
@@ -894,6 +1678,13 @@
       "is_national": false
     },
     {
+      "id": "134127",
+      "name": "Grau-Du-Roi",
+      "code": "GRA",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "455",
       "name": "Greece",
       "code": "GRE",
@@ -908,10 +1699,31 @@
       "is_national": false
     },
     {
+      "id": "386",
+      "name": "Grimsby Town",
+      "code": "GRI",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "171",
       "name": "Guingamp",
       "code": "EAG",
       "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "2588",
+      "name": "Guiseley",
+      "code": "GUI",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "489",
+      "name": "Hajduk Split",
+      "code": "HAJ",
+      "country": "",
       "is_national": false
     },
     {
@@ -926,6 +1738,27 @@
       "name": "Hannover 96",
       "code": "H96",
       "country": "Germany",
+      "is_national": false
+    },
+    {
+      "id": "13083",
+      "name": "Hapoel Be'er",
+      "code": "HBE",
+      "country": "Israel",
+      "is_national": false
+    },
+    {
+      "id": "18101",
+      "name": "Hauts Lyonnais",
+      "code": "HLY",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "262",
+      "name": "Heart of Midlothian",
+      "code": "HOM",
+      "country": "Scotland",
       "is_national": false
     },
     {
@@ -950,6 +1783,13 @@
       "is_national": false
     },
     {
+      "id": "134074",
+      "name": "Horizon Patho",
+      "code": "PAT",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "306",
       "name": "Hull City",
       "code": "HUL",
@@ -964,11 +1804,32 @@
       "is_national": true
     },
     {
+      "id": "16916",
+      "name": "IC Croix",
+      "code": "ICC",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "20025",
+      "name": "Iberia 1999",
+      "code": "IBE",
+      "country": "",
+      "is_national": false
+    },
+    {
       "id": "470",
       "name": "Iceland",
       "code": "ISL",
       "country": "Iceland",
       "is_national": true
+    },
+    {
+      "id": "20703",
+      "name": "Inter D'Escaldes",
+      "code": "IDE",
+      "country": "",
+      "is_national": false
     },
     {
       "id": "110",
@@ -999,6 +1860,20 @@
       "is_national": true
     },
     {
+      "id": "7922",
+      "name": "Jablonec",
+      "code": "JAB",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "11505",
+      "name": "Jagiellonia Bialystok",
+      "code": "JAG",
+      "country": "",
+      "is_national": false
+    },
+    {
       "id": "3975",
       "name": "Juve Stabia",
       "code": "JVS",
@@ -1010,6 +1885,27 @@
       "name": "Juventus",
       "code": "JUV",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "134093",
+      "name": "Juventus Papus",
+      "code": "PAP",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "3611",
+      "name": "KAA Gent",
+      "code": "GEN",
+      "country": "Belgium",
+      "is_national": false
+    },
+    {
+      "id": "2528",
+      "name": "Kairat Almaty",
+      "code": "KAI",
+      "country": "",
       "is_national": false
     },
     {
@@ -1027,11 +1923,32 @@
       "is_national": false
     },
     {
+      "id": "20028",
+      "name": "Kauno Zalgiris",
+      "code": "ZAL",
+      "country": "",
+      "is_national": false
+    },
+    {
       "id": "2619",
       "name": "Kazakhstan",
       "code": "KAZ",
       "country": "Kazakhstan",
       "is_national": true
+    },
+    {
+      "id": "319",
+      "name": "Kidderminster Harriers",
+      "code": "KID",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134088",
+      "name": "Koetzingue",
+      "code": "KOE",
+      "country": "France",
+      "is_national": false
     },
     {
       "id": "18272",
@@ -1052,6 +1969,48 @@
       "name": "Krylia Sovetov",
       "code": "KSS",
       "country": "Russia",
+      "is_national": false
+    },
+    {
+      "id": "8169",
+      "name": "KuPS Kuopio",
+      "code": "KUP",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "4411",
+      "name": "LASK Linz",
+      "code": "LAS",
+      "country": "Austria",
+      "is_national": false
+    },
+    {
+      "id": "134121",
+      "name": "La Baule-Le Pouliguen",
+      "code": "POU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "16917",
+      "name": "La Roche-sur-Yon",
+      "code": "LRY",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "21769",
+      "name": "La Tamponnaise",
+      "code": "LAT",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "21772",
+      "name": "Lannion",
+      "code": "LAN",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1090,10 +2049,45 @@
       "is_national": false
     },
     {
+      "id": "134113",
+      "name": "Le Pays Du Valois",
+      "code": "VAL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "9024",
+      "name": "Le Poire SV",
+      "code": "PSV",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "18906",
+      "name": "Le Puy",
+      "code": "PUY",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134126",
+      "name": "Le Touquet",
+      "code": "TOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "113",
       "name": "Lecce",
       "code": "LEC",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "2990",
+      "name": "Lech Poznan",
+      "code": "LEC",
+      "country": "Poland",
       "is_national": false
     },
     {
@@ -1111,9 +2105,23 @@
       "is_national": false
     },
     {
+      "id": "375",
+      "name": "Leicester City",
+      "code": "LEI",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "175",
       "name": "Lens",
       "code": "RCL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134085",
+      "name": "Les Ulis",
+      "code": "ULS",
       "country": "France",
       "is_national": false
     },
@@ -1122,6 +2130,20 @@
       "name": "Levante",
       "code": "LEV",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "490",
+      "name": "Levski Sofia",
+      "code": "LEV",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "309",
+      "name": "Leyton Orient",
+      "code": "LEY",
+      "country": "England",
       "is_national": false
     },
     {
@@ -1139,10 +2161,24 @@
       "is_national": false
     },
     {
+      "id": "987",
+      "name": "Lillestrom",
+      "code": "LSK",
+      "country": "Norway",
+      "is_national": false
+    },
+    {
       "id": "314",
       "name": "Lincoln City",
       "code": "LCN",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "17856",
+      "name": "Lincoln Red Imps",
+      "code": "LRI",
+      "country": "",
       "is_national": false
     },
     {
@@ -1167,10 +2203,24 @@
       "is_national": false
     },
     {
+      "id": "20876",
+      "name": "Loon Plage FC",
+      "code": "LOO",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "273",
       "name": "Lorient",
       "code": "LOR",
       "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "301",
+      "name": "Luton Town",
+      "code": "LTN",
+      "country": "England",
       "is_national": false
     },
     {
@@ -1188,10 +2238,24 @@
       "is_national": false
     },
     {
+      "id": "134150",
+      "name": "Lyon-la-Duchere",
+      "code": "LLD",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "2950",
       "name": "Mainz",
       "code": "M05",
       "country": "Germany",
+      "is_national": false
+    },
+    {
+      "id": "134077",
+      "name": "Maisons-Alfort",
+      "code": "MAI",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1223,6 +2287,13 @@
       "is_national": false
     },
     {
+      "id": "304",
+      "name": "Mansfield Town",
+      "code": "MNF",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "3991",
       "name": "Mantova",
       "code": "MAN",
@@ -1233,6 +2304,20 @@
       "id": "176",
       "name": "Marseille",
       "code": "OLM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134102",
+      "name": "Massay",
+      "code": "MAS",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134105",
+      "name": "Mazeres Uzos Rontignon",
+      "code": "RON",
       "country": "France",
       "is_national": false
     },
@@ -1258,6 +2343,20 @@
       "is_national": false
     },
     {
+      "id": "390",
+      "name": "Milton Keynes Dons",
+      "code": "MKD",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "20301",
+      "name": "Mjällby AIF",
+      "code": "MJA",
+      "country": "Sweden",
+      "is_national": false
+    },
+    {
       "id": "2573",
       "name": "Modena",
       "code": "MOD",
@@ -1279,8 +2378,36 @@
       "is_national": true
     },
     {
+      "id": "134131",
+      "name": "Montigny-Les-Metz",
+      "code": "MON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134098",
+      "name": "Montlouis",
+      "code": "MON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134071",
+      "name": "Montlucon Football",
+      "code": "MLN",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "274",
       "name": "Montpellier",
+      "code": "MON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "131576",
+      "name": "Montreuil FC",
       "code": "MON",
       "country": "France",
       "is_national": false
@@ -1297,6 +2424,20 @@
       "name": "Málaga",
       "code": "MCF",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "147",
+      "name": "NEC Nijmegen",
+      "code": "NEC",
+      "country": "Netherlands",
+      "is_national": false
+    },
+    {
+      "id": "3362",
+      "name": "NK Celje",
+      "code": "NKC",
+      "country": "Slovenia",
       "is_national": false
     },
     {
@@ -1321,11 +2462,25 @@
       "is_national": false
     },
     {
+      "id": "16735",
+      "name": "Neslois",
+      "code": "NES",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "449",
       "name": "Netherlands",
       "code": "NED",
       "country": "Netherlands",
       "is_national": true
+    },
+    {
+      "id": "134079",
+      "name": "Neuvillette-Jamin",
+      "code": "NEU",
+      "country": "France",
+      "is_national": false
     },
     {
       "id": "361",
@@ -1335,9 +2490,23 @@
       "is_national": false
     },
     {
+      "id": "635",
+      "name": "Newport County",
+      "code": "NEW",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "2502",
       "name": "Nice",
       "code": "NIC",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7730",
+      "name": "Nimes",
+      "code": "NIM",
       "country": "France",
       "is_national": false
     },
@@ -1377,10 +2546,94 @@
       "is_national": false
     },
     {
+      "id": "340",
+      "name": "Notts County",
+      "code": "NCO",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134103",
+      "name": "Nueillaubiers",
+      "code": "NUE",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "1010",
+      "name": "OFI Crete",
+      "code": "OFI",
+      "country": "Greece",
+      "is_national": false
+    },
+    {
+      "id": "134120",
+      "name": "Oberlauterbach",
+      "code": "OBE",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "332",
+      "name": "Oldham Athletic",
+      "code": "OLD",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "435",
+      "name": "Olympiacos",
+      "code": "OLY",
+      "country": "Greece",
+      "is_national": false
+    },
+    {
+      "id": "134064",
+      "name": "Olympique Charleville Prix AM",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "16913",
+      "name": "Olympique Marcquois",
+      "code": "OLM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134065",
+      "name": "Olympique des Membres de Cambrai Amerique",
+      "code": "CAM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "617",
+      "name": "Omonia Nicosia",
+      "code": "OMO",
+      "country": "Cyprus",
+      "is_national": false
+    },
+    {
+      "id": "17483",
+      "name": "Orléans",
+      "code": "ORL",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "97",
       "name": "Osasuna",
       "code": "OSA",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "148",
+      "name": "PSV Eindhoven",
+      "code": "PSV",
+      "country": "Netherlands",
       "is_national": false
     },
     {
@@ -1391,10 +2644,31 @@
       "is_national": false
     },
     {
+      "id": "22281",
+      "name": "Pafos",
+      "code": "PAF",
+      "country": "Cyprus",
+      "is_national": false
+    },
+    {
       "id": "2923",
       "name": "Palermo",
       "code": "PAL",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "443",
+      "name": "Panathinaikos",
+      "code": "PAO",
+      "country": "Greece",
+      "is_national": false
+    },
+    {
+      "id": "132434",
+      "name": "Paris 13 Atletico",
+      "code": "PAR",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1426,10 +2700,45 @@
       "is_national": false
     },
     {
+      "id": "134101",
+      "name": "Pays de Saint-Omer",
+      "code": "PAY",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134083",
+      "name": "Perros-Louannec",
+      "code": "LOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3956",
       "name": "Pisa",
       "code": "PIS",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "10693",
+      "name": "Plabennec",
+      "code": "PLA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "307",
+      "name": "Plymouth Argyle",
+      "code": "PLY",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "132948",
+      "name": "Plymouth Parkway",
+      "code": "PLY",
+      "country": "England",
       "is_national": false
     },
     {
@@ -1438,6 +2747,27 @@
       "code": "POL",
       "country": "Poland",
       "is_national": true
+    },
+    {
+      "id": "134146",
+      "name": "Pont-de-Cheruy",
+      "code": "PON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "14439",
+      "name": "Pontarlier",
+      "code": "PON",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "348",
+      "name": "Port Vale",
+      "code": "PTV",
+      "country": "England",
+      "is_national": false
     },
     {
       "id": "385",
@@ -1454,10 +2784,24 @@
       "is_national": true
     },
     {
+      "id": "5464",
+      "name": "Portugalete",
+      "code": "POR",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
       "id": "394",
       "name": "Preston North End",
       "code": "PNE",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134144",
+      "name": "Puissalicon Magalas",
+      "code": "PUI",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1475,10 +2819,45 @@
       "is_national": false
     },
     {
+      "id": "2790",
+      "name": "RB Salzburg",
+      "code": "SLZ",
+      "country": "Austria",
+      "is_national": false
+    },
+    {
       "id": "131858",
       "name": "RC Celta Fortuna",
       "code": "CEL",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "134133",
+      "name": "RIOM",
+      "code": "RIO",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "18064",
+      "name": "Racing Besancon",
+      "code": "BES",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134078",
+      "name": "Racing Chambery",
+      "code": "CHA",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "22139",
+      "name": "Racing Club de France",
+      "code": "RCF",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1493,6 +2872,13 @@
       "name": "Rayo Vallecano",
       "code": "RAY",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "338",
+      "name": "Reading",
+      "code": "REA",
+      "country": "England",
       "is_national": false
     },
     {
@@ -1531,10 +2917,24 @@
       "is_national": false
     },
     {
+      "id": "8678",
+      "name": "Real Unión Irun",
+      "code": "RUN",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
       "id": "95",
       "name": "Real Valladolid",
       "code": "VLL",
       "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "2290",
+      "name": "Red Star Belgrade",
+      "code": "RSB",
+      "country": "",
       "is_national": false
     },
     {
@@ -1545,11 +2945,74 @@
       "is_national": false
     },
     {
+      "id": "134129",
+      "name": "Reipertswiller",
+      "code": "REI",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "10677",
+      "name": "Rennes TA",
+      "code": "RTA",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "476",
       "name": "Republic of Ireland",
       "code": "IRL",
       "country": "Republic of Ireland",
       "is_national": true
+    },
+    {
+      "id": "131470",
+      "name": "Reus FC Reddis",
+      "code": "REU",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "134153",
+      "name": "Rhone Crussol Foot",
+      "code": "CRU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "19246",
+      "name": "Riga FC",
+      "code": "RIG",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "134115",
+      "name": "Rives 82",
+      "code": "RIV",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134135",
+      "name": "Riviera",
+      "code": "RIV",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "303",
+      "name": "Rochdale",
+      "code": "RCH",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134070",
+      "name": "Rochefort FC",
+      "code": "ROC",
+      "country": "France",
+      "is_national": false
     },
     {
       "id": "7719",
@@ -1580,10 +3043,38 @@
       "is_national": false
     },
     {
+      "id": "402",
+      "name": "Rotherham United",
+      "code": "ROT",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "9009",
+      "name": "Rouen",
+      "code": "ROU",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3851",
       "name": "Rubin Kazan",
       "code": "RUB",
       "country": "Russia",
+      "is_national": false
+    },
+    {
+      "id": "20871",
+      "name": "Rumilly Vallières",
+      "code": "RUV",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "3335",
+      "name": "SC Amiens",
+      "code": "AMI",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1601,6 +3092,27 @@
       "is_national": false
     },
     {
+      "id": "132785",
+      "name": "SC Toulon",
+      "code": "SCT",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "620",
+      "name": "SK Brann",
+      "code": "SKB",
+      "country": "Norway",
+      "is_national": false
+    },
+    {
+      "id": "3746",
+      "name": "SK Sturm Graz",
+      "code": "STG",
+      "country": "Austria",
+      "is_national": false
+    },
+    {
       "id": "3812",
       "name": "SV Darmstadt 98",
       "code": "SVD",
@@ -1615,10 +3127,94 @@
       "is_national": false
     },
     {
+      "id": "21922",
+      "name": "Sabah FK",
+      "code": "SAB",
+      "country": "",
+      "is_national": false
+    },
+    {
+      "id": "12957",
+      "name": "Sablé FC",
+      "code": "SAB",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134082",
+      "name": "Sag Cestas",
+      "code": "SAG",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134152",
+      "name": "Saint Sebastien",
+      "code": "SEB",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "18068",
+      "name": "Saint-Brieuc",
+      "code": "STB",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134114",
+      "name": "Saint-Die Kellermann",
+      "code": "KEL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134138",
+      "name": "Saint-Pauloise FC",
+      "code": "PAU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134087",
+      "name": "Saint-Pierre Milizac",
+      "code": "MIL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "19386",
+      "name": "Saint-Pryvé Saint Hilaire",
+      "code": "SPS",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134151",
+      "name": "Saint-Renan",
+      "code": "REN",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "178",
       "name": "Saint-Étienne",
       "code": "ASS",
       "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "22440",
+      "name": "Salamanca UDS",
+      "code": "SAL",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "132144",
+      "name": "Salisbury FC",
+      "code": "SAL",
+      "country": "England",
       "is_national": false
     },
     {
@@ -1657,6 +3253,27 @@
       "is_national": true
     },
     {
+      "id": "168",
+      "name": "Sedan",
+      "code": "SED",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "9011",
+      "name": "Selongey",
+      "code": "SEL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "18907",
+      "name": "Senlis",
+      "code": "SEN",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "6757",
       "name": "Serbia",
       "code": "SRB",
@@ -1671,10 +3288,45 @@
       "is_national": false
     },
     {
+      "id": "134072",
+      "name": "Seyssinet",
+      "code": "SEY",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "493",
+      "name": "Shakhtar Donetsk",
+      "code": "SHK",
+      "country": "",
+      "is_national": false
+    },
+    {
       "id": "398",
       "name": "Sheffield United",
       "code": "SHU",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "302",
+      "name": "Shrewsbury Town",
+      "code": "SHR",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "936",
+      "name": "Sint-Truidense",
+      "code": "STV",
+      "country": "Belgium",
+      "is_national": false
+    },
+    {
+      "id": "494",
+      "name": "Slavia Prague",
+      "code": "SLP",
+      "country": "",
       "is_national": false
     },
     {
@@ -1683,6 +3335,13 @@
       "code": "SVK",
       "country": "Slovakia",
       "is_national": true
+    },
+    {
+      "id": "521",
+      "name": "Slovan Bratislava",
+      "code": "SLB",
+      "country": "",
+      "is_national": false
     },
     {
       "id": "472",
@@ -1720,10 +3379,24 @@
       "is_national": true
     },
     {
+      "id": "433",
+      "name": "Sparta Prague",
+      "code": "SPP",
+      "country": "Czechia",
+      "is_national": false
+    },
+    {
       "id": "1941",
       "name": "Spartak Moscow",
       "code": "SPM",
       "country": "Russia",
+      "is_national": false
+    },
+    {
+      "id": "2250",
+      "name": "Sporting CP",
+      "code": "SCP",
+      "country": "Portugal",
       "is_national": false
     },
     {
@@ -1734,6 +3407,34 @@
       "is_national": false
     },
     {
+      "id": "134132",
+      "name": "St Andre St Macaire",
+      "code": "MAC",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134124",
+      "name": "St Martin Tatinghem",
+      "code": "TAT",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134089",
+      "name": "St Paul en Jarez",
+      "code": "JAR",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "10689",
+      "name": "St-Ouen L'Aumone",
+      "code": "STO",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "270",
       "name": "St. Pauli",
       "code": "STP",
@@ -1741,9 +3442,37 @@
       "is_national": false
     },
     {
+      "id": "134148",
+      "name": "Stade Bordelais",
+      "code": "BOR",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "131572",
+      "name": "Stade Béthunois",
+      "code": "SBX",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134111",
+      "name": "Stade Castelbourgeois",
+      "code": "CAS",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3266",
       "name": "Stade Laval",
       "code": "SLF",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "19390",
+      "name": "Stade Pontivy",
+      "code": "SPO",
       "country": "France",
       "is_national": false
     },
@@ -1755,10 +3484,31 @@
       "is_national": false
     },
     {
+      "id": "134099",
+      "name": "Stade Sotteville",
+      "code": "SOT",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "3243",
       "name": "Stade de Reims",
       "code": "REI",
       "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "285",
+      "name": "Stevenage",
+      "code": "STE",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "400",
+      "name": "Stockport County",
+      "code": "STO",
+      "country": "England",
       "is_national": false
     },
     {
@@ -1776,6 +3526,13 @@
       "is_national": false
     },
     {
+      "id": "21773",
+      "name": "Strasbourg Koenigshoffen",
+      "code": "SKO",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "11139",
       "name": "Sudtirol",
       "code": "SUD",
@@ -1787,6 +3544,13 @@
       "name": "Sunderland",
       "code": "SUN",
       "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "134097",
+      "name": "Sundhoffen",
+      "code": "SUN",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1811,6 +3575,20 @@
       "is_national": true
     },
     {
+      "id": "131554",
+      "name": "TBD Away",
+      "code": "TBD",
+      "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "131556",
+      "name": "TBD Home",
+      "code": "TBD",
+      "country": "Italy",
+      "is_national": false
+    },
+    {
       "id": "7911",
       "name": "TSG Hoffenheim",
       "code": "TSG",
@@ -1825,6 +3603,13 @@
       "is_national": false
     },
     {
+      "id": "134116",
+      "name": "Talange",
+      "code": "TAL",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "245",
       "name": "Tenerife",
       "code": "TEN",
@@ -1832,10 +3617,31 @@
       "is_national": false
     },
     {
+      "id": "10683",
+      "name": "Thionville",
+      "code": "THI",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134125",
+      "name": "Tinteniac St Domineuc",
+      "code": "TIN",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "239",
       "name": "Torino",
       "code": "TOR",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "21615",
+      "name": "Torreense",
+      "code": "TOR",
+      "country": "",
       "is_national": false
     },
     {
@@ -1849,6 +3655,34 @@
       "id": "179",
       "name": "Toulouse",
       "code": "TOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134109",
+      "name": "Tourcoing",
+      "code": "TOU",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "997",
+      "name": "Trabzonspor",
+      "code": "TRA",
+      "country": "Türkiye",
+      "is_national": false
+    },
+    {
+      "id": "10685",
+      "name": "Trelissac FC",
+      "code": "TRE",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134086",
+      "name": "Tremblay",
+      "code": "TRM",
       "country": "France",
       "is_national": false
     },
@@ -1874,6 +3708,48 @@
       "is_national": false
     },
     {
+      "id": "134142",
+      "name": "US Cheminots Paray-Foot",
+      "code": "CHM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "22138",
+      "name": "US Feurs",
+      "code": "USF",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "17623",
+      "name": "US Marseille Endoume",
+      "code": "USM",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7721",
+      "name": "US Quevilly",
+      "code": "USQ",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "22476",
+      "name": "US Saint-Philbert-de-Grand-Lieu",
+      "code": "SPG",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134104",
+      "name": "USF Fecamp",
+      "code": "USF",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "118",
       "name": "Udinese",
       "code": "UDI",
@@ -1888,6 +3764,34 @@
       "is_national": true
     },
     {
+      "id": "134092",
+      "name": "Union Cosnoise",
+      "code": "COS",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "5807",
+      "name": "Union St.-Gilloise",
+      "code": "USG",
+      "country": "Belgium",
+      "is_national": false
+    },
+    {
+      "id": "21723",
+      "name": "Utebo",
+      "code": "UTB",
+      "country": "Spain",
+      "is_national": false
+    },
+    {
+      "id": "134094",
+      "name": "Val Yerres Crosne",
+      "code": "VAL",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "94",
       "name": "Valencia",
       "code": "VAL",
@@ -1895,10 +3799,73 @@
       "is_national": false
     },
     {
+      "id": "6732",
+      "name": "Valenciennes",
+      "code": "VAF",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134084",
+      "name": "Vandruvre",
+      "code": "VAN",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7574",
+      "name": "Vannes OC",
+      "code": "VAN",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134081",
+      "name": "Veauche",
+      "code": "VEA",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "17530",
       "name": "Venezia",
       "code": "VEN",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "134145",
+      "name": "Vermelles",
+      "code": "VER",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "10675",
+      "name": "Versailles 78",
+      "code": "VER",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134075",
+      "name": "Verson",
+      "code": "VER",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "11303",
+      "name": "Vertou",
+      "code": "VER",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "7296",
+      "name": "Vesoul",
+      "code": "VES",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1937,6 +3904,20 @@
       "is_national": false
     },
     {
+      "id": "510",
+      "name": "Viking FK",
+      "code": "VFK",
+      "country": "Norway",
+      "is_national": false
+    },
+    {
+      "id": "11706",
+      "name": "Viktoria Plzen",
+      "code": "PLZ",
+      "country": "",
+      "is_national": false
+    },
+    {
       "id": "102",
       "name": "Villarreal",
       "code": "VIL",
@@ -1944,10 +3925,31 @@
       "is_national": false
     },
     {
+      "id": "10235",
+      "name": "Villefranche",
+      "code": "VIL",
+      "country": "France",
+      "is_national": false
+    },
+    {
+      "id": "134112",
+      "name": "Violaines",
+      "code": "VIO",
+      "country": "France",
+      "is_national": false
+    },
+    {
       "id": "11137",
       "name": "Virtus Entella",
       "code": "ENT",
       "country": "Italy",
+      "is_national": false
+    },
+    {
+      "id": "10232",
+      "name": "Vitre",
+      "code": "VIT",
+      "country": "France",
       "is_national": false
     },
     {
@@ -1986,6 +3988,20 @@
       "is_national": false
     },
     {
+      "id": "350",
+      "name": "Wigan Athletic",
+      "code": "WGA",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "133370",
+      "name": "Wimborne Town",
+      "code": "WIM",
+      "country": "England",
+      "is_national": false
+    },
+    {
       "id": "380",
       "name": "Wolverhampton Wanderers",
       "code": "WOL",
@@ -1996,6 +4012,20 @@
       "id": "352",
       "name": "Wrexham",
       "code": "WXM",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "344",
+      "name": "Wycombe Wanderers",
+      "code": "WYC",
+      "country": "England",
+      "is_national": false
+    },
+    {
+      "id": "315",
+      "name": "York City",
+      "code": "YOR",
       "country": "England",
       "is_national": false
     },
@@ -17833,6 +19863,22 @@
       "away_team_code": "MAN"
     },
     {
+      "fixture_id": "401876659",
+      "kickoff_utc": "2027-01-02T13:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "177",
+      "home_team": "Metz",
+      "home_team_code": "MET",
+      "away_team_id": "3267",
+      "away_team": "AS Nancy Lorraine",
+      "away_team_code": "ASN"
+    },
+    {
       "fixture_id": "401900841",
       "kickoff_utc": "2027-01-02T13:30:00Z",
       "tournament": "Saudi Pro League",
@@ -18041,6 +20087,102 @@
       "away_team_code": "KHA"
     },
     {
+      "fixture_id": "401876656",
+      "kickoff_utc": "2027-01-02T18:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "7719",
+      "home_team": "Rodez Aveyron",
+      "home_team_code": "AVE",
+      "away_team_id": "11884",
+      "away_team": "Red Star FC 93",
+      "away_team_code": "RSF"
+    },
+    {
+      "fixture_id": "401876658",
+      "kickoff_utc": "2027-01-02T18:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "274",
+      "home_team": "Montpellier",
+      "home_team_code": "MON",
+      "away_team_id": "171",
+      "away_team": "Guingamp",
+      "away_team_code": "EAG"
+    },
+    {
+      "fixture_id": "401876660",
+      "kickoff_utc": "2027-01-02T18:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "6994",
+      "home_team": "Grenoble",
+      "home_team_code": "GRE",
+      "away_team_id": "272",
+      "away_team": "Sochaux",
+      "away_team_code": "SOC"
+    },
+    {
+      "fixture_id": "401876661",
+      "kickoff_utc": "2027-01-02T18:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "7732",
+      "home_team": "Dunkerque",
+      "home_team_code": "DUN",
+      "away_team_id": "7869",
+      "away_team": "Boulogne",
+      "away_team_code": "BOU"
+    },
+    {
+      "fixture_id": "401876662",
+      "kickoff_utc": "2027-01-02T18:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "3170",
+      "home_team": "Dijon FCO",
+      "home_team_code": "DIJ",
+      "away_team_id": "165",
+      "away_team": "Nantes",
+      "away_team_code": "NAN"
+    },
+    {
+      "fixture_id": "401876663",
+      "kickoff_utc": "2027-01-02T18:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "3171",
+      "home_team": "Clermont Foot",
+      "home_team_code": "CLE",
+      "away_team_id": "10678",
+      "away_team": "Pau",
+      "away_team_code": "PAU"
+    },
+    {
       "fixture_id": "401874986",
       "kickoff_utc": "2027-01-02T19:45:00Z",
       "tournament": "Serie A",
@@ -18137,22 +20279,6 @@
       "away_team_code": "AUX"
     },
     {
-      "fixture_id": "401876656",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "7719",
-      "home_team": "Rodez Aveyron",
-      "home_team_code": "AVE",
-      "away_team_id": "11884",
-      "away_team": "Red Star FC 93",
-      "away_team_code": "RSF"
-    },
-    {
       "fixture_id": "401876657",
       "kickoff_utc": "2027-01-02T20:00:00Z",
       "tournament": "Ligue 2",
@@ -18167,118 +20293,6 @@
       "away_team_id": "3266",
       "away_team": "Stade Laval",
       "away_team_code": "SLF"
-    },
-    {
-      "fixture_id": "401876658",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "274",
-      "home_team": "Montpellier",
-      "home_team_code": "MON",
-      "away_team_id": "171",
-      "away_team": "Guingamp",
-      "away_team_code": "EAG"
-    },
-    {
-      "fixture_id": "401876659",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "177",
-      "home_team": "Metz",
-      "home_team_code": "MET",
-      "away_team_id": "3267",
-      "away_team": "AS Nancy Lorraine",
-      "away_team_code": "ASN"
-    },
-    {
-      "fixture_id": "401876660",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "6994",
-      "home_team": "Grenoble",
-      "home_team_code": "GRE",
-      "away_team_id": "272",
-      "away_team": "Sochaux",
-      "away_team_code": "SOC"
-    },
-    {
-      "fixture_id": "401876661",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "7732",
-      "home_team": "Dunkerque",
-      "home_team_code": "DUN",
-      "away_team_id": "7869",
-      "away_team": "Boulogne",
-      "away_team_code": "BOU"
-    },
-    {
-      "fixture_id": "401876662",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "3170",
-      "home_team": "Dijon FCO",
-      "home_team_code": "DIJ",
-      "away_team_id": "165",
-      "away_team": "Nantes",
-      "away_team_code": "NAN"
-    },
-    {
-      "fixture_id": "401876663",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "3171",
-      "home_team": "Clermont Foot",
-      "home_team_code": "CLE",
-      "away_team_id": "10678",
-      "away_team": "Pau",
-      "away_team_code": "PAU"
-    },
-    {
-      "fixture_id": "401876664",
-      "kickoff_utc": "2027-01-02T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "18066",
-      "home_team": "Annecy",
-      "home_team_code": "ANN",
-      "away_team_id": "178",
-      "away_team": "Saint-Étienne",
-      "away_team_code": "ASS"
     },
     {
       "fixture_id": "401874793",
@@ -18775,6 +20789,22 @@
       "away_team_id": "131858",
       "away_team": "RC Celta Fortuna",
       "away_team_code": "CEL"
+    },
+    {
+      "fixture_id": "401876664",
+      "kickoff_utc": "2027-01-04T19:45:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "18066",
+      "home_team": "Annecy",
+      "home_team_code": "ANN",
+      "away_team_id": "178",
+      "away_team": "Saint-Étienne",
+      "away_team_code": "ASS"
     },
     {
       "fixture_id": "401875099",
