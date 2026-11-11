@@ -60,17 +60,44 @@ LEAGUES: Dict[str, Tuple[str, str, bool]] = {
     "uefa.europa": ("UEFA Europa League", "Europe", False),
     "uefa.europa.conf": ("UEFA Conference League", "Europe", False),
     "eng.1": ("Premier League", "England", False),
+    "eng.2": ("EFL Championship", "England", False),
+    "eng.3": ("EFL League One", "England", False),
+    "eng.4": ("EFL League Two", "England", False),
+    "eng.5": ("National League", "England", False),
     "eng.fa": ("FA Cup", "England", False),
     "eng.league_cup": ("EFL Cup", "England", False),
     "esp.1": ("La Liga", "Spain", False),
+    "esp.2": ("LaLiga 2", "Spain", False),
     "esp.copa_del_rey": ("Copa del Rey", "Spain", False),
     "ita.1": ("Serie A", "Italy", False),
+    "ita.2": ("Serie B", "Italy", False),
     "ita.coppa_italia": ("Coppa Italia", "Italy", False),
     "ger.1": ("Bundesliga", "Germany", False),
+    "ger.2": ("2. Bundesliga", "Germany", False),
     "ger.dfb_pokal": ("DFB-Pokal", "Germany", False),
     "fra.1": ("Ligue 1", "France", False),
+    "fra.2": ("Ligue 2", "France", False),
     "fra.coupe_de_france": ("Coupe de France", "France", False),
     "rus.1": ("Russian Premier League", "Russia", False),
+}
+
+# Клубы для справочника берём только из матчей чемпионатов.
+# Кубковые матчи (включая еврокубки) не должны добавлять клубы в этот список.
+CLUB_LEAGUE_SLUGS: Set[str] = {
+    "eng.1",
+    "eng.2",
+    "eng.3",
+    "eng.4",
+    "eng.5",
+    "esp.1",
+    "esp.2",
+    "ita.1",
+    "ita.2",
+    "ger.1",
+    "ger.2",
+    "fra.1",
+    "fra.2",
+    "rus.1",
 }
 
 _request_lock = threading.Lock()
@@ -329,6 +356,9 @@ def collect_event_teams(
 ) -> None:
     tournament, league_country, is_national = LEAGUES[slug]
     del tournament
+
+    if not is_national and slug not in CLUB_LEAGUE_SLUGS:
+        return
 
     header = event.get("header") or {}
     competitions = header.get("competitions") or []
