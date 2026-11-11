@@ -76,6 +76,8 @@ LEAGUES: Dict[str, Tuple[str, str, bool]] = {
     "fra.2": ("Ligue 2", "France", False),
     "fra.coupe_de_france": ("Coupe de France", "France", False),
     "rus.1": ("Russian Premier League", "Russia", False),
+    "ksa.1": ("Saudi Pro League", "Saudi Arabia", False),
+    "ksa.kings.cup": ("Saudi King's Cup", "Saudi Arabia", False),
 }
 
 # Клубы для справочника берём только из матчей чемпионатов.
@@ -92,6 +94,7 @@ CLUB_LEAGUE_SLUGS: Set[str] = {
     "fra.1",
     "fra.2",
     "rus.1",
+    "ksa.1",
 }
 
 _request_lock = threading.Lock()
