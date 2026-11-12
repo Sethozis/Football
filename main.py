@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""Collect upcoming football fixtures from ESPN's public JSON endpoints.
+"""Collect current-season football fixtures from ESPN's public JSON endpoints.
 
 No API key is required. GitHub Actions runs this script every six hours and
-commits the generated football_matches.json.
+commits the generated football_matches.json. For every competition the script
+loads the current season (or current cup tournament), including matches that
+have already been played.
 
 Coverage:
   * FIFA World Cup and its UEFA qualifiers
@@ -188,8 +190,8 @@ def parse_event(
     slug: str,
     tournament: str,
     country: str,
-    now: datetime,
-    horizon: datetime,
+    window_start: datetime,
+    window_end: datetime,
 ) -> Optional[Dict[str, Any]]:
     header = summary.get("header") or {}
     competitions = header.get("competitions") or []
@@ -201,7 +203,7 @@ def parse_event(
     fixture_id = header.get("id") or competition.get("id")
     if kickoff is None or fixture_id is None:
         return None
-    if kickoff <= now or kickoff > horizon:
+    if kickoff < window_start or kickoff > window_end:
         return None
 
     home_team: Optional[Dict[str, Any]] = None
@@ -237,6 +239,31 @@ def parse_event(
     }
 
 
+def league_url(slug: str) -> str:
+    return (
+        f"{ESPN_CORE}/soccer/leagues/{urllib.parse.quote(slug)}"
+        "?lang=en&region=us"
+    )
+
+
+def load_current_season(
+    slug: str,
+) -> Optional[Tuple[datetime, datetime, Optional[int]]]:
+    """Return current ESPN season window for a competition."""
+    payload = get_json(league_url(slug))
+    if not payload:
+        return None
+
+    season = payload.get("season") or {}
+    start = parse_kickoff(season.get("startDate"))
+    end = parse_kickoff(season.get("endDate"))
+    if start is None or end is None or end <= start:
+        return None
+
+    year = season.get("year")
+    return start, end, year if isinstance(year, int) else None
+
+
 def events_url(slug: str, start: datetime, end: datetime, page: int) -> str:
     dates = f"{start.strftime('%Y%m%d')}-{end.strftime('%Y%m%d')}"
     return (
@@ -250,26 +277,40 @@ def load_event_references(
     start: datetime,
     end: datetime,
 ) -> List[str]:
+    """Load references in short date chunks.
+
+    Some ESPN competitions reject a range longer than a few months with
+    HTTP 400, so a full season is split into 90-day windows.
+    """
     references: List[str] = []
-    page = 1
+    seen: Set[str] = set()
+    cursor = start
+    chunk_size = timedelta(days=90)
 
-    while True:
-        payload = get_json(events_url(slug, start, end, page))
-        if not payload:
-            break
+    while cursor <= end:
+        chunk_end = min(cursor + chunk_size, end)
+        page = 1
 
-        items = payload.get("items") or []
-        for item in items:
-            reference = item.get("$ref")
-            if isinstance(reference, str) and reference:
-                references.append(
-                    reference.replace("http://", "https://", 1)
-                )
+        while True:
+            payload = get_json(events_url(slug, cursor, chunk_end, page))
+            if not payload:
+                break
 
-        page_count = int(payload.get("pageCount") or 1)
-        if page >= page_count:
-            break
-        page += 1
+            items = payload.get("items") or []
+            for item in items:
+                reference = item.get("$ref")
+                if isinstance(reference, str) and reference:
+                    normalized = reference.replace("http://", "https://", 1)
+                    if normalized not in seen:
+                        seen.add(normalized)
+                        references.append(normalized)
+
+            page_count = int(payload.get("pageCount") or 1)
+            if page >= page_count:
+                break
+            page += 1
+
+        cursor = chunk_end + timedelta(days=1)
 
     return references
 
@@ -393,7 +434,11 @@ def main() -> int:
         "--days",
         type=int,
         default=DEFAULT_DAYS,
-        help="How many days ahead to include (default: 365).",
+        help=(
+            "How many days ahead to include within the current season "
+            "(default: 365). Past matches from the current season are "
+            "always included."
+        ),
     )
     parser.add_argument(
         "--output",
@@ -419,11 +464,44 @@ def main() -> int:
     output_path = Path(args.output)
 
     references: List[Tuple[str, str]] = []
+    season_windows: Dict[str, Tuple[datetime, datetime]] = {}
     seen_events: Set[str] = set()
 
     for slug in LEAGUES:
+        season = load_current_season(slug)
+        if season is None:
+            logging.warning(
+                "%s: current season metadata unavailable; using future window",
+                slug,
+            )
+            window_start = now
+            window_end = horizon
+        else:
+            window_start, season_end, season_year = season
+            window_end = min(season_end, horizon)
+            if season_year is not None:
+                logging.info(
+                    "%s: current season %s (%s — %s)",
+                    slug,
+                    season_year,
+                    window_start.date().isoformat(),
+                    window_end.date().isoformat(),
+                )
+            else:
+                logging.info(
+                    "%s: current season window %s — %s",
+                    slug,
+                    window_start.date().isoformat(),
+                    window_end.date().isoformat(),
+                )
+
+        if window_end < window_start:
+            logging.info("%s: no current-season matches in window", slug)
+            continue
+
+        season_windows[slug] = (window_start, window_end)
         logging.info("Loading event list for %s", slug)
-        refs = load_event_references(slug, now, horizon)
+        refs = load_event_references(slug, window_start, window_end)
         logging.info("%s: %s event references", slug, len(refs))
         for reference in refs:
             marker = "/events/"
@@ -471,7 +549,15 @@ def main() -> int:
             )
 
             tournament, country, _ = LEAGUES[slug]
-            parsed = parse_event(event, slug, tournament, country, now, horizon)
+            window_start, window_end = season_windows[slug]
+            parsed = parse_event(
+                event,
+                slug,
+                tournament,
+                country,
+                window_start,
+                window_end,
+            )
             if parsed is not None:
                 matches.append(parsed)
 
@@ -524,6 +610,8 @@ def main() -> int:
         "timezone": "UTC",
         "source": "ESPN",
         "upcoming_days": args.days,
+        "include_past": True,
+        "season_only": True,
         "teams": sorted(
             team_directory.values(),
             key=lambda row: row.get("name") or "",
