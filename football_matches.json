@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T14:22:19.617787Z",
+  "generated_at": "2026-11-12T18:31:25.910635Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -45,14 +45,6 @@
       "country": "Germany",
       "region": "",
       "is_national": false
-    },
-    {
-      "id": "16304",
-      "name": "3rd Place Group A",
-      "code": "3AB",
-      "country": "3rd Place Group A",
-      "region": "Asia",
-      "is_national": true
     },
     {
       "id": "103",
@@ -2719,30 +2711,6 @@
       "is_national": false
     },
     {
-      "id": "5927",
-      "name": "Group C Winner",
-      "code": "1CX",
-      "country": "Group C Winner",
-      "region": "Asia",
-      "is_national": true
-    },
-    {
-      "id": "5928",
-      "name": "Group D 2nd Place",
-      "code": "2DX",
-      "country": "Group D 2nd Place",
-      "region": "Asia",
-      "is_national": true
-    },
-    {
-      "id": "5931",
-      "name": "Group E Winner",
-      "code": "1EX",
-      "country": "Group E Winner",
-      "region": "Asia",
-      "is_national": true
-    },
-    {
       "id": "6858",
       "name": "Guijuelo",
       "code": "GUI",
@@ -4773,38 +4741,6 @@
       "country": "France",
       "region": "",
       "is_national": false
-    },
-    {
-      "id": "19282",
-      "name": "Round of 16 1 Winner",
-      "code": "RD1",
-      "country": "Round of 16 1 Winner",
-      "region": "Asia",
-      "is_national": true
-    },
-    {
-      "id": "19283",
-      "name": "Round of 16 2 Winner",
-      "code": "RD1",
-      "country": "Round of 16 2 Winner",
-      "region": "Asia",
-      "is_national": true
-    },
-    {
-      "id": "19284",
-      "name": "Round of 16 3 Winner",
-      "code": "RD1",
-      "country": "Round of 16 3 Winner",
-      "region": "Asia",
-      "is_national": true
-    },
-    {
-      "id": "19278",
-      "name": "Round of 16 5 Winner",
-      "code": "RD1",
-      "country": "Round of 16 5 Winner",
-      "region": "Asia",
-      "is_national": true
     },
     {
       "id": "3851",
