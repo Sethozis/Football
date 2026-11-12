@@ -432,6 +432,26 @@ NATIONAL_TEAM_REGIONS: Dict[str, str] = {
     "Tahiti": "Oceania", "Tonga": "Oceania", "Vanuatu": "Oceania",
 }
 
+def is_placeholder_team_name(name: str) -> bool:
+    value = (name or "").strip().lower()
+    if not value:
+        return True
+
+    if value in {"tbd", "to be determined", "unknown"}:
+        return True
+    if "group" in value and any(
+        word in value for word in ("winner", "runner", "place")
+    ):
+        return True
+    if "round of" in value:
+        return True
+    if "winner" in value or "runner-up" in value:
+        return True
+    if re.search(r"\b(?:1st|2nd|3rd|4th)\s+place\b", value):
+        return True
+    return False
+
+
 def merge_team(
     directory: Dict[str, Dict[str, Any]],
     team: Dict[str, Any],
@@ -445,6 +465,8 @@ def merge_team(
 
     key = str(team_id)
     name = team.get("displayName") or team.get("name") or ""
+    if is_placeholder_team_name(name):
+        return
     code = short_team_code(team)
     row = {
         "id": key,
