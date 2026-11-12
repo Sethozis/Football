@@ -58,6 +58,10 @@ LEAGUES: Dict[str, Tuple[str, str, bool]] = {
     "uefa.euro": ("UEFA European Championship", "Europe", True),
     "uefa.euroq": ("UEFA Euro Qualifiers", "Europe", True),
     "uefa.nations": ("UEFA Nations League", "Europe", True),
+    "conmebol.america": ("Copa América", "South America", True),
+    "concacaf.gold": ("CONCACAF Gold Cup", "North America", True),
+    "caf.nations": ("Africa Cup of Nations", "Africa", True),
+    "afc.asian.cup": ("AFC Asian Cup", "Asia", True),
     "uefa.champions": ("UEFA Champions League", "Europe", False),
     "uefa.europa": ("UEFA Europa League", "Europe", False),
     "uefa.europa.conf": ("UEFA Conference League", "Europe", False),
@@ -334,11 +338,106 @@ def short_team_code(team: Dict[str, Any]) -> str:
     return letters[:3].ljust(3, "X") if letters else "XXX"
 
 
+NATIONAL_REGIONS = {
+    "Europe",
+    "South America",
+    "North America",
+    "Africa",
+    "Asia",
+    "Oceania",
+}
+
+NATIONAL_TEAM_REGIONS: Dict[str, str] = {
+    # Europe
+    "Albania": "Europe", "Andorra": "Europe", "Armenia": "Europe",
+    "Austria": "Europe", "Azerbaijan": "Europe", "Belarus": "Europe",
+    "Belgium": "Europe", "Bosnia-Herzegovina": "Europe",
+    "Bulgaria": "Europe", "Croatia": "Europe", "Cyprus": "Europe",
+    "Czechia": "Europe", "Denmark": "Europe", "England": "Europe",
+    "Estonia": "Europe", "Faroe Islands": "Europe", "Finland": "Europe",
+    "France": "Europe", "Georgia": "Europe", "Germany": "Europe",
+    "Gibraltar": "Europe", "Greece": "Europe", "Hungary": "Europe",
+    "Iceland": "Europe", "Israel": "Europe", "Italy": "Europe",
+    "Kazakhstan": "Europe", "Kosovo": "Europe", "Latvia": "Europe",
+    "Liechtenstein": "Europe", "Lithuania": "Europe",
+    "Luxembourg": "Europe", "Malta": "Europe", "Moldova": "Europe",
+    "Montenegro": "Europe", "Netherlands": "Europe",
+    "North Macedonia": "Europe", "Northern Ireland": "Europe",
+    "Norway": "Europe", "Poland": "Europe", "Portugal": "Europe",
+    "Republic of Ireland": "Europe", "Romania": "Europe",
+    "Russia": "Europe", "San Marino": "Europe", "Scotland": "Europe",
+    "Serbia": "Europe", "Slovakia": "Europe", "Slovenia": "Europe",
+    "Spain": "Europe", "Sweden": "Europe", "Switzerland": "Europe",
+    "Türkiye": "Europe", "Turkey": "Europe", "Ukraine": "Europe",
+    "Wales": "Europe",
+    # South America
+    "Argentina": "South America", "Bolivia": "South America",
+    "Brazil": "South America", "Chile": "South America",
+    "Colombia": "South America", "Ecuador": "South America",
+    "Paraguay": "South America", "Peru": "South America",
+    "Uruguay": "South America", "Venezuela": "South America",
+    # North and Central America, Caribbean
+    "Canada": "North America", "Costa Rica": "North America",
+    "Cuba": "North America", "Curaçao": "North America",
+    "Dominican Republic": "North America", "El Salvador": "North America",
+    "Guatemala": "North America", "Haiti": "North America",
+    "Honduras": "North America", "Jamaica": "North America",
+    "Mexico": "North America", "Nicaragua": "North America",
+    "Panama": "North America", "Puerto Rico": "North America",
+    "Trinidad and Tobago": "North America",
+    "United States": "North America",
+    # Africa
+    "Algeria": "Africa", "Angola": "Africa", "Benin": "Africa",
+    "Botswana": "Africa", "Burkina Faso": "Africa", "Burundi": "Africa",
+    "Cameroon": "Africa", "Cape Verde": "Africa",
+    "Central African Republic": "Africa", "Chad": "Africa",
+    "Comoros": "Africa", "Congo": "Africa", "Congo DR": "Africa",
+    "Djibouti": "Africa", "Egypt": "Africa", "Equatorial Guinea": "Africa",
+    "Eritrea": "Africa", "Eswatini": "Africa", "Ethiopia": "Africa",
+    "Gabon": "Africa", "Gambia": "Africa", "Ghana": "Africa",
+    "Guinea": "Africa", "Guinea-Bissau": "Africa",
+    "Ivory Coast": "Africa", "Kenya": "Africa", "Lesotho": "Africa",
+    "Liberia": "Africa", "Libya": "Africa", "Madagascar": "Africa",
+    "Malawi": "Africa", "Mali": "Africa", "Mauritania": "Africa",
+    "Mauritius": "Africa", "Morocco": "Africa", "Mozambique": "Africa",
+    "Namibia": "Africa", "Niger": "Africa", "Nigeria": "Africa",
+    "Rwanda": "Africa", "Sao Tome and Principe": "Africa",
+    "Senegal": "Africa", "Seychelles": "Africa", "Sierra Leone": "Africa",
+    "Somalia": "Africa", "South Africa": "Africa",
+    "South Sudan": "Africa", "Sudan": "Africa", "Tanzania": "Africa",
+    "Togo": "Africa", "Tunisia": "Africa", "Uganda": "Africa",
+    "Zambia": "Africa", "Zimbabwe": "Africa",
+    # Asia
+    "Afghanistan": "Asia", "Australia": "Asia", "Bahrain": "Asia",
+    "Bangladesh": "Asia", "Bhutan": "Asia", "Brunei": "Asia",
+    "Cambodia": "Asia", "China": "Asia", "Chinese Taipei": "Asia",
+    "Guam": "Asia", "Hong Kong": "Asia", "India": "Asia",
+    "Indonesia": "Asia", "Iran": "Asia", "Iraq": "Asia",
+    "Japan": "Asia", "Jordan": "Asia", "Kuwait": "Asia",
+    "Kyrgyzstan": "Asia", "Laos": "Asia", "Lebanon": "Asia",
+    "Macau": "Asia", "Malaysia": "Asia", "Maldives": "Asia",
+    "Mongolia": "Asia", "Myanmar": "Asia", "Nepal": "Asia",
+    "North Korea": "Asia", "Oman": "Asia", "Pakistan": "Asia",
+    "Palestine": "Asia", "Philippines": "Asia", "Qatar": "Asia",
+    "Saudi Arabia": "Asia", "Singapore": "Asia", "South Korea": "Asia",
+    "Sri Lanka": "Asia", "Syria": "Asia", "Tajikistan": "Asia",
+    "Thailand": "Asia", "Timor-Leste": "Asia", "Turkmenistan": "Asia",
+    "United Arab Emirates": "Asia", "Uzbekistan": "Asia",
+    "Vietnam": "Asia", "Yemen": "Asia",
+    # Oceania
+    "American Samoa": "Oceania", "Cook Islands": "Oceania",
+    "Fiji": "Oceania", "New Caledonia": "Oceania",
+    "New Zealand": "Oceania", "Papua New Guinea": "Oceania",
+    "Samoa": "Oceania", "Solomon Islands": "Oceania",
+    "Tahiti": "Oceania", "Tonga": "Oceania", "Vanuatu": "Oceania",
+}
+
 def merge_team(
     directory: Dict[str, Dict[str, Any]],
     team: Dict[str, Any],
     country: str,
     is_national: bool,
+    region: str = "",
 ) -> None:
     team_id = team.get("id")
     if team_id is None:
@@ -352,6 +451,7 @@ def merge_team(
         "name": name,
         "code": code,
         "country": country,
+        "region": region,
         "is_national": bool(is_national),
     }
 
@@ -362,6 +462,8 @@ def merge_team(
     existing = directory[key]
     if not existing.get("country") and country:
         existing["country"] = country
+    if not existing.get("region") and region:
+        existing["region"] = region
     if not existing.get("name") and name:
         existing["name"] = name
     if not existing.get("code") and code:
@@ -389,8 +491,13 @@ def collect_event_teams(
 
     for competitor in competition.get("competitors") or []:
         team = competitor.get("team") or {}
+        region = ""
         if is_national:
             country = team.get("displayName") or team.get("name") or ""
+            if league_country in NATIONAL_REGIONS:
+                region = league_country
+            else:
+                region = NATIONAL_TEAM_REGIONS.get(country, "")
         elif league_country not in ("Europe", "World"):
             country = league_country
         elif competitor.get("homeAway") == "home" and venue_country:
@@ -398,7 +505,7 @@ def collect_event_teams(
         else:
             country = ""
 
-        merge_team(directory, team, country, is_national)
+        merge_team(directory, team, country, is_national, region)
 
         team_id = team.get("id")
         if (
@@ -478,6 +585,14 @@ def main() -> int:
             window_end = horizon
         else:
             window_start, season_end, season_year = season
+            if season_end < now:
+                logging.info(
+                    "%s: current ESPN season ended %s; skipping",
+                    slug,
+                    season_end.date().isoformat(),
+                )
+                continue
+
             window_end = min(season_end, horizon)
             if season_year is not None:
                 logging.info(
