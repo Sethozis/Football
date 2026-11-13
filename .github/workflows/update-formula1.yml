@@ -1,0 +1,61 @@
+name: Update Formula 1 schedule
+
+on:
+  schedule:
+    # Once a day, offset from the football workflow.
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# The same group is used by the football workflow, so two generated JSON
+# files are never committed at the same time.
+concurrency:
+  group: sports-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Fetch Formula 1 schedule
+        run: python formula1.py
+
+      - name: Commit generated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add f1.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update Formula 1 schedule [skip ci]"
+
+          pushed=false
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              pushed=true
+              break
+            fi
+            echo "Push failed, retrying..."
+            sleep 5
+          done
+
+          if [ "$pushed" != "true" ]; then
+            echo "Could not push generated JSON"
+            exit 1
+          fi
