@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T23:01:38.466082Z",
+  "generated_at": "2026-11-13T04:21:33.290995Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -47817,6 +47817,22 @@
       "away_team_code": "SCP"
     },
     {
+      "fixture_id": "401933793",
+      "kickoff_utc": "2026-12-04T19:30:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "133370",
+      "home_team": "Wimborne Town",
+      "home_team_code": "WIM",
+      "away_team_id": "387",
+      "away_team": "Bradford City",
+      "away_team_code": "BRD"
+    },
+    {
       "fixture_id": "401899511",
       "kickoff_utc": "2026-12-04T19:30:00Z",
       "tournament": "Serie B",
@@ -48377,22 +48393,6 @@
       "away_team_code": "LEY"
     },
     {
-      "fixture_id": "401933789",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "293",
-      "home_team": "Dover Athletic",
-      "home_team_code": "DOV",
-      "away_team_id": "375",
-      "away_team": "Leicester City",
-      "away_team_code": "LEI"
-    },
-    {
       "fixture_id": "401933790",
       "kickoff_utc": "2026-12-05T15:00:00Z",
       "tournament": "FA Cup",
@@ -48409,22 +48409,6 @@
       "away_team_code": "MNF"
     },
     {
-      "fixture_id": "401933791",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "642",
-      "home_team": "Barrow",
-      "home_team_code": "BRW",
-      "away_team_id": "319",
-      "away_team": "Kidderminster Harriers",
-      "away_team_code": "KID"
-    },
-    {
       "fixture_id": "401933792",
       "kickoff_utc": "2026-12-05T15:00:00Z",
       "tournament": "FA Cup",
@@ -48439,38 +48423,6 @@
       "away_team_id": "301",
       "away_team": "Luton Town",
       "away_team_code": "LTN"
-    },
-    {
-      "fixture_id": "401933793",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "133370",
-      "home_team": "Wimborne Town",
-      "home_team_code": "WIM",
-      "away_team_id": "387",
-      "away_team": "Bradford City",
-      "away_team_code": "BRD"
-    },
-    {
-      "fixture_id": "401933794",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "396",
-      "home_team": "Crewe Alexandra",
-      "home_team_code": "CAX",
-      "away_team_id": "307",
-      "away_team": "Plymouth Argyle",
-      "away_team_code": "PLY"
     },
     {
       "fixture_id": "401933795",
@@ -48569,22 +48521,6 @@
       "away_team_code": "BAR"
     },
     {
-      "fixture_id": "401933801",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "2588",
-      "home_team": "Guiseley",
-      "home_team_code": "GUI",
-      "away_team_id": "340",
-      "away_team": "Notts County",
-      "away_team_code": "NCO"
-    },
-    {
       "fixture_id": "401933802",
       "kickoff_utc": "2026-12-05T15:00:00Z",
       "tournament": "FA Cup",
@@ -48599,22 +48535,6 @@
       "away_team_id": "308",
       "away_team": "Bristol Rovers",
       "away_team_code": "BRI"
-    },
-    {
-      "fixture_id": "401933815",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "132948",
-      "home_team": "Plymouth Parkway",
-      "home_team_code": "PLY",
-      "away_team_id": "280",
-      "away_team": "Barnet",
-      "away_team_code": "BAR"
     },
     {
       "fixture_id": "401933816",
@@ -48809,6 +48729,22 @@
       "away_team_code": "INT"
     },
     {
+      "fixture_id": "401933789",
+      "kickoff_utc": "2026-12-05T17:15:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "293",
+      "home_team": "Dover Athletic",
+      "home_team_code": "DOV",
+      "away_team_id": "375",
+      "away_team": "Leicester City",
+      "away_team_code": "LEI"
+    },
+    {
       "fixture_id": "401884714",
       "kickoff_utc": "2026-12-05T17:30:00Z",
       "tournament": "Bundesliga",
@@ -48967,6 +48903,22 @@
       "away_team_id": "113",
       "away_team": "Lecce",
       "away_team_code": "LEC"
+    },
+    {
+      "fixture_id": "401933791",
+      "kickoff_utc": "2026-12-05T20:00:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "642",
+      "home_team": "Barrow",
+      "home_team_code": "BRW",
+      "away_team_id": "319",
+      "away_team": "Kidderminster Harriers",
+      "away_team_code": "KID"
     },
     {
       "fixture_id": "401879214",
@@ -49209,6 +49161,22 @@
       "away_team_code": "DOR"
     },
     {
+      "fixture_id": "401933794",
+      "kickoff_utc": "2026-12-06T15:15:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "396",
+      "home_team": "Crewe Alexandra",
+      "home_team_code": "CAX",
+      "away_team_id": "307",
+      "away_team": "Plymouth Argyle",
+      "away_team_code": "PLY"
+    },
+    {
       "fixture_id": "401876380",
       "kickoff_utc": "2026-12-06T16:15:00Z",
       "tournament": "Ligue 1",
@@ -49303,6 +49271,22 @@
       "away_team_id": "118",
       "away_team": "Udinese",
       "away_team_code": "UDI"
+    },
+    {
+      "fixture_id": "401933815",
+      "kickoff_utc": "2026-12-06T17:30:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "132948",
+      "home_team": "Plymouth Parkway",
+      "home_team_code": "PLY",
+      "away_team_id": "280",
+      "away_team": "Barnet",
+      "away_team_code": "BAR"
     },
     {
       "fixture_id": "401899510",
@@ -49719,6 +49703,22 @@
       "away_team_id": "3997",
       "away_team": "Sassuolo",
       "away_team_code": "SAS"
+    },
+    {
+      "fixture_id": "401933801",
+      "kickoff_utc": "2026-12-07T19:30:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "2588",
+      "home_team": "Guiseley",
+      "home_team_code": "GUI",
+      "away_team_id": "340",
+      "away_team": "Notts County",
+      "away_team_code": "NCO"
     },
     {
       "fixture_id": "401876675",
