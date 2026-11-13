@@ -1,0 +1,1508 @@
+{
+  "generated_at": "2026-11-13T06:35:44.832702Z",
+  "season": 2026,
+  "timezone": "UTC",
+  "source": "ESPN",
+  "events": [
+    {
+      "id": "600057427",
+      "season": 2026,
+      "name": "Qatar Airways Australian Grand Prix",
+      "short_name": "Qatar Airways Australian GP",
+      "circuit": "Melbourne Grand Prix Circuit",
+      "city": "Melbourne",
+      "country": "Australia",
+      "country_code": "",
+      "start_utc": "2026-03-06T01:30:00Z",
+      "end_utc": "2026-03-08T04:00:00Z",
+      "sessions": [
+        {
+          "id": "401839028",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-03-06T01:30:00Z"
+        },
+        {
+          "id": "401839029",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-03-06T05:00:00Z"
+        },
+        {
+          "id": "401839030",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-03-07T01:30:00Z"
+        },
+        {
+          "id": "401839031",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-03-07T05:00:00Z"
+        },
+        {
+          "id": "401839032",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-03-08T04:00:00Z"
+        }
+      ],
+      "round": 1
+    },
+    {
+      "id": "600057428",
+      "season": 2026,
+      "name": "Heineken Chinese Grand Prix",
+      "short_name": "Heineken Chinese GP",
+      "circuit": "Shanghai International Circuit",
+      "city": "Shanghai",
+      "country": "China",
+      "country_code": "",
+      "start_utc": "2026-03-13T03:30:00Z",
+      "end_utc": "2026-03-15T07:00:00Z",
+      "sessions": [
+        {
+          "id": "401839033",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-03-13T03:30:00Z"
+        },
+        {
+          "id": "401839034",
+          "type": "sprint_qualifying",
+          "type_name_ru": "Спринт-квалификация",
+          "type_name_en": "Sprint Qualifying",
+          "is_sprint": true,
+          "abbreviation": "SS",
+          "start_utc": "2026-03-13T07:30:00Z"
+        },
+        {
+          "id": "401839035",
+          "type": "sprint",
+          "type_name_ru": "Спринт",
+          "type_name_en": "Sprint",
+          "is_sprint": true,
+          "abbreviation": "SR",
+          "start_utc": "2026-03-14T03:00:00Z"
+        },
+        {
+          "id": "401839036",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-03-14T07:00:00Z"
+        },
+        {
+          "id": "401839037",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-03-15T07:00:00Z"
+        }
+      ],
+      "round": 2
+    },
+    {
+      "id": "600057429",
+      "season": 2026,
+      "name": "Aramco Japanese Grand Prix",
+      "short_name": "Aramco Japanese GP",
+      "circuit": "Suzuka International Racing Course",
+      "city": "Suzuka",
+      "country": "Japan",
+      "country_code": "",
+      "start_utc": "2026-03-27T02:30:00Z",
+      "end_utc": "2026-03-29T05:00:00Z",
+      "sessions": [
+        {
+          "id": "401839038",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-03-27T02:30:00Z"
+        },
+        {
+          "id": "401839039",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-03-27T06:00:00Z"
+        },
+        {
+          "id": "401839040",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-03-28T02:30:00Z"
+        },
+        {
+          "id": "401839041",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-03-28T06:00:00Z"
+        },
+        {
+          "id": "401839042",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-03-29T05:00:00Z"
+        }
+      ],
+      "round": 3
+    },
+    {
+      "id": "600057430",
+      "season": 2026,
+      "name": "Gulf Air Bahrain Grand Prix",
+      "short_name": "Gulf Air Bahrain GP",
+      "circuit": "Bahrain International Circuit",
+      "city": "Sakhir",
+      "country": "Bahrain",
+      "country_code": "",
+      "start_utc": "2026-04-10T11:30:00Z",
+      "end_utc": "2026-04-12T15:00:00Z",
+      "sessions": [
+        {
+          "id": "401839043",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-04-10T11:30:00Z"
+        },
+        {
+          "id": "401839044",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-04-10T15:00:00Z"
+        },
+        {
+          "id": "401839045",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-04-11T12:30:00Z"
+        },
+        {
+          "id": "401839046",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-04-11T16:00:00Z"
+        },
+        {
+          "id": "401839047",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-04-12T15:00:00Z"
+        }
+      ],
+      "round": 4
+    },
+    {
+      "id": "600057431",
+      "season": 2026,
+      "name": "STC Saudi Arabian Grand Prix",
+      "short_name": "STC Saudi Arabian GP",
+      "circuit": "Jeddah Street Circuit",
+      "city": "Jeddah",
+      "country": "Saudi Arabia",
+      "country_code": "",
+      "start_utc": "2026-04-17T13:30:00Z",
+      "end_utc": "2026-04-19T17:00:00Z",
+      "sessions": [
+        {
+          "id": "401839048",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-04-17T13:30:00Z"
+        },
+        {
+          "id": "401839049",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-04-17T17:00:00Z"
+        },
+        {
+          "id": "401839050",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-04-18T13:30:00Z"
+        },
+        {
+          "id": "401839051",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-04-18T17:00:00Z"
+        },
+        {
+          "id": "401839052",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-04-19T17:00:00Z"
+        }
+      ],
+      "round": 5
+    },
+    {
+      "id": "600057432",
+      "season": 2026,
+      "name": "Crypto.com Miami Grand Prix",
+      "short_name": "Crypto.com Miami GP",
+      "circuit": "Miami International Autodrome",
+      "city": "Florida",
+      "country": "USA",
+      "country_code": "",
+      "start_utc": "2026-05-01T16:00:00Z",
+      "end_utc": "2026-05-03T17:00:00Z",
+      "sessions": [
+        {
+          "id": "401839053",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-05-01T16:00:00Z"
+        },
+        {
+          "id": "401839054",
+          "type": "sprint_qualifying",
+          "type_name_ru": "Спринт-квалификация",
+          "type_name_en": "Sprint Qualifying",
+          "is_sprint": true,
+          "abbreviation": "SS",
+          "start_utc": "2026-05-01T20:30:00Z"
+        },
+        {
+          "id": "401839055",
+          "type": "sprint",
+          "type_name_ru": "Спринт",
+          "type_name_en": "Sprint",
+          "is_sprint": true,
+          "abbreviation": "SR",
+          "start_utc": "2026-05-02T16:00:00Z"
+        },
+        {
+          "id": "401839056",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-05-02T20:00:00Z"
+        },
+        {
+          "id": "401839057",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-05-03T17:00:00Z"
+        }
+      ],
+      "round": 6
+    },
+    {
+      "id": "600057433",
+      "season": 2026,
+      "name": "Lenovo Canadian Grand Prix",
+      "short_name": "Lenovo Canadian GP",
+      "circuit": "Circuit Gilles-Villeneuve",
+      "city": "Montreal",
+      "country": "Canada",
+      "country_code": "",
+      "start_utc": "2026-05-22T16:30:00Z",
+      "end_utc": "2026-05-24T20:00:00Z",
+      "sessions": [
+        {
+          "id": "401839058",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-05-22T16:30:00Z"
+        },
+        {
+          "id": "401839059",
+          "type": "sprint_qualifying",
+          "type_name_ru": "Спринт-квалификация",
+          "type_name_en": "Sprint Qualifying",
+          "is_sprint": true,
+          "abbreviation": "SS",
+          "start_utc": "2026-05-22T20:30:00Z"
+        },
+        {
+          "id": "401839060",
+          "type": "sprint",
+          "type_name_ru": "Спринт",
+          "type_name_en": "Sprint",
+          "is_sprint": true,
+          "abbreviation": "SR",
+          "start_utc": "2026-05-23T16:00:00Z"
+        },
+        {
+          "id": "401839061",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-05-23T20:00:00Z"
+        },
+        {
+          "id": "401839062",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-05-24T20:00:00Z"
+        }
+      ],
+      "round": 7
+    },
+    {
+      "id": "600057434",
+      "season": 2026,
+      "name": "Monaco Grand Prix",
+      "short_name": "Monaco GP",
+      "circuit": "Circuit de Monaco",
+      "city": "Monte Carlo",
+      "country": "Monaco",
+      "country_code": "",
+      "start_utc": "2026-06-05T11:30:00Z",
+      "end_utc": "2026-06-07T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839063",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-06-05T11:30:00Z"
+        },
+        {
+          "id": "401839064",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-06-05T15:00:00Z"
+        },
+        {
+          "id": "401839065",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-06-06T10:30:00Z"
+        },
+        {
+          "id": "401839066",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-06-06T14:00:00Z"
+        },
+        {
+          "id": "401839067",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-06-07T13:00:00Z"
+        }
+      ],
+      "round": 8
+    },
+    {
+      "id": "600057435",
+      "season": 2026,
+      "name": "MSC Cruises Barcelona-Catalunya Grand Prix",
+      "short_name": "MSC Cruises Barcelona-Catalunya GP",
+      "circuit": "Circuit de Catalunya",
+      "city": "Barcelona",
+      "country": "Spain",
+      "country_code": "",
+      "start_utc": "2026-06-12T11:30:00Z",
+      "end_utc": "2026-06-14T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839068",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-06-12T11:30:00Z"
+        },
+        {
+          "id": "401839069",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-06-12T15:00:00Z"
+        },
+        {
+          "id": "401839070",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-06-13T10:30:00Z"
+        },
+        {
+          "id": "401839071",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-06-13T14:00:00Z"
+        },
+        {
+          "id": "401839072",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-06-14T13:00:00Z"
+        }
+      ],
+      "round": 9
+    },
+    {
+      "id": "600057436",
+      "season": 2026,
+      "name": "Lenovo Austrian Grand Prix",
+      "short_name": "Lenovo Austrian GP",
+      "circuit": "Red Bull Ring",
+      "city": "Spielberg",
+      "country": "Austria",
+      "country_code": "",
+      "start_utc": "2026-06-26T11:30:00Z",
+      "end_utc": "2026-06-28T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839073",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-06-26T11:30:00Z"
+        },
+        {
+          "id": "401839074",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-06-26T15:00:00Z"
+        },
+        {
+          "id": "401839075",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-06-27T10:30:00Z"
+        },
+        {
+          "id": "401839076",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-06-27T14:00:00Z"
+        },
+        {
+          "id": "401839077",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-06-28T13:00:00Z"
+        }
+      ],
+      "round": 10
+    },
+    {
+      "id": "600057437",
+      "season": 2026,
+      "name": "Pirelli British Grand Prix",
+      "short_name": "Pirelli British GP",
+      "circuit": "Silverstone Circuit",
+      "city": "Silverstone",
+      "country": "Britain",
+      "country_code": "",
+      "start_utc": "2026-07-03T11:30:00Z",
+      "end_utc": "2026-07-05T14:00:00Z",
+      "sessions": [
+        {
+          "id": "401839078",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-07-03T11:30:00Z"
+        },
+        {
+          "id": "401839079",
+          "type": "sprint_qualifying",
+          "type_name_ru": "Спринт-квалификация",
+          "type_name_en": "Sprint Qualifying",
+          "is_sprint": true,
+          "abbreviation": "SS",
+          "start_utc": "2026-07-03T15:30:00Z"
+        },
+        {
+          "id": "401839080",
+          "type": "sprint",
+          "type_name_ru": "Спринт",
+          "type_name_en": "Sprint",
+          "is_sprint": true,
+          "abbreviation": "SR",
+          "start_utc": "2026-07-04T11:00:00Z"
+        },
+        {
+          "id": "401839081",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-07-04T15:00:00Z"
+        },
+        {
+          "id": "401839082",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-07-05T14:00:00Z"
+        }
+      ],
+      "round": 11
+    },
+    {
+      "id": "600057439",
+      "season": 2026,
+      "name": "Moët & Chandon Belgian Grand Prix",
+      "short_name": "Moët & Chandon Belgian GP",
+      "circuit": "Circuit de Spa-Francorchamps",
+      "city": "Stavelot",
+      "country": "Belgium",
+      "country_code": "",
+      "start_utc": "2026-07-17T11:30:00Z",
+      "end_utc": "2026-07-19T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839083",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-07-17T11:30:00Z"
+        },
+        {
+          "id": "401839084",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-07-17T15:00:00Z"
+        },
+        {
+          "id": "401839085",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-07-18T10:30:00Z"
+        },
+        {
+          "id": "401839086",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-07-18T14:00:00Z"
+        },
+        {
+          "id": "401839087",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-07-19T13:00:00Z"
+        }
+      ],
+      "round": 12
+    },
+    {
+      "id": "600057440",
+      "season": 2026,
+      "name": "AWS Hungarian Grand Prix",
+      "short_name": "AWS Hungarian GP",
+      "circuit": "Hungaroring",
+      "city": "Budapest",
+      "country": "Hungary",
+      "country_code": "",
+      "start_utc": "2026-07-24T11:30:00Z",
+      "end_utc": "2026-07-26T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839088",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-07-24T11:30:00Z"
+        },
+        {
+          "id": "401839089",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-07-24T15:00:00Z"
+        },
+        {
+          "id": "401839090",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-07-25T10:30:00Z"
+        },
+        {
+          "id": "401839091",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-07-25T14:00:00Z"
+        },
+        {
+          "id": "401839092",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-07-26T13:00:00Z"
+        }
+      ],
+      "round": 13
+    },
+    {
+      "id": "600057441",
+      "season": 2026,
+      "name": "Heineken Dutch Grand Prix",
+      "short_name": "Heineken Dutch GP",
+      "circuit": "Circuit Park Zandvoort",
+      "city": "Zandvoort",
+      "country": "Netherlands",
+      "country_code": "",
+      "start_utc": "2026-08-21T10:30:00Z",
+      "end_utc": "2026-08-23T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839093",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-08-21T10:30:00Z"
+        },
+        {
+          "id": "401839094",
+          "type": "sprint_qualifying",
+          "type_name_ru": "Спринт-квалификация",
+          "type_name_en": "Sprint Qualifying",
+          "is_sprint": true,
+          "abbreviation": "SS",
+          "start_utc": "2026-08-21T14:30:00Z"
+        },
+        {
+          "id": "401839095",
+          "type": "sprint",
+          "type_name_ru": "Спринт",
+          "type_name_en": "Sprint",
+          "is_sprint": true,
+          "abbreviation": "SR",
+          "start_utc": "2026-08-22T10:00:00Z"
+        },
+        {
+          "id": "401839096",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-08-22T14:00:00Z"
+        },
+        {
+          "id": "401839097",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-08-23T13:00:00Z"
+        }
+      ],
+      "round": 14
+    },
+    {
+      "id": "600057442",
+      "season": 2026,
+      "name": "Pirelli Italian Grand Prix",
+      "short_name": "Pirelli Italian GP",
+      "circuit": "Autodromo Nazionale Monza",
+      "city": "Monza",
+      "country": "Italy",
+      "country_code": "",
+      "start_utc": "2026-09-04T10:30:00Z",
+      "end_utc": "2026-09-06T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839098",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-09-04T10:30:00Z"
+        },
+        {
+          "id": "401839099",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-09-04T14:00:00Z"
+        },
+        {
+          "id": "401839100",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-09-05T10:30:00Z"
+        },
+        {
+          "id": "401839101",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-09-05T14:00:00Z"
+        },
+        {
+          "id": "401839102",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-09-06T13:00:00Z"
+        }
+      ],
+      "round": 15
+    },
+    {
+      "id": "600057443",
+      "season": 2026,
+      "name": "Tag Heuer Spanish Grand Prix",
+      "short_name": "Tag Heuer Spanish GP",
+      "circuit": "Madring",
+      "city": "Madrid",
+      "country": "Spain",
+      "country_code": "",
+      "start_utc": "2026-09-11T11:30:00Z",
+      "end_utc": "2026-09-13T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839103",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-09-11T11:30:00Z"
+        },
+        {
+          "id": "401839104",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-09-11T15:00:00Z"
+        },
+        {
+          "id": "401839105",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-09-12T10:30:00Z"
+        },
+        {
+          "id": "401839106",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-09-12T14:00:00Z"
+        },
+        {
+          "id": "401839107",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-09-13T13:00:00Z"
+        }
+      ],
+      "round": 16
+    },
+    {
+      "id": "600057444",
+      "season": 2026,
+      "name": "Qatar Airways Azerbaijan Grand Prix",
+      "short_name": "Qatar Airways Azerbaijan GP",
+      "circuit": "Baku City Circuit",
+      "city": "Baku",
+      "country": "Azerbaijan",
+      "country_code": "",
+      "start_utc": "2026-09-24T08:30:00Z",
+      "end_utc": "2026-09-26T11:00:00Z",
+      "sessions": [
+        {
+          "id": "401839108",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-09-24T08:30:00Z"
+        },
+        {
+          "id": "401839109",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-09-24T12:00:00Z"
+        },
+        {
+          "id": "401839110",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-09-25T08:30:00Z"
+        },
+        {
+          "id": "401839111",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-09-25T12:00:00Z"
+        },
+        {
+          "id": "401839112",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-09-26T11:00:00Z"
+        }
+      ],
+      "round": 17
+    },
+    {
+      "id": "600060990",
+      "season": 2026,
+      "name": "Gulf Air Bahrain Grand Prix in Malaysia",
+      "short_name": "Gulf Air Bahrain GP in Malaysia",
+      "circuit": "Sepang International Circuit",
+      "city": "Kuala Lumpur",
+      "country": "Malaysia",
+      "country_code": "",
+      "start_utc": "2026-10-02T04:30:00Z",
+      "end_utc": "2026-10-04T07:00:00Z",
+      "sessions": [
+        {
+          "id": "401901646",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-10-02T04:30:00Z"
+        },
+        {
+          "id": "401901647",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-10-02T08:00:00Z"
+        },
+        {
+          "id": "401901648",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-10-03T04:30:00Z"
+        },
+        {
+          "id": "401901649",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-10-03T08:00:00Z"
+        },
+        {
+          "id": "401901650",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-10-04T07:00:00Z"
+        }
+      ],
+      "round": 18
+    },
+    {
+      "id": "600057445",
+      "season": 2026,
+      "name": "Singapore Airlines Singapore Grand Prix",
+      "short_name": "Singapore Airlines Singapore GP",
+      "circuit": "Marina Bay Street Circuit",
+      "city": "Singapore",
+      "country": "Singapore",
+      "country_code": "",
+      "start_utc": "2026-10-09T08:30:00Z",
+      "end_utc": "2026-10-11T12:00:00Z",
+      "sessions": [
+        {
+          "id": "401839113",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-10-09T08:30:00Z"
+        },
+        {
+          "id": "401839114",
+          "type": "sprint_qualifying",
+          "type_name_ru": "Спринт-квалификация",
+          "type_name_en": "Sprint Qualifying",
+          "is_sprint": true,
+          "abbreviation": "SS",
+          "start_utc": "2026-10-09T12:30:00Z"
+        },
+        {
+          "id": "401839115",
+          "type": "sprint",
+          "type_name_ru": "Спринт",
+          "type_name_en": "Sprint",
+          "is_sprint": true,
+          "abbreviation": "SR",
+          "start_utc": "2026-10-10T09:00:00Z"
+        },
+        {
+          "id": "401839116",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-10-10T13:30:00Z"
+        },
+        {
+          "id": "401839117",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-10-11T12:00:00Z"
+        }
+      ],
+      "round": 19
+    },
+    {
+      "id": "600057446",
+      "season": 2026,
+      "name": "MSC Cruises United States Grand Prix",
+      "short_name": "MSC Cruises United States GP",
+      "circuit": "Circuit of the Americas",
+      "city": "Austin",
+      "country": "USA",
+      "country_code": "",
+      "start_utc": "2026-10-23T17:30:00Z",
+      "end_utc": "2026-10-25T20:00:00Z",
+      "sessions": [
+        {
+          "id": "401839118",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-10-23T17:30:00Z"
+        },
+        {
+          "id": "401839119",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-10-23T21:00:00Z"
+        },
+        {
+          "id": "401839120",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-10-24T17:30:00Z"
+        },
+        {
+          "id": "401839121",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-10-24T21:00:00Z"
+        },
+        {
+          "id": "401839122",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-10-25T20:00:00Z"
+        }
+      ],
+      "round": 20
+    },
+    {
+      "id": "600057447",
+      "season": 2026,
+      "name": "Mexico City Grand Prix",
+      "short_name": "Mexico City GP",
+      "circuit": "Autodromo Hermanos Rodriguez",
+      "city": "Mexico City",
+      "country": "Mexico",
+      "country_code": "",
+      "start_utc": "2026-10-30T18:30:00Z",
+      "end_utc": "2026-11-01T20:00:00Z",
+      "sessions": [
+        {
+          "id": "401839123",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-10-30T18:30:00Z"
+        },
+        {
+          "id": "401839124",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-10-30T22:00:00Z"
+        },
+        {
+          "id": "401839125",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-10-31T17:30:00Z"
+        },
+        {
+          "id": "401839126",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-10-31T21:00:00Z"
+        },
+        {
+          "id": "401839127",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-11-01T20:00:00Z"
+        }
+      ],
+      "round": 21
+    },
+    {
+      "id": "600057448",
+      "season": 2026,
+      "name": "MSC Cruises São Paulo Grand Prix",
+      "short_name": "MSC Cruises São Paulo GP",
+      "circuit": "Autodromo Jose Carlos Pace",
+      "city": "Sao Paulo",
+      "country": "Brazil",
+      "country_code": "",
+      "start_utc": "2026-11-06T15:30:00Z",
+      "end_utc": "2026-11-08T17:00:00Z",
+      "sessions": [
+        {
+          "id": "401839128",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-11-06T15:30:00Z"
+        },
+        {
+          "id": "401839129",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-11-06T19:00:00Z"
+        },
+        {
+          "id": "401839130",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-11-07T14:30:00Z"
+        },
+        {
+          "id": "401839131",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-11-07T18:00:00Z"
+        },
+        {
+          "id": "401839132",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-11-08T17:00:00Z"
+        }
+      ],
+      "round": 22
+    },
+    {
+      "id": "600057449",
+      "season": 2026,
+      "name": "Heineken Las Vegas Grand Prix",
+      "short_name": "Heineken Las Vegas GP",
+      "circuit": "Las Vegas Street Circuit",
+      "city": "Nevada",
+      "country": "USA",
+      "country_code": "",
+      "start_utc": "2026-11-20T00:30:00Z",
+      "end_utc": "2026-11-22T04:00:00Z",
+      "sessions": [
+        {
+          "id": "401839133",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-11-20T00:30:00Z"
+        },
+        {
+          "id": "401839134",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-11-20T04:00:00Z"
+        },
+        {
+          "id": "401839135",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-11-21T00:30:00Z"
+        },
+        {
+          "id": "401839136",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-11-21T04:00:00Z"
+        },
+        {
+          "id": "401839137",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-11-22T04:00:00Z"
+        }
+      ],
+      "round": 23
+    },
+    {
+      "id": "600057450",
+      "season": 2026,
+      "name": "Qatar Airways Qatar Grand Prix",
+      "short_name": "Qatar Airways Qatar GP",
+      "circuit": "Losail International Circuit",
+      "city": "Lusail",
+      "country": "Qatar",
+      "country_code": "",
+      "start_utc": "2026-11-27T13:30:00Z",
+      "end_utc": "2026-11-29T16:00:00Z",
+      "sessions": [
+        {
+          "id": "401839138",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-11-27T13:30:00Z"
+        },
+        {
+          "id": "401839139",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-11-27T17:00:00Z"
+        },
+        {
+          "id": "401839140",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-11-28T14:30:00Z"
+        },
+        {
+          "id": "401839141",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-11-28T18:00:00Z"
+        },
+        {
+          "id": "401839142",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-11-29T16:00:00Z"
+        }
+      ],
+      "round": 24
+    },
+    {
+      "id": "600057451",
+      "season": 2026,
+      "name": "Etihad Airways Abu Dhabi Grand Prix",
+      "short_name": "Etihad Airways Abu Dhabi GP",
+      "circuit": "Yas Marina Circuit",
+      "city": "Abu Dhabi",
+      "country": "United Arab Emirates",
+      "country_code": "",
+      "start_utc": "2026-12-04T09:30:00Z",
+      "end_utc": "2026-12-06T13:00:00Z",
+      "sessions": [
+        {
+          "id": "401839143",
+          "type": "practice",
+          "type_name_ru": "Практика 1",
+          "type_name_en": "Practice 1",
+          "is_sprint": false,
+          "abbreviation": "FP1",
+          "start_utc": "2026-12-04T09:30:00Z"
+        },
+        {
+          "id": "401839144",
+          "type": "practice",
+          "type_name_ru": "Практика 2",
+          "type_name_en": "Practice 2",
+          "is_sprint": false,
+          "abbreviation": "FP2",
+          "start_utc": "2026-12-04T13:00:00Z"
+        },
+        {
+          "id": "401839145",
+          "type": "practice",
+          "type_name_ru": "Практика 3",
+          "type_name_en": "Practice 3",
+          "is_sprint": false,
+          "abbreviation": "FP3",
+          "start_utc": "2026-12-05T10:30:00Z"
+        },
+        {
+          "id": "401839146",
+          "type": "qualifying",
+          "type_name_ru": "Квалификация",
+          "type_name_en": "Qualifying",
+          "is_sprint": false,
+          "abbreviation": "Qual",
+          "start_utc": "2026-12-05T14:00:00Z"
+        },
+        {
+          "id": "401839147",
+          "type": "race",
+          "type_name_ru": "Гонка",
+          "type_name_en": "Race",
+          "is_sprint": false,
+          "abbreviation": "Race",
+          "start_utc": "2026-12-06T13:00:00Z"
+        }
+      ],
+      "round": 25
+    }
+  ]
+}
