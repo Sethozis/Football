@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T04:21:33.290995Z",
+  "generated_at": "2026-11-13T13:41:45.815470Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -48409,38 +48409,6 @@
       "away_team_code": "MNF"
     },
     {
-      "fixture_id": "401933792",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "13884",
-      "home_team": "AFC Fylde",
-      "home_team_code": "FYL",
-      "away_team_id": "301",
-      "away_team": "Luton Town",
-      "away_team_code": "LTN"
-    },
-    {
-      "fixture_id": "401933795",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "132144",
-      "home_team": "Salisbury FC",
-      "home_team_code": "SAL",
-      "away_team_id": "346",
-      "away_team": "Blackpool",
-      "away_team_code": "BLP"
-    },
-    {
       "fixture_id": "401933796",
       "kickoff_utc": "2026-12-05T15:00:00Z",
       "tournament": "FA Cup",
@@ -48985,6 +48953,22 @@
       "away_team_code": "PNE"
     },
     {
+      "fixture_id": "401933795",
+      "kickoff_utc": "2026-12-06T12:15:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "132144",
+      "home_team": "Salisbury FC",
+      "home_team_code": "SAL",
+      "away_team_id": "346",
+      "away_team": "Blackpool",
+      "away_team_code": "BLP"
+    },
+    {
       "fixture_id": "401885035",
       "kickoff_utc": "2026-12-06T12:30:00Z",
       "tournament": "2. Bundesliga",
@@ -49159,6 +49143,22 @@
       "away_team_id": "124",
       "away_team": "Borussia Dortmund",
       "away_team_code": "DOR"
+    },
+    {
+      "fixture_id": "401933792",
+      "kickoff_utc": "2026-12-06T14:30:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "13884",
+      "home_team": "AFC Fylde",
+      "home_team_code": "FYL",
+      "away_team_id": "301",
+      "away_team": "Luton Town",
+      "away_team_code": "LTN"
     },
     {
       "fixture_id": "401933794",
