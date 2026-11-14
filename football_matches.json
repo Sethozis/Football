@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T12:46:17.437804Z",
+  "generated_at": "2026-11-14T21:51:01.783125Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -40441,22 +40441,6 @@
       "away_team_code": "MON"
     },
     {
-      "fixture_id": "401933096",
-      "kickoff_utc": "2026-11-14T13:00:00Z",
-      "tournament": "Coupe de France",
-      "country": "France",
-      "stage": "2026-27 Coupe de France, Seventh Round",
-      "season": 2026,
-      "league_id": "3952",
-      "league_slug": "fra.coupe_de_france",
-      "home_team_id": "134138",
-      "home_team": "Saint-Pauloise FC",
-      "home_team_code": "PAU",
-      "away_team_id": "21769",
-      "away_team": "La Tamponnaise",
-      "away_team_code": "LAT"
-    },
-    {
       "fixture_id": "401883114",
       "kickoff_utc": "2026-11-14T13:00:00Z",
       "tournament": "LaLiga 2",
@@ -41879,6 +41863,22 @@
       "away_team_id": "22139",
       "away_team": "Racing Club de France",
       "away_team_code": "RCF"
+    },
+    {
+      "fixture_id": "401933096",
+      "kickoff_utc": "2026-11-15T13:00:00Z",
+      "tournament": "Coupe de France",
+      "country": "France",
+      "stage": "2026-27 Coupe de France, Seventh Round",
+      "season": 2026,
+      "league_id": "3952",
+      "league_slug": "fra.coupe_de_france",
+      "home_team_id": "134138",
+      "home_team": "Saint-Pauloise FC",
+      "home_team_code": "PAU",
+      "away_team_id": "21769",
+      "away_team": "La Tamponnaise",
+      "away_team_code": "LAT"
     },
     {
       "fixture_id": "401883113",
