@@ -1,0 +1,112 @@
+{
+  "country": "RU",
+  "calendarId": "RU-FEDERAL",
+  "year": 2027,
+  "status": "PRELIMINARY",
+  "preliminary": true,
+  "versionId": "RU-FEDERAL-2027-v1",
+  "contentHash": "sha256:35bb56446e288379365428a0e9868824262432a71a2de0faac1af2c466de09c7",
+  "source": "https://calendar.legalic.ru/",
+  "generatedAt": "2026-11-15T18:27:15Z",
+  "daysOff": [
+    {
+      "date": "2027-01-01",
+      "weekday": "friday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Новогодние каникулы"
+    },
+    {
+      "date": "2027-01-04",
+      "weekday": "monday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Новогодние каникулы"
+    },
+    {
+      "date": "2027-01-05",
+      "weekday": "tuesday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Новогодние каникулы"
+    },
+    {
+      "date": "2027-01-06",
+      "weekday": "wednesday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Новогодние каникулы"
+    },
+    {
+      "date": "2027-01-07",
+      "weekday": "thursday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Рождество Христово"
+    },
+    {
+      "date": "2027-01-08",
+      "weekday": "friday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Новогодние каникулы"
+    },
+    {
+      "date": "2027-02-22",
+      "weekday": "monday",
+      "type": "TRANSFERRED_DAY_OFF",
+      "transferredFrom": "2027-02-20"
+    },
+    {
+      "date": "2027-02-23",
+      "weekday": "tuesday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "День защитника Отечества"
+    },
+    {
+      "date": "2027-03-08",
+      "weekday": "monday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "Международный женский день"
+    },
+    {
+      "date": "2027-05-03",
+      "weekday": "monday",
+      "type": "TRANSFERRED_DAY_OFF",
+      "transferredFrom": "2027-05-01"
+    },
+    {
+      "date": "2027-05-10",
+      "weekday": "monday",
+      "type": "TRANSFERRED_DAY_OFF",
+      "transferredFrom": "2027-05-09"
+    },
+    {
+      "date": "2027-06-14",
+      "weekday": "monday",
+      "type": "TRANSFERRED_DAY_OFF",
+      "transferredFrom": "2027-06-12"
+    },
+    {
+      "date": "2027-11-04",
+      "weekday": "thursday",
+      "type": "PUBLIC_HOLIDAY",
+      "holidayName": "День народного единства"
+    },
+    {
+      "date": "2027-11-05",
+      "weekday": "friday",
+      "type": "TRANSFERRED_DAY_OFF",
+      "transferredFrom": "2027-01-02"
+    },
+    {
+      "date": "2027-12-31",
+      "weekday": "friday",
+      "type": "TRANSFERRED_DAY_OFF",
+      "transferredFrom": "2027-01-03"
+    }
+  ],
+  "workingDays": [
+    {
+      "date": "2027-02-20",
+      "weekday": "saturday",
+      "type": "TRANSFERRED_WORKING",
+      "transferredTo": "2027-02-22",
+      "shortened": true
+    }
+  ]
+}
