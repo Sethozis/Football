@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T04:00:48.531612Z",
+  "generated_at": "2026-11-15T13:14:34.592989Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -833,7 +833,7 @@
     {
       "id": "14381",
       "name": "Avenir Foot Lozere",
-      "code": "AVF",
+      "code": "AFL",
       "country": "France",
       "region": "",
       "is_national": false
@@ -41107,7 +41107,7 @@
       "league_slug": "fra.coupe_de_france",
       "home_team_id": "14381",
       "home_team": "Avenir Foot Lozere",
-      "home_team_code": "AVF",
+      "home_team_code": "AFL",
       "away_team_id": "134067",
       "away_team": "Entente Crest-Aouste",
       "away_team_code": "ENT"
