@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-14T21:51:01.783125Z",
+  "generated_at": "2026-11-15T04:00:48.531612Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -2681,7 +2681,7 @@
     {
       "id": "134127",
       "name": "Grau-Du-Roi",
-      "code": "GRA",
+      "code": "GDR",
       "country": "France",
       "region": "",
       "is_national": false
@@ -3633,7 +3633,7 @@
     {
       "id": "134105",
       "name": "Mazeres Uzos Rontignon",
-      "code": "RON",
+      "code": "MUR",
       "country": "France",
       "region": "",
       "is_national": false
@@ -4423,14 +4423,6 @@
       "is_national": false
     },
     {
-      "id": "134133",
-      "name": "RIOM",
-      "code": "RIO",
-      "country": "France",
-      "region": "",
-      "is_national": false
-    },
-    {
       "id": "18064",
       "name": "Racing Besancon",
       "code": "BES",
@@ -4651,6 +4643,14 @@
       "name": "Riga FC",
       "code": "RIG",
       "country": "",
+      "region": "",
+      "is_national": false
+    },
+    {
+      "id": "134133",
+      "name": "Riom",
+      "code": "FCR",
+      "country": "France",
       "region": "",
       "is_national": false
     },
@@ -40691,7 +40691,7 @@
       "league_slug": "fra.coupe_de_france",
       "home_team_id": "134127",
       "home_team": "Grau-Du-Roi",
-      "home_team_code": "GRA",
+      "home_team_code": "GDR",
       "away_team_id": "134135",
       "away_team": "Riviera",
       "away_team_code": "RIV"
@@ -41190,7 +41190,7 @@
       "home_team_code": "BOR",
       "away_team_id": "134105",
       "away_team": "Mazeres Uzos Rontignon",
-      "away_team_code": "RON"
+      "away_team_code": "MUR"
     },
     {
       "fixture_id": "401932817",
@@ -41442,8 +41442,8 @@
       "league_id": "3952",
       "league_slug": "fra.coupe_de_france",
       "home_team_id": "134133",
-      "home_team": "RIOM",
-      "home_team_code": "RIO",
+      "home_team": "Riom",
+      "home_team_code": "FCR",
       "away_team_id": "19388",
       "away_team": "FC Limonest",
       "away_team_code": "LIM"
