@@ -1,0 +1,60 @@
+name: Update Russian production calendar
+
+on:
+  schedule:
+    # Monthly, on the 1st at 04:23 UTC.
+    - cron: "23 4 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: russia-holidays-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Fetch next year's production calendar
+        run: python update_russia_holidays.py
+
+      - name: Commit generated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add holidays/ru
+
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update Russian production calendar [skip ci]"
+
+          pushed=false
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              pushed=true
+              break
+            fi
+            echo "Push failed, retrying..."
+            sleep 5
+          done
+
+          if [ "$pushed" != "true" ]; then
+            echo "Could not push generated JSON"
+            exit 1
+          fi
