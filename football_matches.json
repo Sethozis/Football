@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T04:00:29.469750Z",
+  "generated_at": "2026-11-16T14:23:08.338760Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -2442,7 +2442,7 @@
       "id": "436",
       "name": "Fenerbahce",
       "code": "FEN",
-      "country": "Türkiye",
+      "country": "",
       "region": "",
       "is_national": false
     },
@@ -5722,7 +5722,7 @@
       "id": "997",
       "name": "Trabzonspor",
       "code": "TRA",
-      "country": "Türkiye",
+      "country": "",
       "region": "",
       "is_national": false
     },
@@ -47849,6 +47849,22 @@
       "away_team_code": "SAM"
     },
     {
+      "fixture_id": "401933818",
+      "kickoff_utc": "2026-12-04T19:45:00Z",
+      "tournament": "FA Cup",
+      "country": "England",
+      "stage": "2026-27 English FA Cup, Second Round",
+      "season": 2026,
+      "league_id": "3918",
+      "league_slug": "eng.fa",
+      "home_team_id": "344",
+      "home_team": "Wycombe Wanderers",
+      "home_team_code": "WYC",
+      "away_team_id": "390",
+      "away_team": "Milton Keynes Dons",
+      "away_team_code": "MKD"
+    },
+    {
       "fixture_id": "401876378",
       "kickoff_utc": "2026-12-04T19:45:00Z",
       "tournament": "Ligue 1",
@@ -48567,22 +48583,6 @@
       "away_team_id": "320",
       "away_team": "Cheltenham Town",
       "away_team_code": "CHL"
-    },
-    {
-      "fixture_id": "401933818",
-      "kickoff_utc": "2026-12-05T15:00:00Z",
-      "tournament": "FA Cup",
-      "country": "England",
-      "stage": "2026-27 English FA Cup, Second Round",
-      "season": 2026,
-      "league_id": "3918",
-      "league_slug": "eng.fa",
-      "home_team_id": "344",
-      "home_team": "Wycombe Wanderers",
-      "home_team_code": "WYC",
-      "away_team_id": "390",
-      "away_team": "Milton Keynes Dons",
-      "away_team_code": "MKD"
     },
     {
       "fixture_id": "401933819",
