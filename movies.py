@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
-"""Collect upcoming digital movie releases from TMDB and OMDb.
+"""Collect digital movie releases from Trakt, enriched with TMDB and OMDb.
 
-The script keeps movies that:
-  * have an exact digital release date
-  * have an IMDb rating at or above MIN_IMDB_RATING
-  * are released in the current/previous month or in the future window
+Trakt supplies digital release dates across countries. TMDB supplies Russian
+and English titles, genres and posters. OMDb supplies the IMDb rating.
 
-TMDB is used for release dates, localized titles, genres and posters.
-OMDb (by IMDb id from TMDB) is used only for the IMDb rating.
+Only movies released digitally in the current/previous month or in the future
+window are kept. Old catalogue re-releases are filtered by the movie year.
 
 Required environment variables:
-  TMDB_API_KEY   TMDB v3 API key or v4 read access token
-  OMDB_API_KEY   OMDb API key
+  TRAKT_CLIENT_ID  Trakt application Client ID
+  TMDB_API_KEY     TMDB v3 API key or v4 read access token
+  OMDB_API_KEY     OMDb API key
 
-The generated movie_releases.json is intended to be committed by GitHub
-Actions. No API key is ever shipped to the iOS app.
+The generated movie_releases.json is committed by GitHub Actions.
 """
 
 from __future__ import annotations
@@ -35,6 +33,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
+TRAKT_BASE = "https://api.trakt.tv"
 TMDB_BASE = "https://api.themoviedb.org/3"
 TMDB_IMAGE_BASE = "https://image.tmdb.org/t/p/w500"
 OMDB_BASE = "https://www.omdbapi.com/"
@@ -43,13 +42,9 @@ DEFAULT_MIN_RATING = 7.0
 DEFAULT_MONTHS_AHEAD = 12
 DEFAULT_WORKERS = 4
 HTTP_TIMEOUT = 25
+TRAKT_CHUNK_DAYS = 30
 RATING_CACHE_DAYS = 7
-USER_AGENT = "month-calendar-movie-sync/1.0"
-
-MONTH_NAMES = (
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December",
-)
+USER_AGENT = "month-calendar-movie-sync/2.0"
 
 
 @dataclass(frozen=True)
@@ -59,19 +54,28 @@ class ReleaseWindow:
 
 
 @dataclass
+class TraktMovie:
+    trakt_id: int
+    tmdb_id: Optional[int]
+    imdb_id: str
+    title: str
+    year: Optional[int]
+
+
+@dataclass
 class Candidate:
     tmdb_id: int
-    detail: Dict[str, Any]
-    digital_date: date
-    digital_country: str
+    imdb_id: str
     title_ru: str
     title_en: str
     title_original: str
+    year: Optional[int]
     genre_ids: List[int]
     genres_ru: List[str]
     genres_en: List[str]
+    digital_date: date
+    digital_country: str
     poster_url: Optional[str]
-    imdb_id: str
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -88,7 +92,7 @@ def request_json(
     url: str,
     headers: Optional[Dict[str, str]] = None,
     timeout: int = HTTP_TIMEOUT,
-) -> Optional[Dict[str, Any]]:
+) -> Optional[Any]:
     request_headers = {
         "User-Agent": USER_AGENT,
         "Accept": "application/json",
@@ -101,8 +105,7 @@ def request_json(
         request = urllib.request.Request(url, headers=request_headers)
         try:
             with urllib.request.urlopen(request, timeout=timeout) as response:
-                body = response.read().decode("utf-8")
-                return json.loads(body)
+                return json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as error:
             if error.code == 404:
                 return None
@@ -125,8 +128,7 @@ def request_json(
     return None
 
 
-def tmdb_auth_params(api_key: str) -> Tuple[Dict[str, str], Dict[str, str]]:
-    """Support both TMDB v3 API keys and v4 bearer tokens."""
+def tmdb_auth(api_key: str) -> Tuple[Dict[str, str], Dict[str, str]]:
     if api_key.startswith("eyJ"):
         return {}, {"Authorization": f"Bearer {api_key}"}
     return {"api_key": api_key}, {}
@@ -138,20 +140,39 @@ def tmdb_get(
     api_key: str,
     timeout: int,
 ) -> Optional[Dict[str, Any]]:
-    auth_params, headers = tmdb_auth_params(api_key)
+    auth_params, headers = tmdb_auth(api_key)
     query = dict(params)
     query.update(auth_params)
     url = f"{TMDB_BASE}{path}"
     if query:
         url += "?" + urllib.parse.urlencode(query)
-    return request_json(url, headers=headers, timeout=timeout)
+    payload = request_json(url, headers=headers, timeout=timeout)
+    return payload if isinstance(payload, dict) else None
+
+
+def trakt_get(
+    path: str,
+    client_id: str,
+    timeout: int,
+) -> Optional[Any]:
+    url = f"{TRAKT_BASE}{path}"
+    return request_json(
+        url,
+        headers={
+            "trakt-api-version": "2",
+            "trakt-api-key": client_id,
+            "Content-Type": "application/json",
+        },
+        timeout=timeout,
+    )
 
 
 def omdb_get(imdb_id: str, api_key: str, timeout: int) -> Optional[Dict[str, Any]]:
     url = f"{OMDB_BASE}?" + urllib.parse.urlencode(
         {"i": imdb_id, "apikey": api_key}
     )
-    return request_json(url, timeout=timeout)
+    payload = request_json(url, timeout=timeout)
+    return payload if isinstance(payload, dict) else None
 
 
 def add_months(value: date, months: int) -> date:
@@ -161,39 +182,212 @@ def add_months(value: date, months: int) -> date:
 
 
 def last_day_of_month(value: date) -> date:
-    next_month = add_months(value, 1)
-    return next_month - timedelta(days=1)
+    return add_months(value, 1) - timedelta(days=1)
 
 
 def release_window(months_ahead: int) -> ReleaseWindow:
-    today = date.today()
-    current_month = today.replace(day=1)
-    start = add_months(current_month, -1)
-    end = last_day_of_month(add_months(current_month, months_ahead))
-    return ReleaseWindow(start=start, end=end)
+    current = date.today().replace(day=1)
+    return ReleaseWindow(
+        start=add_months(current, -1),
+        end=last_day_of_month(add_months(current, months_ahead)),
+    )
 
 
 def parse_date(value: Any) -> Optional[date]:
-    if not isinstance(value, str) or not value:
-        return None
-    match = re.match(r"^(\d{4})-(\d{2})-(\d{2})", value)
-    if not match:
+    if not isinstance(value, str) or len(value) < 10:
         return None
     try:
-        return date(
-            int(match.group(1)),
-            int(match.group(2)),
-            int(match.group(3)),
-        )
+        return date.fromisoformat(value[:10])
     except ValueError:
         return None
 
 
-def localized_title(
-    detail: Dict[str, Any],
-    language: str,
-) -> Optional[str]:
-    translations = detail.get("translations", {})
+def integer_year(value: Any) -> Optional[int]:
+    if isinstance(value, int):
+        return value
+    if isinstance(value, str) and value.isdigit():
+        return int(value)
+    return None
+
+
+def trakt_movie_from_item(item: Dict[str, Any]) -> Optional[TraktMovie]:
+    movie = item.get("movie")
+    if not isinstance(movie, dict):
+        movie = item
+    ids = movie.get("ids")
+    if not isinstance(ids, dict):
+        return None
+
+    trakt_id = ids.get("trakt")
+    if not isinstance(trakt_id, int):
+        return None
+
+    tmdb_id = ids.get("tmdb")
+    if not isinstance(tmdb_id, int):
+        tmdb_id = None
+
+    imdb_id = ids.get("imdb")
+    if not isinstance(imdb_id, str):
+        imdb_id = ""
+
+    title = movie.get("title")
+    if not isinstance(title, str):
+        title = ""
+
+    return TraktMovie(
+        trakt_id=trakt_id,
+        tmdb_id=tmdb_id,
+        imdb_id=imdb_id if imdb_id.startswith("tt") else "",
+        title=title,
+        year=integer_year(movie.get("year")),
+    )
+
+
+def fetch_trakt_calendar(
+    kind: str,
+    window: ReleaseWindow,
+    client_id: str,
+    timeout: int,
+) -> List[Dict[str, Any]]:
+    rows: List[Dict[str, Any]] = []
+    cursor = window.start
+    remaining = (window.end - window.start).days + 1
+
+    while remaining > 0:
+        chunk = min(TRAKT_CHUNK_DAYS, remaining)
+        payload = trakt_get(
+            f"/calendars/all/{kind}/{cursor.isoformat()}/{chunk}",
+            client_id,
+            timeout,
+        )
+        if isinstance(payload, list):
+            rows.extend(item for item in payload if isinstance(item, dict))
+        logging.info(
+            "Trakt %s %s..%s: %s items",
+            kind,
+            cursor,
+            cursor + timedelta(days=chunk - 1),
+            len(payload) if isinstance(payload, list) else 0,
+        )
+        cursor += timedelta(days=chunk)
+        remaining -= chunk
+        time.sleep(0.12)
+
+    return rows
+
+
+def collect_trakt_movies(
+    window: ReleaseWindow,
+    client_id: str,
+    timeout: int,
+    min_year: int,
+    limit: Optional[int],
+) -> List[TraktMovie]:
+    rows = fetch_trakt_calendar(
+        "streaming", window, client_id, timeout
+    ) + fetch_trakt_calendar(
+        "movies", window, client_id, timeout
+    )
+
+    movies: Dict[int, TraktMovie] = {}
+    for item in rows:
+        movie = trakt_movie_from_item(item)
+        if movie is None:
+            continue
+        if movie.year is not None and movie.year < min_year:
+            continue
+        if not movie.imdb_id and movie.tmdb_id is None:
+            continue
+        movies[movie.trakt_id] = movie
+
+    result = list(movies.values())
+    result.sort(
+        key=lambda item: (
+            item.year or 0,
+            item.title.lower(),
+        )
+    )
+    if limit is not None:
+        result = result[:limit]
+
+    logging.info(
+        "Trakt: %s candidate movies after year filter (%s+)",
+        len(result),
+        min_year,
+    )
+    return result
+
+
+def select_digital_release(
+    releases: Any,
+    window: ReleaseWindow,
+) -> Optional[Tuple[date, str]]:
+    if not isinstance(releases, list):
+        return None
+
+    priority = {
+        "us": 0, "gb": 1, "ca": 2, "au": 3, "nz": 4,
+        "ie": 5, "de": 6, "fr": 7, "it": 8, "es": 9,
+        "jp": 10, "ru": 11,
+    }
+    best: Optional[Tuple[date, int, str]] = None
+
+    for release in releases:
+        if not isinstance(release, dict):
+            continue
+        release_type = str(release.get("release_type") or "").lower()
+        if release_type != "digital":
+            continue
+        released = parse_date(release.get("release_date"))
+        if released is None or released < window.start or released > window.end:
+            continue
+
+        country = str(release.get("country") or "").lower()
+        candidate = (
+            released,
+            priority.get(country, 99),
+            country.upper(),
+        )
+        if best is None or candidate < best:
+            best = candidate
+
+    if best is None:
+        return None
+    return best[0], best[2]
+
+
+def load_trakt_releases(
+    movies: List[TraktMovie],
+    window: ReleaseWindow,
+    client_id: str,
+    timeout: int,
+) -> List[Tuple[TraktMovie, date, str]]:
+    result: List[Tuple[TraktMovie, date, str]] = []
+
+    for index, movie in enumerate(movies, start=1):
+        releases = trakt_get(
+            f"/movies/{movie.trakt_id}/releases",
+            client_id,
+            timeout,
+        )
+        digital = select_digital_release(releases, window)
+        if digital is not None:
+            result.append((movie, digital[0], digital[1]))
+
+        if index % 25 == 0 or index == len(movies):
+            logging.info(
+                "Trakt releases: %s/%s checked, %s with digital date",
+                index,
+                len(movies),
+                len(result),
+            )
+        time.sleep(0.12)
+
+    return result
+
+
+def localized_title(detail: Dict[str, Any], language: str) -> Optional[str]:
+    translations = detail.get("translations")
     if not isinstance(translations, dict):
         return None
     entries = translations.get("translations")
@@ -214,11 +408,8 @@ def localized_title(
     return None
 
 
-def alternative_title(
-    detail: Dict[str, Any],
-    country_code: str,
-) -> Optional[str]:
-    alternative = detail.get("alternative_titles", {})
+def alternative_title(detail: Dict[str, Any], country: str) -> Optional[str]:
+    alternative = detail.get("alternative_titles")
     if not isinstance(alternative, dict):
         return None
     entries = alternative.get("titles")
@@ -228,7 +419,7 @@ def alternative_title(
     for entry in entries:
         if not isinstance(entry, dict):
             continue
-        if entry.get("iso_3166_1") != country_code:
+        if entry.get("iso_3166_1") != country:
             continue
         title = entry.get("title")
         if isinstance(title, str) and title.strip():
@@ -236,140 +427,112 @@ def alternative_title(
     return None
 
 
-def choose_digital_release(
-    detail: Dict[str, Any],
-    window: ReleaseWindow,
-) -> Optional[Tuple[date, str]]:
-    release_dates = detail.get("release_dates", {})
-    if not isinstance(release_dates, dict):
-        return None
-    results = release_dates.get("results")
-    if not isinstance(results, list):
-        return None
-
-    best: Optional[Tuple[date, int, str]] = None
-    country_priority = {
-        "US": 0, "GB": 1, "CA": 2, "AU": 3, "NZ": 4,
-        "IE": 5, "DE": 6, "FR": 7, "IT": 8, "ES": 9,
-        "JP": 10, "RU": 11,
-    }
-
-    for country in results:
-        if not isinstance(country, dict):
-            continue
-        country_code = str(country.get("iso_3166_1") or "")
-        releases = country.get("release_dates")
-        if not isinstance(releases, list):
-            continue
-
-        for release in releases:
-            if not isinstance(release, dict):
-                continue
-            if release.get("type") != 4:
-                continue
-            released = parse_date(release.get("release_date"))
-            if released is None:
-                continue
-            if released < window.start or released > window.end:
-                continue
-
-            priority = country_priority.get(country_code, 99)
-            candidate = (released, priority, country_code)
-            if best is None or candidate < best:
-                best = candidate
-
-    if best is None:
-        return None
-    return best[0], best[2]
-
-
-def collect_candidates(
-    window: ReleaseWindow,
+def load_genres(
+    language: str,
     api_key: str,
     timeout: int,
-    limit: Optional[int],
-) -> List[int]:
-    ids: List[int] = []
-    seen = set()
-    page = 1
-    total_pages = 1
-
-    while page <= total_pages and page <= 500:
-        payload = tmdb_get(
-            "/discover/movie",
-            {
-                "language": "en-US",
-                "sort_by": "primary_release_date.asc",
-                "with_release_type": "4",
-                "release_date.gte": window.start.isoformat(),
-                "release_date.lte": window.end.isoformat(),
-                "include_adult": "false",
-                "page": str(page),
-            },
-            api_key,
-            timeout,
-        )
-        if payload is None:
-            break
-
-        total_pages = int(payload.get("total_pages") or 1)
-        results = payload.get("results")
-        if not isinstance(results, list) or not results:
-            break
-
-        for result in results:
-            if not isinstance(result, dict):
-                continue
-            movie_id = result.get("id")
-            if isinstance(movie_id, int) and movie_id not in seen:
-                seen.add(movie_id)
-                ids.append(movie_id)
-                if limit is not None and len(ids) >= limit:
-                    return ids
-
-        page += 1
-        time.sleep(0.05)
-
-    logging.info(
-        "TMDB discover: %s candidates in %s..%s",
-        len(ids),
-        window.start,
-        window.end,
+) -> Dict[int, str]:
+    payload = tmdb_get(
+        "/genre/movie/list",
+        {"language": language},
+        api_key,
+        timeout,
     )
-    return ids
+    if not payload:
+        return {}
+    result: Dict[int, str] = {}
+    for genre in payload.get("genres") or []:
+        if not isinstance(genre, dict):
+            continue
+        genre_id = genre.get("id")
+        name = genre.get("name")
+        if isinstance(genre_id, int) and isinstance(name, str):
+            result[genre_id] = name
+    return result
 
 
-def fetch_detail(
-    movie_id: int,
+def find_tmdb_id(
+    imdb_id: str,
     api_key: str,
     timeout: int,
-) -> Optional[Dict[str, Any]]:
-    return tmdb_get(
-        f"/movie/{movie_id}",
+) -> Optional[int]:
+    if not imdb_id:
+        return None
+    payload = tmdb_get(
+        f"/find/{urllib.parse.quote(imdb_id)}",
+        {"external_source": "imdb_id"},
+        api_key,
+        timeout,
+    )
+    if not payload:
+        return None
+    results = payload.get("movie_results")
+    if not isinstance(results, list) or not results:
+        return None
+    first = results[0]
+    if not isinstance(first, dict):
+        return None
+    movie_id = first.get("id")
+    return movie_id if isinstance(movie_id, int) else None
+
+
+def fetch_tmdb_detail(
+    movie: TraktMovie,
+    api_key: str,
+    timeout: int,
+) -> Optional[Tuple[TraktMovie, Dict[str, Any]]]:
+    tmdb_id = movie.tmdb_id
+    if tmdb_id is None:
+        tmdb_id = find_tmdb_id(movie.imdb_id, api_key, timeout)
+    if tmdb_id is None:
+        return None
+
+    detail = tmdb_get(
+        f"/movie/{tmdb_id}",
         {
             "language": "en-US",
             "append_to_response": (
-                "release_dates,translations,alternative_titles,external_ids"
+                "translations,alternative_titles,external_ids"
             ),
         },
         api_key,
         timeout,
     )
+    if detail is None:
+        return None
+
+    update = TraktMovie(
+        trakt_id=movie.trakt_id,
+        tmdb_id=tmdb_id,
+        imdb_id=movie.imdb_id,
+        title=movie.title,
+        year=movie.year,
+    )
+    return update, detail
 
 
 def build_candidate(
-    movie_id: int,
+    movie: TraktMovie,
     detail: Dict[str, Any],
-    window: ReleaseWindow,
+    digital: Tuple[date, str],
     genre_names_ru: Dict[int, str],
     genre_names_en: Dict[int, str],
 ) -> Optional[Candidate]:
-    imdb_id = str(detail.get("external_ids", {}).get("imdb_id") or "")
-    if not imdb_id.startswith("tt"):
+    external = detail.get("external_ids")
+    imdb_id = movie.imdb_id
+    if isinstance(external, dict):
+        value = external.get("imdb_id")
+        if isinstance(value, str) and value.startswith("tt"):
+            imdb_id = value
+    if not imdb_id:
         return None
 
-    digital = choose_digital_release(detail, window)
-    if digital is None:
+    tmdb_id = movie.tmdb_id
+    if tmdb_id is None:
+        value = detail.get("id")
+        if isinstance(value, int):
+            tmdb_id = value
+    if tmdb_id is None:
         return None
 
     genres = detail.get("genres")
@@ -394,13 +557,17 @@ def build_candidate(
         localized_title(detail, "en")
         or str(detail.get("title") or "").strip()
         or str(detail.get("original_title") or "").strip()
+        or movie.title
     )
     title_ru = (
         localized_title(detail, "ru")
         or alternative_title(detail, "RU")
-        or ""
+        or title_en
     )
-    title_original = str(detail.get("original_title") or "").strip()
+    title_original = (
+        str(detail.get("original_title") or "").strip()
+        or title_en
+    )
 
     poster_path = detail.get("poster_path")
     poster_url = (
@@ -410,42 +577,19 @@ def build_candidate(
     )
 
     return Candidate(
-        tmdb_id=movie_id,
-        detail=detail,
-        digital_date=digital[0],
-        digital_country=digital[1],
-        title_ru=title_ru or title_en,
-        title_en=title_en or title_original,
-        title_original=title_original or title_en,
+        tmdb_id=tmdb_id,
+        imdb_id=imdb_id,
+        title_ru=title_ru,
+        title_en=title_en,
+        title_original=title_original,
+        year=movie.year,
         genre_ids=genre_ids,
         genres_ru=genres_ru,
         genres_en=genres_en,
+        digital_date=digital[0],
+        digital_country=digital[1],
         poster_url=poster_url,
-        imdb_id=imdb_id,
     )
-
-
-def load_genres(
-    language: str,
-    api_key: str,
-    timeout: int,
-) -> Dict[int, str]:
-    payload = tmdb_get(
-        "/genre/movie/list",
-        {"language": language},
-        api_key,
-        timeout,
-    )
-    if not payload:
-        return {}
-    result: Dict[int, str] = {}
-    for genre in payload.get("genres") or []:
-        if isinstance(genre, dict):
-            genre_id = genre.get("id")
-            name = genre.get("name")
-            if isinstance(genre_id, int) and isinstance(name, str):
-                result[genre_id] = name
-    return result
 
 
 def load_rating_cache(path: Path) -> Dict[str, Tuple[float, str]]:
@@ -511,7 +655,7 @@ def fetch_omdb_rating(
 
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Collect upcoming digital movie releases."
+        description="Collect digital movie releases from Trakt + TMDB + OMDb."
     )
     parser.add_argument(
         "--output",
@@ -526,6 +670,12 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         help=f"minimum IMDb rating (default: {DEFAULT_MIN_RATING})",
     )
     parser.add_argument(
+        "--min-year",
+        type=int,
+        default=date.today().year - 1,
+        help="minimum movie release year",
+    )
+    parser.add_argument(
         "--months-ahead",
         type=int,
         default=DEFAULT_MONTHS_AHEAD,
@@ -535,7 +685,7 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         "--limit",
         type=int,
         default=None,
-        help="limit candidate movies for a test run",
+        help="limit Trakt candidates for a test run",
     )
     parser.add_argument(
         "--workers",
@@ -564,8 +714,12 @@ def main(argv: Optional[List[str]] = None) -> int:
         format="%(levelname)s %(message)s",
     )
 
+    trakt_key = os.environ.get("TRAKT_CLIENT_ID", "").strip()
     tmdb_key = os.environ.get("TMDB_API_KEY", "").strip()
     omdb_key = os.environ.get("OMDB_API_KEY", "").strip()
+    if not trakt_key:
+        logging.error("TRAKT_CLIENT_ID is not set")
+        return 2
     if not tmdb_key:
         logging.error("TMDB_API_KEY is not set")
         return 2
@@ -576,50 +730,75 @@ def main(argv: Optional[List[str]] = None) -> int:
     if not 0 <= args.min_rating <= 10:
         logging.error("Minimum rating must be between 0 and 10")
         return 2
-    if args.months_ahead < 0:
-        logging.error("Months ahead must be non-negative")
+    if args.months_ahead < 0 or args.min_year < 1900:
+        logging.error("Invalid year/window")
         return 2
 
     window = release_window(args.months_ahead)
     genres_ru = load_genres("ru-RU", tmdb_key, args.timeout)
     genres_en = load_genres("en-US", tmdb_key, args.timeout)
-    candidate_ids = collect_candidates(
+
+    trakt_movies = collect_trakt_movies(
         window,
-        tmdb_key,
+        trakt_key,
         args.timeout,
+        args.min_year,
         args.limit,
     )
-    if not candidate_ids:
-        logging.error("No candidate movies found")
+    if not trakt_movies:
+        logging.error("No Trakt candidates after year filter")
         return 1
 
+    digital_movies = load_trakt_releases(
+        trakt_movies,
+        window,
+        trakt_key,
+        args.timeout,
+    )
+    logging.info("%s movies with digital release dates", len(digital_movies))
+
     candidates: List[Candidate] = []
+    details_done = 0
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 8))) as pool:
         futures = {
-            pool.submit(fetch_detail, movie_id, tmdb_key, args.timeout):
-                movie_id
-            for movie_id in candidate_ids
+            pool.submit(
+                fetch_tmdb_detail,
+                movie,
+                tmdb_key,
+                args.timeout,
+            ): (movie, digital_date, digital_country)
+            for movie, digital_date, digital_country in digital_movies
         }
         for future in as_completed(futures):
-            movie_id = futures[future]
+            movie, digital_date, digital_country = futures[future]
             try:
-                detail = future.result()
+                fetched = future.result()
             except Exception:
-                logging.exception("TMDB detail failed for %s", movie_id)
+                logging.exception("TMDB detail failed for %s", movie.trakt_id)
                 continue
-            if not detail:
+            if fetched is None:
                 continue
+            updated_movie, detail = fetched
             candidate = build_candidate(
-                movie_id,
+                updated_movie,
                 detail,
-                window,
+                (digital_date, digital_country),
                 genres_ru,
                 genres_en,
             )
             if candidate is not None:
                 candidates.append(candidate)
 
-    logging.info("%s candidates have a valid digital date", len(candidates))
+            details_done += 1
+            if details_done % 25 == 0 or details_done == len(futures):
+                logging.info(
+                    "TMDB details: %s/%s, %s candidates",
+                    details_done,
+                    len(futures),
+                    len(candidates),
+                )
+
+    logging.info("TMDB: %s enriched candidates", len(candidates))
 
     rating_cache = load_rating_cache(args.output)
     movies: List[Dict[str, Any]] = []
@@ -665,6 +844,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "title_ru": candidate.title_ru,
                 "title_en": candidate.title_en,
                 "title_original": candidate.title_original,
+                "year": candidate.year,
                 "genre_ids": candidate.genre_ids,
                 "genres_ru": candidate.genres_ru,
                 "genres_en": candidate.genres_en,
@@ -680,6 +860,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     payload = {
         "generated_at": checked_now,
         "minimum_imdb_rating": round(args.min_rating, 1),
+        "minimum_year": args.min_year,
         "window": {
             "from": window.start.isoformat(),
             "to": window.end.isoformat(),
