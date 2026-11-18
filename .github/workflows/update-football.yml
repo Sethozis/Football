@@ -1,4 +1,4 @@
-name: Update football matches
+name: Update football data
 
 on:
   schedule:
@@ -10,13 +10,13 @@ permissions:
   contents: write
 
 concurrency:
-  group: football-matches-update
+  group: sports-data-update
   cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
 
     steps:
       - name: Check out repository
@@ -30,14 +30,32 @@ jobs:
       - name: Fetch matches
         run: python main.py
 
+      - name: Fetch standings
+        run: python standings.py
+
       - name: Commit generated JSON
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add football_matches.json
+          git add football_matches.json football_standings.json
           if git diff --cached --quiet; then
             echo "No changes"
             exit 0
           fi
-          git commit -m "Update football matches [skip ci]"
-          git push
+          git commit -m "Update football data [skip ci]"
+
+          pushed=false
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              pushed=true
+              break
+            fi
+            echo "Push failed, retrying..."
+            sleep 5
+          done
+
+          if [ "$pushed" != "true" ]; then
+            echo "Could not push generated JSON"
+            exit 1
+          fi
