@@ -1,0 +1,4400 @@
+{
+  "generated_at": "2026-11-18T16:55:34Z",
+  "minimum_imdb_rating": 7.0,
+  "window": {
+    "from": "2026-10-01",
+    "to": "2027-11-30"
+  },
+  "count": 171,
+  "movies": [
+    {
+      "tmdb_id": 1465563,
+      "imdb_id": "tt36544524",
+      "title_ru": "Поэт",
+      "title_en": "A Poet",
+      "title_original": "Un poeta",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/o0MRVa3XMUUIxiSCZYaJ1jGXdk.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 6254,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 644,
+      "imdb_id": "tt0212720",
+      "title_ru": "Искусственный разум",
+      "title_en": "A.I. Artificial Intelligence",
+      "title_original": "A.I. Artificial Intelligence",
+      "genre_ids": [
+        18,
+        878,
+        12
+      ],
+      "genres_ru": [
+        "драма",
+        "фантастика",
+        "приключения"
+      ],
+      "genres_en": [
+        "Drama",
+        "Science Fiction",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/wnUAcUrMRGPPZUDroLeZhSjLkuu.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 343624,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1671305,
+      "imdb_id": "tt19766724",
+      "title_ru": "Accursed",
+      "title_en": "Accursed",
+      "title_original": "Accursed",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xJH8AMCJxdeOZ1pTk693TzZij0g.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 37,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1751736,
+      "imdb_id": "tt43635242",
+      "title_ru": "Ameer Log",
+      "title_en": "Ameer Log",
+      "title_original": "Ameer Log",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3GeLO1YuFbXklGouyTXx9VzxRl6.jpg",
+      "imdb_rating": 9.0,
+      "imdb_votes": 341,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1775356,
+      "imdb_id": "tt21329452",
+      "title_ru": "Beyond the Gateway",
+      "title_en": "Beyond the Gateway",
+      "title_original": "Beyond the Gateway",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/pxY4OOcCiYU6wtdwjlFWUg1wRRY.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 9,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 937287,
+      "imdb_id": "tt16426418",
+      "title_ru": "Претенденты",
+      "title_en": "Challengers",
+      "title_original": "Challengers",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/H6vke7zGiuLsz4v4RPeReb9rsv.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 185343,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1161617,
+      "imdb_id": "tt26394837",
+      "title_ru": "Код 3",
+      "title_en": "Code 3",
+      "title_original": "Code 3",
+      "genre_ids": [
+        35,
+        28,
+        18
+      ],
+      "genres_ru": [
+        "комедия",
+        "боевик",
+        "драма"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Action",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "IL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gIAYMDb5mIAeCAj76q1sRsKjkzo.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 22648,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1165366,
+      "imdb_id": "tt28553375",
+      "title_ru": "Де Голль. Часть 1. Сопротивление",
+      "title_en": "De Gaulle: Résistance",
+      "title_original": "La Bataille de Gaulle : L’Âge de fer",
+      "genre_ids": [
+        36,
+        18,
+        10752
+      ],
+      "genres_ru": [
+        "история",
+        "драма",
+        "военный"
+      ],
+      "genres_en": [
+        "History",
+        "Drama",
+        "War"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5mD1wVMawcq7a10ypT37NDUaP64.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 2804,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 877690,
+      "imdb_id": "tt15502006",
+      "title_ru": "Миссис Рождественская магия",
+      "title_en": "Debbie Macomber's A Mrs. Miracle Christmas",
+      "title_original": "Debbie Macomber's A Mrs. Miracle Christmas",
+      "genre_ids": [
+        10770,
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "телевизионный фильм",
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "TV Movie",
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rUrCxAs3byx0jnjcfWxjtGTQ0U.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 1218,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1336265,
+      "imdb_id": "tt35354956",
+      "title_ru": "Eastern Anthems",
+      "title_en": "Eastern Anthems",
+      "title_original": "Chants de l’Est",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/a1rgeKhY3mmf4CixTYqVh7hgT6W.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 8,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1193128,
+      "imdb_id": "tt21272942",
+      "title_ru": "Я был незнакомцем",
+      "title_en": "I Was a Stranger",
+      "title_original": "قضية الغرباء",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/RBIrEveMOIy5Kxg2WzgMnCIhaN.jpg",
+      "imdb_rating": 8.0,
+      "imdb_votes": 13483,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 89,
+      "imdb_id": "tt0097576",
+      "title_ru": "Индиана Джонс и последний крестовый поход",
+      "title_en": "Indiana Jones and the Last Crusade",
+      "title_original": "Indiana Jones and the Last Crusade",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "genres_ru": [
+        "приключения",
+        "боевик"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Action"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/sizg1AU8f8JDZX4QIgE4pjUMBvx.jpg",
+      "imdb_rating": 8.2,
+      "imdb_votes": 872939,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 87,
+      "imdb_id": "tt0087469",
+      "title_ru": "Индиана Джонс и Храм Судьбы",
+      "title_en": "Indiana Jones and the Temple of Doom",
+      "title_original": "Indiana Jones and the Temple of Doom",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "genres_ru": [
+        "приключения",
+        "боевик"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Action"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gpdVNUaa4LhRMLfJOPj1AZdhAZ3.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 574680,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 603692,
+      "imdb_id": "tt10366206",
+      "title_ru": "Джон Уик 4",
+      "title_en": "John Wick: Chapter 4",
+      "title_original": "John Wick: Chapter 4",
+      "genre_ids": [
+        28,
+        53,
+        80
+      ],
+      "genres_ru": [
+        "боевик",
+        "триллер",
+        "криминал"
+      ],
+      "genres_en": [
+        "Action",
+        "Thriller",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 420768,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1214326,
+      "imdb_id": "tt21980046",
+      "title_ru": "Mrs. Buică",
+      "title_en": "Mrs. Buică",
+      "title_original": "Mrs. Buică",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/d0llMCMRlfPiprZ0CXlDdsCKBML.jpg",
+      "imdb_rating": 8.8,
+      "imdb_votes": 66,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1727563,
+      "imdb_id": "tt36626888",
+      "title_ru": "Ohh My Dog",
+      "title_en": "Ohh My Dog",
+      "title_original": "ओह माय डॉग",
+      "genre_ids": [
+        18,
+        10751
+      ],
+      "genres_ru": [
+        "драма",
+        "семейный"
+      ],
+      "genres_en": [
+        "Drama",
+        "Family"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3zVHaUphvyc3O5dDEkzJe9Faf3P.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 18133,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1549620,
+      "imdb_id": "tt36610602",
+      "title_ru": "Personhood",
+      "title_en": "Personhood",
+      "title_original": "Personhood",
+      "genre_ids": [
+        878,
+        10749,
+        18
+      ],
+      "genres_ru": [
+        "фантастика",
+        "мелодрама",
+        "драма"
+      ],
+      "genres_en": [
+        "Science Fiction",
+        "Romance",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/45pBGAUDZmF5RFlCYAnhvkmDLFi.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 41,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 85,
+      "imdb_id": "tt0082971",
+      "title_ru": "Индиана Джонс: В поисках утраченного ковчега",
+      "title_en": "Raiders of the Lost Ark",
+      "title_original": "Raiders of the Lost Ark",
+      "genre_ids": [
+        12,
+        28
+      ],
+      "genres_ru": [
+        "приключения",
+        "боевик"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Action"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ceG9VzoRAVGwivFU403Wc3AHRys.jpg",
+      "imdb_rating": 8.4,
+      "imdb_votes": 1122661,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 13765,
+      "imdb_id": "tt0066344",
+      "title_ru": "Скрудж",
+      "title_en": "Scrooge",
+      "title_original": "Scrooge",
+      "genre_ids": [
+        14,
+        18,
+        10751
+      ],
+      "genres_ru": [
+        "фэнтези",
+        "драма",
+        "семейный"
+      ],
+      "genres_en": [
+        "Fantasy",
+        "Drama",
+        "Family"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eadjJGFdbZdhXSjtokmay7NjVHi.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 14059,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 15143,
+      "imdb_id": "tt0094006",
+      "title_ru": "Чудеса своего рода",
+      "title_en": "Some Kind of Wonderful",
+      "title_original": "Some Kind of Wonderful",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "genres_ru": [
+        "мелодрама",
+        "комедия"
+      ],
+      "genres_en": [
+        "Romance",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/6z6ZUrwbAJl9Nq43OY77O7iY80x.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 38123,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1240889,
+      "imdb_id": "tt35298123",
+      "title_ru": "Подростковый секс и смерть в лагере «Миазма»",
+      "title_en": "Teenage Sex and Death at Camp Miasma",
+      "title_original": "Teenage Sex and Death at Camp Miasma",
+      "genre_ids": [
+        35,
+        27,
+        10749
+      ],
+      "genres_ru": [
+        "комедия",
+        "ужасы",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Horror",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "AS",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jcGvB76v8p1sqYXXkBetWASV0uM.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 10079,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 274,
+      "imdb_id": "tt0102926",
+      "title_ru": "Молчание ягнят",
+      "title_en": "The Silence of the Lambs",
+      "title_original": "The Silence of the Lambs",
+      "genre_ids": [
+        80,
+        53,
+        18
+      ],
+      "genres_ru": [
+        "криминал",
+        "триллер",
+        "драма"
+      ],
+      "genres_en": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
+      "imdb_rating": 8.6,
+      "imdb_votes": 1755718,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1429348,
+      "imdb_id": "tt36243564",
+      "title_ru": "Посторонний",
+      "title_en": "The Stranger",
+      "title_original": "L'Étranger",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "genres_ru": [
+        "драма",
+        "криминал"
+      ],
+      "genres_en": [
+        "Drama",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/11lx7Isd86SIPeNuWlAPjYTfr57.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 7438,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 933260,
+      "imdb_id": "tt17526714",
+      "title_ru": "Субстанция",
+      "title_en": "The Substance",
+      "title_original": "The Substance",
+      "genre_ids": [
+        27,
+        878
+      ],
+      "genres_ru": [
+        "ужасы",
+        "фантастика"
+      ],
+      "genres_en": [
+        "Horror",
+        "Science Fiction"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 467188,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1805465,
+      "imdb_id": "tt43349404",
+      "title_ru": "The Surveyor",
+      "title_en": "The Surveyor",
+      "title_original": "The Surveyor",
+      "genre_ids": [
+        18,
+        27
+      ],
+      "genres_ru": [
+        "драма",
+        "ужасы"
+      ],
+      "genres_en": [
+        "Drama",
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-01",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/offzpKCKacKQwI4jgPYR3dn1Zmr.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 27,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1359717,
+      "imdb_id": "tt33503181",
+      "title_ru": "Свидание накануне Рождества",
+      "title_en": "'Twas the Date Before Christmas",
+      "title_original": "'Twas the Date Before Christmas",
+      "genre_ids": [
+        10770,
+        35,
+        10749,
+        18
+      ],
+      "genres_ru": [
+        "телевизионный фильм",
+        "комедия",
+        "мелодрама",
+        "драма"
+      ],
+      "genres_en": [
+        "TV Movie",
+        "Comedy",
+        "Romance",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jxfXnIvMsNJrBZFi9fX9ra8lkdo.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 1714,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1733775,
+      "imdb_id": "tt37091196",
+      "title_ru": "Backpay",
+      "title_en": "Backpay",
+      "title_original": "Backpay",
+      "genre_ids": [
+        53,
+        28
+      ],
+      "genres_ru": [
+        "триллер",
+        "боевик"
+      ],
+      "genres_en": [
+        "Thriller",
+        "Action"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/o0JCIJ2yBcavkh0JY05HOTRpBYz.jpg",
+      "imdb_rating": 9.3,
+      "imdb_votes": 7,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1630307,
+      "imdb_id": "tt38712491",
+      "title_ru": "Charlie Shaw's Revenge",
+      "title_en": "Charlie Shaw's Revenge",
+      "title_original": "Charlie Shaw's Revenge",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "genres_ru": [
+        "ужасы",
+        "триллер"
+      ],
+      "genres_en": [
+        "Horror",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/fVRD1OFTaMzEqC5ZENJEQ9Tq3Fm.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 73,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1788904,
+      "imdb_id": "tt48035907",
+      "title_ru": "Hamrammr",
+      "title_en": "Hamrammr",
+      "title_original": "Hamrammr",
+      "genre_ids": [
+        36
+      ],
+      "genres_ru": [
+        "история"
+      ],
+      "genres_en": [
+        "History"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "IS",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gUqUmHUWGJ8wfFBzHtYjnoxF9nY.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 7,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1397364,
+      "imdb_id": "tt34886821",
+      "title_ru": "Грация",
+      "title_en": "La Grazia",
+      "title_original": "La grazia",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/lnPGzi7BNc17WtxXso16CjNjT5K.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 11740,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1049064,
+      "imdb_id": "tt30050236",
+      "title_ru": "Mahendragiri Vaaraahi",
+      "title_en": "Mahendragiri Vaaraahi",
+      "title_original": "మహేంద్రగిరి వారాహి",
+      "genre_ids": [
+        14,
+        53,
+        9648
+      ],
+      "genres_ru": [
+        "фэнтези",
+        "триллер",
+        "детектив"
+      ],
+      "genres_en": [
+        "Fantasy",
+        "Thriller",
+        "Mystery"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/k3nv8jKb0TzWm4GoHdXF1U6errm.jpg",
+      "imdb_rating": 9.5,
+      "imdb_votes": 699,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1772825,
+      "imdb_id": "tt45897032",
+      "title_ru": "Peter Rebello",
+      "title_en": "Peter Rebello",
+      "title_original": "Peter Rebello",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "genres_ru": [
+        "триллер",
+        "драма"
+      ],
+      "genres_en": [
+        "Thriller",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/fV5oT4oOh4plJt44RtmBa5DviJk.jpg",
+      "imdb_rating": 9.4,
+      "imdb_votes": 6,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1771513,
+      "imdb_id": "tt44122050",
+      "title_ru": "The Killing of Otsuya",
+      "title_en": "The Killing of Otsuya",
+      "title_original": "お艶殺し",
+      "genre_ids": [
+        18,
+        10749,
+        80
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама",
+        "криминал"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/mjQ4FfVzwHphRoSIZA4bPUEDGmY.jpg",
+      "imdb_rating": 8.7,
+      "imdb_votes": 50,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1464883,
+      "imdb_id": "tt36580119",
+      "title_ru": "Президентский торт",
+      "title_en": "The President's Cake",
+      "title_original": "The President's Cake",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "IQ",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uSrozVUxIUaer6FIUHHFtOdbqj8.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 4747,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1755896,
+      "imdb_id": "tt44618406",
+      "title_ru": "Ultorath",
+      "title_en": "Ultorath",
+      "title_original": "Ultorath",
+      "genre_ids": [],
+      "genres_ru": [],
+      "genres_en": [],
+      "digital_release_date": "2026-10-02",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rupbZs8tE5h8SyaUEMFJECkIXvF.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 10,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1786196,
+      "imdb_id": "tt48093559",
+      "title_ru": "Shakira Live from Madrid",
+      "title_en": "Shakira Live from Madrid",
+      "title_original": "Shakira Live from Madrid",
+      "genre_ids": [
+        10402
+      ],
+      "genres_ru": [
+        "музыка"
+      ],
+      "genres_en": [
+        "Music"
+      ],
+      "digital_release_date": "2026-10-03",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/hfeqYyDWdxfrVSvR18MDqNgJVNU.jpg",
+      "imdb_rating": 8.8,
+      "imdb_votes": 5,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1257406,
+      "imdb_id": "tt35521200",
+      "title_ru": "Два прокурора",
+      "title_en": "Two Prosecutors",
+      "title_original": "Deux procureurs",
+      "genre_ids": [
+        18,
+        9648,
+        53,
+        36
+      ],
+      "genres_ru": [
+        "драма",
+        "детектив",
+        "триллер",
+        "история"
+      ],
+      "genres_en": [
+        "Drama",
+        "Mystery",
+        "Thriller",
+        "History"
+      ],
+      "digital_release_date": "2026-10-03",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/dU46ROG7HoP7biPtntaMTjkGbU6.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 2944,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1790493,
+      "imdb_id": "tt48357838",
+      "title_ru": "Electro Andes: Episode 1 - The Night of the Andean Beast",
+      "title_en": "Electro Andes: Episode 1 - The Night of the Andean Beast",
+      "title_original": "Electro Andes: Episodio 1- La Noche de la Bestia Andina",
+      "genre_ids": [
+        878,
+        28,
+        16
+      ],
+      "genres_ru": [
+        "фантастика",
+        "боевик",
+        "мультфильм"
+      ],
+      "genres_en": [
+        "Science Fiction",
+        "Action",
+        "Animation"
+      ],
+      "digital_release_date": "2026-10-04",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/nWPqgLbA4URJXV79lbqU9tNsB7J.jpg",
+      "imdb_rating": 8.9,
+      "imdb_votes": 28,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1233413,
+      "imdb_id": "tt31193180",
+      "title_ru": "Грешники",
+      "title_en": "Sinners",
+      "title_original": "Sinners",
+      "genre_ids": [
+        27,
+        28,
+        53
+      ],
+      "genres_ru": [
+        "ужасы",
+        "боевик",
+        "триллер"
+      ],
+      "genres_en": [
+        "Horror",
+        "Action",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-04",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/fWPgbnt2LSqkQ6cdQc0SZN9CpLm.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 530959,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 826,
+      "imdb_id": "tt0050212",
+      "title_ru": "Мост через реку Квай",
+      "title_en": "The Bridge on the River Kwai",
+      "title_original": "The Bridge on the River Kwai",
+      "genre_ids": [
+        18,
+        36,
+        10752
+      ],
+      "genres_ru": [
+        "драма",
+        "история",
+        "военный"
+      ],
+      "genres_en": [
+        "Drama",
+        "History",
+        "War"
+      ],
+      "digital_release_date": "2026-10-04",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/7paXMt2e3Tr5dLmEZOGgFEn2Vo7.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 251786,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1794147,
+      "imdb_id": "tt48675813",
+      "title_ru": "The Power of the Newspaper: Detroit in the 1960s",
+      "title_en": "The Power of the Newspaper: Detroit in the 1960s",
+      "title_original": "The Power of the Newspaper: Detroit in the 1960s",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-04",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/pqGo7tgEXdUfcrNPSnEu4zxSrMQ.jpg",
+      "imdb_rating": 10.0,
+      "imdb_votes": 6,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1204680,
+      "imdb_id": "tt1756855",
+      "title_ru": "Хитрый Койот",
+      "title_en": "Coyote vs. Acme",
+      "title_original": "Coyote vs. Acme",
+      "genre_ids": [
+        35,
+        12,
+        10751,
+        16
+      ],
+      "genres_ru": [
+        "комедия",
+        "приключения",
+        "семейный",
+        "мультфильм"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Adventure",
+        "Family",
+        "Animation"
+      ],
+      "digital_release_date": "2026-10-05",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/kYDCl2y0VPvhT5eYWbMRInPoB03.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 52320,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1480574,
+      "imdb_id": "tt36948232",
+      "title_ru": "Сыграть в ящик",
+      "title_en": "Just Play Dead",
+      "title_original": "Just Play Dead",
+      "genre_ids": [
+        53,
+        80
+      ],
+      "genres_ru": [
+        "триллер",
+        "криминал"
+      ],
+      "genres_en": [
+        "Thriller",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-05",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/e0WaDBrrBAMcq2stAXCR7rXEsiw.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 16,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1634949,
+      "imdb_id": "tt39847629",
+      "title_ru": "Lorne",
+      "title_en": "Lorne",
+      "title_original": "Lorne",
+      "genre_ids": [
+        35,
+        99
+      ],
+      "genres_ru": [
+        "комедия",
+        "документальный"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-05",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3n3mGGQI1HkmzUlcPubMZ9QvcJA.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 17,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1724704,
+      "imdb_id": "tt39052798",
+      "title_ru": "Promise",
+      "title_en": "Promise",
+      "title_original": "Promise",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-05",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/a9HQrvrcPIghm0cvf1q5KLaxfvw.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 885,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 950028,
+      "imdb_id": "tt14173636",
+      "title_ru": "Приглашение",
+      "title_en": "The Invite",
+      "title_original": "The Invite",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-05",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/b7Dr8Chzse8VagexAporUu2RtLx.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 68555,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 858024,
+      "imdb_id": "tt14905854",
+      "title_ru": "Хамнет: История, вдохновившая «Гамлета»",
+      "title_en": "Hamnet",
+      "title_original": "Hamnet",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-06",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vbeyOZm2bvBXcbgPD3v6o94epPX.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 138057,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 352552,
+      "imdb_id": "tt4902012",
+      "title_ru": "Hurricane of Fun: The Making of Wet Hot",
+      "title_en": "Hurricane of Fun: The Making of Wet Hot",
+      "title_original": "Hurricane of Fun: The Making of Wet Hot",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-06",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jJucJnv6VvFNzcC4VVovkh5e1gZ.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 1527,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1784043,
+      "imdb_id": "tt36398784",
+      "title_ru": "JINX",
+      "title_en": "JINX",
+      "title_original": "JINX",
+      "genre_ids": [
+        27,
+        9648,
+        10751
+      ],
+      "genres_ru": [
+        "ужасы",
+        "детектив",
+        "семейный"
+      ],
+      "genres_en": [
+        "Horror",
+        "Mystery",
+        "Family"
+      ],
+      "digital_release_date": "2026-10-06",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/cKt3zqbyvyqUiRrzowQVdRiuFiW.jpg",
+      "imdb_rating": 9.7,
+      "imdb_votes": 11,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1290062,
+      "imdb_id": "tt37513740",
+      "title_ru": "Land of Shadows",
+      "title_en": "Land of Shadows",
+      "title_original": "Land of Shadows",
+      "genre_ids": [
+        9648,
+        14,
+        18
+      ],
+      "genres_ru": [
+        "детектив",
+        "фэнтези",
+        "драма"
+      ],
+      "genres_en": [
+        "Mystery",
+        "Fantasy",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-06",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jnKUmaR661bXpVDFh6xMFcs6LyA.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 20,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 969681,
+      "imdb_id": "tt22084616",
+      "title_ru": "Человек-паук: Новый день",
+      "title_en": "Spider-Man: Brand New Day",
+      "title_original": "Spider-Man: Brand New Day",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "genres_ru": [
+        "фантастика",
+        "боевик",
+        "приключения"
+      ],
+      "genres_en": [
+        "Science Fiction",
+        "Action",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-06",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
+      "imdb_rating": 8.0,
+      "imdb_votes": 327986,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1084244,
+      "imdb_id": "tt29355505",
+      "title_ru": "История игрушек 5",
+      "title_en": "Toy Story 5",
+      "title_original": "Toy Story 5",
+      "genre_ids": [
+        16,
+        10751,
+        35,
+        12
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "семейный",
+        "комедия",
+        "приключения"
+      ],
+      "genres_en": [
+        "Animation",
+        "Family",
+        "Comedy",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-06",
+      "digital_release_country": "IL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
+      "imdb_rating": 7.4,
+      "imdb_votes": 81658,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1791024,
+      "imdb_id": "tt48441063",
+      "title_ru": "Clutch",
+      "title_en": "Clutch",
+      "title_original": "Clutch",
+      "genre_ids": [
+        12,
+        28,
+        16
+      ],
+      "genres_ru": [
+        "приключения",
+        "боевик",
+        "мультфильм"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Action",
+        "Animation"
+      ],
+      "digital_release_date": "2026-10-07",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/mJG3mVV9eX3g8ArWoFYL3Yje5EA.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 5,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1088166,
+      "imdb_id": "tt11539996",
+      "title_ru": "Диспетчер",
+      "title_en": "Relay",
+      "title_original": "Relay",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "genres_ru": [
+        "боевик",
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-07",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/mpwccO2L8LUVtVTJTdgUVgoQqAo.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 41510,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1790961,
+      "imdb_id": "tt48439225",
+      "title_ru": "Staatsgeheimnis RAF – Terroristen in der DDR",
+      "title_en": "Staatsgeheimnis RAF – Terroristen in der DDR",
+      "title_original": "Staatsgeheimnis RAF – Terroristen in der DDR",
+      "genre_ids": [
+        99,
+        36,
+        10770
+      ],
+      "genres_ru": [
+        "документальный",
+        "история",
+        "телевизионный фильм"
+      ],
+      "genres_en": [
+        "Documentary",
+        "History",
+        "TV Movie"
+      ],
+      "digital_release_date": "2026-10-07",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ci1oMjYqsiGNznUNMeUQIYIAjbt.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 8,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 951547,
+      "imdb_id": "tt20102664",
+      "title_ru": "Легенда о Куньлуне",
+      "title_en": "The Legend of Kunlun",
+      "title_original": "发丘天官：昆仑墟",
+      "genre_ids": [
+        14,
+        28,
+        12,
+        878
+      ],
+      "genres_ru": [
+        "фэнтези",
+        "боевик",
+        "приключения",
+        "фантастика"
+      ],
+      "genres_en": [
+        "Fantasy",
+        "Action",
+        "Adventure",
+        "Science Fiction"
+      ],
+      "digital_release_date": "2026-10-07",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9DeA3mAJ20Ep5cWBsCaB6wwdV7p.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 39,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 97630,
+      "imdb_id": "tt1790885",
+      "title_ru": "Цель номер один",
+      "title_en": "Zero Dark Thirty",
+      "title_original": "Zero Dark Thirty",
+      "genre_ids": [
+        53,
+        18
+      ],
+      "genres_ru": [
+        "триллер",
+        "драма"
+      ],
+      "genres_en": [
+        "Thriller",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-07",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/wNSdSSxowM3WIqmPJNg3RagYbwP.jpg",
+      "imdb_rating": 7.4,
+      "imdb_votes": 345171,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1618821,
+      "imdb_id": "tt38990458",
+      "title_ru": "Bicharo Bachelor",
+      "title_en": "Bicharo Bachelor",
+      "title_original": "Bicharo Bachelor",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "genres_ru": [
+        "драма",
+        "комедия"
+      ],
+      "genres_en": [
+        "Drama",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-08",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5lF0XAa8EO2NoqrzhbX3yS02R71.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 347,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1486453,
+      "imdb_id": "tt37025712",
+      "title_ru": "Crusty Fouler",
+      "title_en": "Crusty Fouler",
+      "title_original": "Crusty Fouler",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-08",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4GtDFuqP0X3HCY88IctplsUwtw0.jpg",
+      "imdb_rating": 9.2,
+      "imdb_votes": 19,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 70846,
+      "imdb_id": "tt0168972",
+      "title_ru": "Любовь и попса",
+      "title_en": "Love & Pop",
+      "title_original": "ラブ&ポップ",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-08",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/t5TMd9ldthwyMAd6HDcrJcZIIDx.jpg",
+      "imdb_rating": 7.4,
+      "imdb_votes": 2617,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1610181,
+      "imdb_id": "tt40502137",
+      "title_ru": "Pressure Cooker",
+      "title_en": "Pressure Cooker",
+      "title_original": "প্রেশার কুকার",
+      "genre_ids": [
+        80,
+        53,
+        18
+      ],
+      "genres_ru": [
+        "криминал",
+        "триллер",
+        "драма"
+      ],
+      "genres_en": [
+        "Crime",
+        "Thriller",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-08",
+      "digital_release_country": "BD",
+      "poster_url": "https://image.tmdb.org/t/p/w500/Avi1xDS28NKEdbiBGn6IJDYI8TO.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 270,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1705390,
+      "imdb_id": "tt43279365",
+      "title_ru": "Project Baby",
+      "title_en": "Project Baby",
+      "title_original": "Project Baby",
+      "genre_ids": [
+        35,
+        10749
+      ],
+      "genres_ru": [
+        "комедия",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-08",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/cPVgsUuwKXYiAGk7IPjYeWIYlsA.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 9,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1662627,
+      "imdb_id": "tt45445978",
+      "title_ru": "When Silence Barks",
+      "title_en": "When Silence Barks",
+      "title_original": "On aboie en silence",
+      "genre_ids": [
+        18,
+        10770
+      ],
+      "genres_ru": [
+        "драма",
+        "телевизионный фильм"
+      ],
+      "genres_en": [
+        "Drama",
+        "TV Movie"
+      ],
+      "digital_release_date": "2026-10-08",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xonXMZ6vK4kIpsRUcy615xHfet8.jpg",
+      "imdb_rating": 7.9,
+      "imdb_votes": 9,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1718405,
+      "imdb_id": "tt43617102",
+      "title_ru": "Drags to Riches",
+      "title_en": "Drags to Riches",
+      "title_original": "Drags to Riches",
+      "genre_ids": [
+        35
+      ],
+      "genres_ru": [
+        "комедия"
+      ],
+      "genres_en": [
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3A34qz6uVwDdI9ga0y29vv5VXmI.jpg",
+      "imdb_rating": 8.2,
+      "imdb_votes": 7,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1792171,
+      "imdb_id": "tt39821515",
+      "title_ru": "Life Today",
+      "title_en": "Life Today",
+      "title_original": "Life Today",
+      "genre_ids": [
+        28,
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "боевик",
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Action",
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jxHzzXhdhryiaWA2lJ9Bw3eCE89.jpg",
+      "imdb_rating": 9.3,
+      "imdb_votes": 506,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1724044,
+      "imdb_id": "tt42439606",
+      "title_ru": "Mindshare: The Download",
+      "title_en": "Mindshare: The Download",
+      "title_original": "Mindshare: The Download",
+      "genre_ids": [
+        878,
+        14
+      ],
+      "genres_ru": [
+        "фантастика",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Science Fiction",
+        "Fantasy"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/b7DD5Wky3vDu0xYCp6LHpqDWAxz.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 125,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1447853,
+      "imdb_id": "tt36150957",
+      "title_ru": "Oasis: Не оглядывайся в гневе",
+      "title_en": "Oasis: Don't Look Back in Anger",
+      "title_original": "Oasis: Don't Look Back in Anger",
+      "genre_ids": [
+        99,
+        10402
+      ],
+      "genres_ru": [
+        "документальный",
+        "музыка"
+      ],
+      "genres_en": [
+        "Documentary",
+        "Music"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5XoHhKZ1IROW6f5UlRpADHnTL2l.jpg",
+      "imdb_rating": 8.6,
+      "imdb_votes": 801,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1603779,
+      "imdb_id": "tt38126135",
+      "title_ru": "Paris Cafe",
+      "title_en": "Paris Cafe",
+      "title_original": "பாரிஸ் கஃபே",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5rPqzWDqEFjcLGJ5Rvt8SbV3BRv.jpg",
+      "imdb_rating": 8.7,
+      "imdb_votes": 550,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1798625,
+      "imdb_id": "tt48918513",
+      "title_ru": "Playback",
+      "title_en": "Playback",
+      "title_original": "Playback",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/z5zqqH0Hc4OXdHGGLdio5HflX4m.jpg",
+      "imdb_rating": 8.8,
+      "imdb_votes": 5,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 837881,
+      "imdb_id": "tt11198810",
+      "title_ru": "Её правда",
+      "title_en": "She Said",
+      "title_original": "She Said",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "genres_ru": [
+        "драма",
+        "история"
+      ],
+      "genres_en": [
+        "Drama",
+        "History"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/jG4UI2dbNWlWtTTupjeU3fRJ5Fn.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 50521,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1794211,
+      "imdb_id": "tt48357489",
+      "title_ru": "Unmasking the Tylenol Killer",
+      "title_en": "Unmasking the Tylenol Killer",
+      "title_original": "Unmasking the Tylenol Killer",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-09",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4lNjEPeYMdMgwmyg5ds2NBcIEuU.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 8,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1792989,
+      "imdb_id": "tt46075436",
+      "title_ru": "Byzantium - Europe's Golden Heritage",
+      "title_en": "Byzantium - Europe's Golden Heritage",
+      "title_original": "Byzance, mille ans qui ont changé le monde",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-10",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/is4IxAhrO7eX2LwLkVCvaa7HTAE.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 10,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 297547,
+      "imdb_id": "tt3307330",
+      "title_ru": "The Patriarch",
+      "title_en": "The Patriarch",
+      "title_original": "Kabisera",
+      "genre_ids": [
+        18,
+        53,
+        80
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер",
+        "криминал"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-10",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uDiDAjQAhUICJi3VHzmz3RvHO2S.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 25,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1437714,
+      "imdb_id": "tt39127357",
+      "title_ru": "Vijaynagar'er Hirey",
+      "title_en": "Vijaynagar'er Hirey",
+      "title_original": "বিজয়নগরের হীরে",
+      "genre_ids": [
+        12,
+        9648,
+        28,
+        53
+      ],
+      "genres_ru": [
+        "приключения",
+        "детектив",
+        "боевик",
+        "триллер"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Mystery",
+        "Action",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-10",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gasVnEUAFByENiAMUOdiI5CyH4Z.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 76,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1795849,
+      "imdb_id": "tt48944443",
+      "title_ru": "Cookies Left Out to Cool",
+      "title_en": "Cookies Left Out to Cool",
+      "title_original": "Cookies Left Out to Cool",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-11",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/1tMaWS1PiUxxDxsDgTumpKzAEDi.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 9,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1700680,
+      "imdb_id": "tt43063916",
+      "title_ru": "Crazy Magical Mexico",
+      "title_en": "Crazy Magical Mexico",
+      "title_original": "Loco México Mágico",
+      "genre_ids": [
+        35
+      ],
+      "genres_ru": [
+        "комедия"
+      ],
+      "genres_en": [
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-11",
+      "digital_release_country": "MX",
+      "poster_url": "https://image.tmdb.org/t/p/w500/wCUD4k1EYhFwuTpsUwKfY3fvWOT.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 300,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1804084,
+      "imdb_id": "tt31704382",
+      "title_ru": "Foxhole",
+      "title_en": "Foxhole",
+      "title_original": "Foxhole",
+      "genre_ids": [
+        18,
+        10752,
+        36
+      ],
+      "genres_ru": [
+        "драма",
+        "военный",
+        "история"
+      ],
+      "genres_en": [
+        "Drama",
+        "War",
+        "History"
+      ],
+      "digital_release_date": "2026-10-11",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/b22H3yPl42GUFXSupOSOgwVH2Rr.jpg",
+      "imdb_rating": 8.6,
+      "imdb_votes": 13,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 48369,
+      "imdb_id": "tt0030252",
+      "title_ru": "Hôtel du Nord",
+      "title_en": "Hôtel du Nord",
+      "title_original": "Hôtel du Nord",
+      "genre_ids": [
+        10749,
+        18
+      ],
+      "genres_ru": [
+        "мелодрама",
+        "драма"
+      ],
+      "genres_en": [
+        "Romance",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-11",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9gJXoE2kkyFUflet4VzjQbMMwV8.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 3318,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 11324,
+      "imdb_id": "tt1130884",
+      "title_ru": "Остров проклятых",
+      "title_en": "Shutter Island",
+      "title_original": "Shutter Island",
+      "genre_ids": [
+        18,
+        53,
+        9648
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер",
+        "детектив"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "digital_release_date": "2026-10-11",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/nrmXQ0zcZUL8jFLrakWc90IR8z9.jpg",
+      "imdb_rating": 8.2,
+      "imdb_votes": 1689261,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 646,
+      "imdb_id": "tt0055928",
+      "title_ru": "007: Доктор Ноу",
+      "title_en": "Dr. No",
+      "title_original": "Dr. No",
+      "genre_ids": [
+        12,
+        28,
+        53
+      ],
+      "genres_ru": [
+        "приключения",
+        "боевик",
+        "триллер"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Action",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-12",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9zCOLJmLNst0sCPZlkW1IRoH65E.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 198212,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1772626,
+      "imdb_id": "tt36946387",
+      "title_ru": "Território do Crime",
+      "title_en": "Território do Crime",
+      "title_original": "Território do Crime",
+      "genre_ids": [
+        28,
+        80,
+        18
+      ],
+      "genres_ru": [
+        "боевик",
+        "криминал",
+        "драма"
+      ],
+      "genres_en": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-12",
+      "digital_release_country": "BR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/truNTH49eQGkzy4ScaYM12jkjnM.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 25,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1130852,
+      "imdb_id": "tt22208340",
+      "title_ru": "In the Fire of War",
+      "title_en": "In the Fire of War",
+      "title_original": "Ka Whawhai Tonu",
+      "genre_ids": [
+        28,
+        12,
+        18,
+        36
+      ],
+      "genres_ru": [
+        "боевик",
+        "приключения",
+        "драма",
+        "история"
+      ],
+      "genres_en": [
+        "Action",
+        "Adventure",
+        "Drama",
+        "History"
+      ],
+      "digital_release_date": "2026-10-13",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/9XvsWQfMiKw8xNbSTUUDLnQ8ZvS.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 128,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1356670,
+      "imdb_id": "tt32204858",
+      "title_ru": "Ночная смена",
+      "title_en": "Late Shift",
+      "title_original": "Heldin",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-13",
+      "digital_release_country": "CN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/2X2FZIYdXYNwDbStJhgeoVn0pWH.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 11566,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1465897,
+      "imdb_id": "tt36958465",
+      "title_ru": "Raas",
+      "title_en": "Raas",
+      "title_original": "রাস",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-13",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vj6xNjxaERcNNRtQxMFPO0JNYe6.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 64,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1697644,
+      "imdb_id": "tt43343177",
+      "title_ru": "River",
+      "title_en": "River",
+      "title_original": "Fluss",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-13",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/lJpp3kGKztoWOnfpVDKoHJBdIEb.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 5,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1294972,
+      "imdb_id": "tt36639400",
+      "title_ru": "The Last Blossom",
+      "title_en": "The Last Blossom",
+      "title_original": "ホウセンカ",
+      "genre_ids": [
+        16,
+        18
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "драма"
+      ],
+      "genres_en": [
+        "Animation",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-13",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/pFQrsh38XqJ31zZ9zQ3rrb7EepD.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 205,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1490214,
+      "imdb_id": "tt37818327",
+      "title_ru": "Солнце никогда не садится",
+      "title_en": "The Sun Never Sets",
+      "title_original": "The Sun Never Sets",
+      "genre_ids": [
+        10749,
+        18,
+        35
+      ],
+      "genres_ru": [
+        "мелодрама",
+        "драма",
+        "комедия"
+      ],
+      "genres_en": [
+        "Romance",
+        "Drama",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-13",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/hpzzGHyVN4nE0GzqoAu12ko6ER3.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 21,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1227739,
+      "imdb_id": "tt26733325",
+      "title_ru": "Возвращение домой",
+      "title_en": "Homebound",
+      "title_original": "Homebound",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-14",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vyezjSvSdLO0bvr6jSNuFi6yuiw.jpg",
+      "imdb_rating": 7.9,
+      "imdb_votes": 14518,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 668640,
+      "imdb_id": "tt11700260",
+      "title_ru": "Главная роль",
+      "title_en": "Official Competition",
+      "title_original": "Competencia oficial",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-14",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xvsiRSy1kIwlySogzOxkCFrJWYx.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 18035,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1180798,
+      "imdb_id": "tt29513272",
+      "title_ru": "Семейный сезон",
+      "title_en": "A Season for Family",
+      "title_original": "A Season for Family",
+      "genre_ids": [
+        10770,
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "телевизионный фильм",
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "TV Movie",
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-15",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/8M3xrDQENIwptlUJgld6meNwReD.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 1013,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 501170,
+      "imdb_id": "tt5606664",
+      "title_ru": "Доктор Сон",
+      "title_en": "Doctor Sleep",
+      "title_original": "Doctor Sleep",
+      "genre_ids": [
+        27,
+        14
+      ],
+      "genres_ru": [
+        "ужасы",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Horror",
+        "Fantasy"
+      ],
+      "digital_release_date": "2026-10-15",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/p69QzIBbN06aTYqRRiCOY1emNBh.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 248679,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1686999,
+      "imdb_id": "tt33095205",
+      "title_ru": "Enna Vilai",
+      "title_en": "Enna Vilai",
+      "title_original": "என்ன விலை",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-15",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/NkklX4xp3BlLmlMT0LXehkStJZ.jpg",
+      "imdb_rating": 8.7,
+      "imdb_votes": 1104,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1288069,
+      "imdb_id": "tt6262770",
+      "title_ru": "Тенцинг",
+      "title_en": "Tenzing",
+      "title_original": "Tenzing",
+      "genre_ids": [
+        18,
+        36,
+        12
+      ],
+      "genres_ru": [
+        "драма",
+        "история",
+        "приключения"
+      ],
+      "genres_en": [
+        "Drama",
+        "History",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-15",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 289,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1759875,
+      "imdb_id": "tt34992230",
+      "title_ru": "The Militia",
+      "title_en": "The Militia",
+      "title_original": "The Militia",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-15",
+      "digital_release_country": "BR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/bBAeq5GAt6QKUL5eS0UalflLysH.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 29,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 698687,
+      "imdb_id": "tt8864596",
+      "title_ru": "Трансформеры: Начало",
+      "title_en": "Transformers One",
+      "title_original": "Transformers One",
+      "genre_ids": [
+        16,
+        878,
+        12,
+        10751
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "фантастика",
+        "приключения",
+        "семейный"
+      ],
+      "genres_en": [
+        "Animation",
+        "Science Fiction",
+        "Adventure",
+        "Family"
+      ],
+      "digital_release_date": "2026-10-15",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/iRCgqpdVE4wyLQvGYU3ZP7pAtUc.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 70745,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1593963,
+      "imdb_id": "tt39014003",
+      "title_ru": "Adinaasam Vellapokkam",
+      "title_en": "Adinaasam Vellapokkam",
+      "title_original": "അടിനാസം വെള്ളപ്പൊക്കം",
+      "genre_ids": [
+        35
+      ],
+      "genres_ru": [
+        "комедия"
+      ],
+      "genres_en": [
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rI7Yu92YOdukaaKopASwipGLcXD.jpg",
+      "imdb_rating": 9.1,
+      "imdb_votes": 884,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1552357,
+      "imdb_id": "tt37900058",
+      "title_ru": "Kurla To Vengurla",
+      "title_en": "Kurla To Vengurla",
+      "title_original": "Kurla To Vengurla",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/Qdlzw9lIqokSq3iJ0QJNg5FAny.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 50,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1799722,
+      "imdb_id": "tt43680757",
+      "title_ru": "Mandelbrot Hall: Pilot",
+      "title_en": "Mandelbrot Hall: Pilot",
+      "title_original": "Mandelbrot Hall: Pilot",
+      "genre_ids": [
+        27,
+        9648,
+        35,
+        14,
+        16
+      ],
+      "genres_ru": [
+        "ужасы",
+        "детектив",
+        "комедия",
+        "фэнтези",
+        "мультфильм"
+      ],
+      "genres_en": [
+        "Horror",
+        "Mystery",
+        "Comedy",
+        "Fantasy",
+        "Animation"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/drO89iCaTXxyV7uwNtSlcYvzff1.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 12,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1580672,
+      "imdb_id": "tt37536023",
+      "title_ru": "Mantra Muugdha",
+      "title_en": "Mantra Muugdha",
+      "title_original": "ମନ୍ତ୍ରମୁଗ୍ଧ",
+      "genre_ids": [
+        35,
+        14
+      ],
+      "genres_ru": [
+        "комедия",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4x2pE7RBAT6sX24koUr9VrVmynQ.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 321,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1730565,
+      "imdb_id": "tt37681052",
+      "title_ru": "Monitor",
+      "title_en": "Monitor",
+      "title_original": "Monitor",
+      "genre_ids": [
+        16,
+        27
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "ужасы"
+      ],
+      "genres_en": [
+        "Animation",
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/dLXSPYhdBi6eL8jlAVyaahmne1d.jpg",
+      "imdb_rating": 10.0,
+      "imdb_votes": 6,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1799570,
+      "imdb_id": "tt39558804",
+      "title_ru": "Sugriva",
+      "title_en": "Sugriva",
+      "title_original": "Sugriva",
+      "genre_ids": [
+        28,
+        18,
+        53
+      ],
+      "genres_ru": [
+        "боевик",
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Action",
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/dtnutjXr4bXhwfniuX4jaSholLT.jpg",
+      "imdb_rating": 8.9,
+      "imdb_votes": 1025,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 204,
+      "imdb_id": "tt0046268",
+      "title_ru": "Плата за страх",
+      "title_en": "The Wages of Fear",
+      "title_original": "Le Salaire de la peur",
+      "genre_ids": [
+        18,
+        53,
+        12
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер",
+        "приключения"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/sNOvIp4X0fmCMfgEs2ww5IyMgFm.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 74568,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1582437,
+      "imdb_id": "tt38907742",
+      "title_ru": "Грозовой перевал: дом проклятых",
+      "title_en": "Wuthering Heights: The House of the Damned",
+      "title_original": "Wuthering Heights: The House of the Damned",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-16",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/mcJwNjTb8MmGQFuwQph2XgVAMZI.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 133,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 462,
+      "imdb_id": "tt0195685",
+      "title_ru": "Эрин Брокович",
+      "title_en": "Erin Brockovich",
+      "title_original": "Erin Brockovich",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-18",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eMs20iUQyZVs05Ck7Q0LNnRsstr.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 250356,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1318413,
+      "imdb_id": "tt32547691",
+      "title_ru": "Давление",
+      "title_en": "Pressure",
+      "title_original": "Pressure",
+      "genre_ids": [
+        53,
+        36,
+        10752
+      ],
+      "genres_ru": [
+        "триллер",
+        "история",
+        "военный"
+      ],
+      "genres_en": [
+        "Thriller",
+        "History",
+        "War"
+      ],
+      "digital_release_date": "2026-10-18",
+      "digital_release_country": "BR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gFjEggtrejCN79r6SXRjM269OtG.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 37390,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 961,
+      "imdb_id": "tt0017925",
+      "title_ru": "Паровоз Генерал",
+      "title_en": "The General",
+      "title_original": "The General",
+      "genre_ids": [
+        35,
+        10752,
+        10749
+      ],
+      "genres_ru": [
+        "комедия",
+        "военный",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Comedy",
+        "War",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-18",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4NmV1Wei4LxT2lpjViCAScgCZLq.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 106379,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 4311,
+      "imdb_id": "tt0059050",
+      "title_ru": "Убийцы в спальных вагонах",
+      "title_en": "The Sleeping Car Murders",
+      "title_original": "Compartiment tueurs",
+      "genre_ids": [
+        80,
+        53,
+        9648
+      ],
+      "genres_ru": [
+        "криминал",
+        "триллер",
+        "детектив"
+      ],
+      "genres_en": [
+        "Crime",
+        "Thriller",
+        "Mystery"
+      ],
+      "digital_release_date": "2026-10-18",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/msJGRCLe3WV3geKQ0suhVAlms97.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 2257,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 491625,
+      "imdb_id": "tt2395469",
+      "title_ru": "Парень из гетто",
+      "title_en": "Gully Boy",
+      "title_original": "गल्ली बॉय",
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "genres_ru": [
+        "музыка",
+        "драма"
+      ],
+      "genres_en": [
+        "Music",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-19",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4RE7TD5TqEXbPKyUHcn7CSeMlrJ.jpg",
+      "imdb_rating": 7.9,
+      "imdb_votes": 48066,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1317149,
+      "imdb_id": "tt31514146",
+      "title_ru": "Я ругаюсь",
+      "title_en": "I Swear",
+      "title_original": "I Swear",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "genres_ru": [
+        "драма",
+        "история"
+      ],
+      "genres_en": [
+        "Drama",
+        "History"
+      ],
+      "digital_release_date": "2026-10-19",
+      "digital_release_country": "IL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 68158,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 62789,
+      "imdb_id": "tt0074262",
+      "title_ru": "Сиятельные трупы",
+      "title_en": "Illustrious Corpses",
+      "title_original": "Cadaveri eccellenti",
+      "genre_ids": [
+        53
+      ],
+      "genres_ru": [
+        "триллер"
+      ],
+      "genres_en": [
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-19",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ue4OgtZ9pUvthCNH9h3vK2xeNqL.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 2847,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 717787,
+      "imdb_id": "tt38266673",
+      "title_ru": "Твоё письмо",
+      "title_en": "Your Letter",
+      "title_original": "연의 편지",
+      "genre_ids": [
+        16,
+        18,
+        9648,
+        12
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "драма",
+        "детектив",
+        "приключения"
+      ],
+      "genres_en": [
+        "Animation",
+        "Drama",
+        "Mystery",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-19",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/lC6PjARz6pq2kDpbnfkefytKf7O.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 410,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 982116,
+      "imdb_id": "tt16304140",
+      "title_ru": "Butthole Surfers: The Hole Truth and Nothing Butt",
+      "title_en": "Butthole Surfers: The Hole Truth and Nothing Butt",
+      "title_original": "Butthole Surfers: The Hole Truth and Nothing Butt",
+      "genre_ids": [
+        99,
+        10402
+      ],
+      "genres_ru": [
+        "документальный",
+        "музыка"
+      ],
+      "genres_en": [
+        "Documentary",
+        "Music"
+      ],
+      "digital_release_date": "2026-10-20",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uG7aqinXD5EgXtm2MTJma37t7V8.jpg",
+      "imdb_rating": 8.5,
+      "imdb_votes": 266,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 982159,
+      "imdb_id": "tt20202992",
+      "title_ru": "Fairy Folk",
+      "title_en": "Fairy Folk",
+      "title_original": "Fairy Folk",
+      "genre_ids": [
+        35,
+        14
+      ],
+      "genres_ru": [
+        "комедия",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Fantasy"
+      ],
+      "digital_release_date": "2026-10-20",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/lpZuY35OmevlfFnw5UivSigQ8cO.jpg",
+      "imdb_rating": 7.9,
+      "imdb_votes": 45,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1255718,
+      "imdb_id": "tt27550504",
+      "title_ru": "Полицейский в штатском",
+      "title_en": "Plainclothes",
+      "title_original": "Plainclothes",
+      "genre_ids": [
+        18,
+        10749,
+        80
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама",
+        "криминал"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-20",
+      "digital_release_country": "IT",
+      "poster_url": "https://image.tmdb.org/t/p/w500/bT5QN5QARV5TblAt9jDVQQsnSec.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 5775,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 258857,
+      "imdb_id": "tt2932226",
+      "title_ru": "Staircases to Nowhere: Making Stanley Kubrick's The Shining",
+      "title_en": "Staircases to Nowhere: Making Stanley Kubrick's The Shining",
+      "title_original": "Staircases to Nowhere: Making Stanley Kubrick's The Shining",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-20",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/eseK8MXO5tvtlo2xUJdG7FQPdgD.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 85,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1492865,
+      "imdb_id": "tt36748956",
+      "title_ru": "Steal This Story, Please!",
+      "title_en": "Steal This Story, Please!",
+      "title_original": "Steal This Story, Please!",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-20",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/d7SqbT4URKiw1zmmZBSy0aTzD50.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 220,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 76100,
+      "imdb_id": "tt1860190",
+      "title_ru": "Carole King & James Taylor | Live at the Troubadour",
+      "title_en": "Carole King & James Taylor | Live at the Troubadour",
+      "title_original": "Carole King & James Taylor | Live at the Troubadour",
+      "genre_ids": [
+        10402
+      ],
+      "genres_ru": [
+        "музыка"
+      ],
+      "genres_en": [
+        "Music"
+      ],
+      "digital_release_date": "2026-10-21",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vMota7rVVFJcyjb9lrQRzUo12gz.jpg",
+      "imdb_rating": 8.7,
+      "imdb_votes": 50,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1713546,
+      "imdb_id": "tt42362291",
+      "title_ru": "Jeena Dil Se",
+      "title_en": "Jeena Dil Se",
+      "title_original": "Jeena Dil Se",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "genres_ru": [
+        "мелодрама",
+        "комедия"
+      ],
+      "genres_en": [
+        "Romance",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-21",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/pEsKzjFxuwvw67mBEfvQaH7yKP4.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 1578,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1418982,
+      "imdb_id": "tt35315343",
+      "title_ru": "A Matter of Life and Death",
+      "title_en": "A Matter of Life and Death",
+      "title_original": "مسألة حياة أو موت",
+      "genre_ids": [
+        10749,
+        14,
+        18,
+        35
+      ],
+      "genres_ru": [
+        "мелодрама",
+        "фэнтези",
+        "драма",
+        "комедия"
+      ],
+      "genres_en": [
+        "Romance",
+        "Fantasy",
+        "Drama",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-22",
+      "digital_release_country": "SA",
+      "poster_url": "https://image.tmdb.org/t/p/w500/u5n8QwiWNEUKzLa8DwuFanwIplx.jpg",
+      "imdb_rating": 8.8,
+      "imdb_votes": 13,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1802058,
+      "imdb_id": "tt46078866",
+      "title_ru": "CMA Presents I Will Always Love You: A Celebration of Dolly Parton",
+      "title_en": "CMA Presents I Will Always Love You: A Celebration of Dolly Parton",
+      "title_original": "CMA Presents I Will Always Love You: A Celebration of Dolly Parton",
+      "genre_ids": [
+        10402,
+        99
+      ],
+      "genres_ru": [
+        "музыка",
+        "документальный"
+      ],
+      "genres_en": [
+        "Music",
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-22",
+      "digital_release_country": "SG",
+      "poster_url": "https://image.tmdb.org/t/p/w500/tlNqQwhyta5j1oJDISCPFId15EX.jpg",
+      "imdb_rating": 8.9,
+      "imdb_votes": 46,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1294698,
+      "imdb_id": "tt34794183",
+      "title_ru": "Дело №137",
+      "title_en": "Case 137",
+      "title_original": "Dossier 137",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "genres_ru": [
+        "криминал",
+        "драма"
+      ],
+      "genres_en": [
+        "Crime",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-22",
+      "digital_release_country": "CA",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4QL4LcsYX8mdNktst0CnyHQDRLg.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 4301,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1720100,
+      "imdb_id": "tt32253489",
+      "title_ru": "Detention",
+      "title_en": "Detention",
+      "title_original": "Detention",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "genres_ru": [
+        "драма",
+        "комедия"
+      ],
+      "genres_en": [
+        "Drama",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-22",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/cDt0sXakrTQMfiKHQ749MyRmruc.jpg",
+      "imdb_rating": 8.9,
+      "imdb_votes": 21,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1753750,
+      "imdb_id": "tt44650563",
+      "title_ru": "National Theatre at Home: War Horse",
+      "title_en": "National Theatre at Home: War Horse",
+      "title_original": "National Theatre at Home: War Horse",
+      "genre_ids": [
+        18,
+        10752
+      ],
+      "genres_ru": [
+        "драма",
+        "военный"
+      ],
+      "genres_en": [
+        "Drama",
+        "War"
+      ],
+      "digital_release_date": "2026-10-22",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/x4d5qYyjYBJcYIFujoVIKURod28.jpg",
+      "imdb_rating": 8.4,
+      "imdb_votes": 8,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1500536,
+      "imdb_id": "tt36598036",
+      "title_ru": "Нанкинский фотограф",
+      "title_en": "Dead to Rights",
+      "title_original": "南京照相馆",
+      "genre_ids": [
+        10752,
+        18,
+        36
+      ],
+      "genres_ru": [
+        "военный",
+        "драма",
+        "история"
+      ],
+      "genres_en": [
+        "War",
+        "Drama",
+        "History"
+      ],
+      "digital_release_date": "2026-10-23",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rx9xTly73NssFHPg9gKrX9tJdDI.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 3810,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1805372,
+      "imdb_id": "tt43310374",
+      "title_ru": "I'm Handsome (Since 2009)",
+      "title_en": "I'm Handsome (Since 2009)",
+      "title_original": "I'm Handsome (Since 2009)",
+      "genre_ids": [
+        10751
+      ],
+      "genres_ru": [
+        "семейный"
+      ],
+      "genres_en": [
+        "Family"
+      ],
+      "digital_release_date": "2026-10-23",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zN6T8JBjYWdcls2IEcQfTGInrQm.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 1542,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1664760,
+      "imdb_id": "tt42834196",
+      "title_ru": "Possessed",
+      "title_en": "Possessed",
+      "title_original": "ผีเข้า",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-23",
+      "digital_release_country": "TH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/nQP2qBDxFYhgTY1mmDRVOz7C0aA.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 12,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1422600,
+      "imdb_id": "tt35521365",
+      "title_ru": "Strange Journey: The Story of Rocky Horror",
+      "title_en": "Strange Journey: The Story of Rocky Horror",
+      "title_original": "Strange Journey: The Story of Rocky Horror",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-23",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/dsmzcTYLKrHLeZZZXiLPN0uUuYH.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 570,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1567937,
+      "imdb_id": "tt38775487",
+      "title_ru": "Пустой пистолет",
+      "title_en": "V",
+      "title_original": "空枪",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "genres_ru": [
+        "драма",
+        "криминал"
+      ],
+      "genres_en": [
+        "Drama",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-23",
+      "digital_release_country": "CN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/rNqQQ3hFknhKpy8OTyGfzk7FY20.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 81,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1379266,
+      "imdb_id": "tt35231039",
+      "title_ru": "Национальное достояние",
+      "title_en": "Kokuho",
+      "title_original": "国宝",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-24",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/z6Kx30dhspFmGcXHjdrv9KQ7Bk8.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 6403,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 4174,
+      "imdb_id": "tt0038109",
+      "title_ru": "Заворожённый",
+      "title_en": "Spellbound",
+      "title_original": "Spellbound",
+      "genre_ids": [
+        18,
+        9648,
+        53
+      ],
+      "genres_ru": [
+        "драма",
+        "детектив",
+        "триллер"
+      ],
+      "genres_en": [
+        "Drama",
+        "Mystery",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-25",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/dPAox7jGScLBvxKLeRptJIBF7v.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 55841,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1529126,
+      "imdb_id": "tt10118256",
+      "title_ru": "Sticky",
+      "title_en": "Sticky",
+      "title_original": "Sticky",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "genres_ru": [
+        "комедия",
+        "криминал"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Crime"
+      ],
+      "digital_release_date": "2026-10-25",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ddW3SacTCJqODQ6OuLZ1j3E7oEJ.jpg",
+      "imdb_rating": 9.6,
+      "imdb_votes": 9,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 14674,
+      "imdb_id": "tt0051899",
+      "title_ru": "Человек с запада",
+      "title_en": "Man of the West",
+      "title_original": "Man of the West",
+      "genre_ids": [
+        37
+      ],
+      "genres_ru": [
+        "вестерн"
+      ],
+      "genres_en": [
+        "Western"
+      ],
+      "digital_release_date": "2026-10-26",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/fh9vTJ5mOkKK5nZ1LRhfvP5JrD7.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 10979,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1317288,
+      "imdb_id": "tt32916440",
+      "title_ru": "Марти Великолепный",
+      "title_en": "Marty Supreme",
+      "title_original": "Marty Supreme",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-26",
+      "digital_release_country": "TH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 223911,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 426063,
+      "imdb_id": "tt5040012",
+      "title_ru": "Носферату",
+      "title_en": "Nosferatu",
+      "title_original": "Nosferatu",
+      "genre_ids": [
+        27,
+        14
+      ],
+      "genres_ru": [
+        "ужасы",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Horror",
+        "Fantasy"
+      ],
+      "digital_release_date": "2026-10-26",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/d0B8xDdqBZlzlPEzES8lu5LlNQn.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 278787,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1503762,
+      "imdb_id": "tt13609648",
+      "title_ru": "Разум и чувства",
+      "title_en": "Sense and Sensibility",
+      "title_original": "Sense and Sensibility",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-26",
+      "digital_release_country": "GB",
+      "poster_url": "https://image.tmdb.org/t/p/w500/czsyPHosFNbh4PPqXfqWu1aBXnA.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 1752,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1144107,
+      "imdb_id": "tt37284198",
+      "title_ru": "The Legend of Hei 2",
+      "title_en": "The Legend of Hei 2",
+      "title_original": "罗小黑战记 2",
+      "genre_ids": [
+        16,
+        14,
+        28,
+        12
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "фэнтези",
+        "боевик",
+        "приключения"
+      ],
+      "genres_en": [
+        "Animation",
+        "Fantasy",
+        "Action",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-10-26",
+      "digital_release_country": "PL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/dRCUBiTKtsmju3fmSS4MK0ywcqR.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 2055,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1329016,
+      "imdb_id": "tt33095251",
+      "title_ru": "Тони",
+      "title_en": "Tony",
+      "title_original": "Tony",
+      "genre_ids": [
+        18,
+        35
+      ],
+      "genres_ru": [
+        "драма",
+        "комедия"
+      ],
+      "genres_en": [
+        "Drama",
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-26",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
+      "imdb_rating": 7.6,
+      "imdb_votes": 8219,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 43418,
+      "imdb_id": "tt1418646",
+      "title_ru": "Ниже холма 60",
+      "title_en": "Beneath Hill 60",
+      "title_original": "Beneath Hill 60",
+      "genre_ids": [
+        18,
+        36,
+        10752
+      ],
+      "genres_ru": [
+        "драма",
+        "история",
+        "военный"
+      ],
+      "genres_en": [
+        "Drama",
+        "History",
+        "War"
+      ],
+      "digital_release_date": "2026-10-27",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5eHtQC77fmILNRd7FG70SOdChs8.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 9320,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1355388,
+      "imdb_id": "tt18468926",
+      "title_ru": "Concessions",
+      "title_en": "Concessions",
+      "title_original": "Concessions",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-27",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ooH1RBIh9tSp8XmEuIstc0h6cyF.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 54,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 191882,
+      "imdb_id": "tt0143248",
+      "title_ru": "Felice… Felice…",
+      "title_en": "Felice… Felice…",
+      "title_original": "Felice… Felice…",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-27",
+      "digital_release_country": "NL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/sL0RcDAAyrtD342tHgphzqSvlAS.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 125,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1465063,
+      "imdb_id": "tt36583977",
+      "title_ru": "Остров забвения",
+      "title_en": "Forgotten Island",
+      "title_original": "Forgotten Island",
+      "genre_ids": [
+        16,
+        12,
+        14,
+        35,
+        10751
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "приключения",
+        "фэнтези",
+        "комедия",
+        "семейный"
+      ],
+      "genres_en": [
+        "Animation",
+        "Adventure",
+        "Fantasy",
+        "Comedy",
+        "Family"
+      ],
+      "digital_release_date": "2026-10-27",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/myd1K3gefdNAWFsGNRDdMeiK9Qg.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 1331,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1809199,
+      "imdb_id": "tt46670803",
+      "title_ru": "Zainab Johnson: Toxically Optimistic",
+      "title_en": "Zainab Johnson: Toxically Optimistic",
+      "title_original": "Zainab Johnson: Toxically Optimistic",
+      "genre_ids": [
+        35
+      ],
+      "genres_ru": [
+        "комедия"
+      ],
+      "genres_en": [
+        "Comedy"
+      ],
+      "digital_release_date": "2026-10-27",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/45aRvdvuLz2mooiHAe3j1bCFfHL.jpg",
+      "imdb_rating": 8.2,
+      "imdb_votes": 27,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1452267,
+      "imdb_id": "tt36361934",
+      "title_ru": "Кокон",
+      "title_en": "cocoon - One Summer of Girlhood",
+      "title_original": "cocoon～ある夏の少女たちより～",
+      "genre_ids": [
+        16,
+        18,
+        10752
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "драма",
+        "военный"
+      ],
+      "genres_en": [
+        "Animation",
+        "Drama",
+        "War"
+      ],
+      "digital_release_date": "2026-10-27",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/pTql9ek3bCdTkZTh2UvvXIy69qN.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 234,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1480856,
+      "imdb_id": "tt37405791",
+      "title_ru": "Hanging by a Wire",
+      "title_en": "Hanging by a Wire",
+      "title_original": "Hanging by a Wire",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-10-28",
+      "digital_release_country": "BR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/duZIrDULyk3PBIxoUmKXm3uqlBv.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 32,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1483644,
+      "imdb_id": "tt35713314",
+      "title_ru": "The Dysphoria",
+      "title_en": "The Dysphoria",
+      "title_original": "The Dysphoria",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-28",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ycNjhmgd1UOrw3VPTXUXQX4TQ6q.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 22,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 2649,
+      "imdb_id": "tt0119174",
+      "title_ru": "Игра",
+      "title_en": "The Game",
+      "title_original": "The Game",
+      "genre_ids": [
+        18,
+        53,
+        9648
+      ],
+      "genres_ru": [
+        "драма",
+        "триллер",
+        "детектив"
+      ],
+      "genres_en": [
+        "Drama",
+        "Thriller",
+        "Mystery"
+      ],
+      "digital_release_date": "2026-10-28",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4UOa079915QjiTA2u5hT2yKVgUu.jpg",
+      "imdb_rating": 7.7,
+      "imdb_votes": 478430,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1814023,
+      "imdb_id": "tt43635494",
+      "title_ru": "Adhey Neevu Adhey Nenu",
+      "title_en": "Adhey Neevu Adhey Nenu",
+      "title_original": "Adhey Neevu Adhey Nenu",
+      "genre_ids": [
+        10749,
+        80,
+        53
+      ],
+      "genres_ru": [
+        "мелодрама",
+        "криминал",
+        "триллер"
+      ],
+      "genres_en": [
+        "Romance",
+        "Crime",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-29",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ct7Rzpyf6x0amH7J5dyjHi1RHMF.jpg",
+      "imdb_rating": 9.0,
+      "imdb_votes": 1044,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1515692,
+      "imdb_id": "tt44090278",
+      "title_ru": "Baththa",
+      "title_en": "Baththa",
+      "title_original": "பத்தா",
+      "genre_ids": [
+        18,
+        35,
+        28
+      ],
+      "genres_ru": [
+        "драма",
+        "комедия",
+        "боевик"
+      ],
+      "genres_en": [
+        "Drama",
+        "Comedy",
+        "Action"
+      ],
+      "digital_release_date": "2026-10-29",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/7wHBYs8HHmTGe4nXLpMEAoDSK2o.jpg",
+      "imdb_rating": 9.2,
+      "imdb_votes": 5566,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1165369,
+      "imdb_id": "tt35856133",
+      "title_ru": "Де Голль. Часть 2. Свобода",
+      "title_en": "De Gaulle: Liberté",
+      "title_original": "La Bataille de Gaulle : J'écris ton nom",
+      "genre_ids": [
+        36,
+        18,
+        10752
+      ],
+      "genres_ru": [
+        "история",
+        "драма",
+        "военный"
+      ],
+      "genres_en": [
+        "History",
+        "Drama",
+        "War"
+      ],
+      "digital_release_date": "2026-10-29",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vyI8RnUy0tV7F0rj0WUjlNKIIHx.jpg",
+      "imdb_rating": 8.0,
+      "imdb_votes": 1748,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1456196,
+      "imdb_id": "tt43407940",
+      "title_ru": "Thella Kaagitham",
+      "title_en": "Thella Kaagitham",
+      "title_original": "తెల్లకాగితం",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-29",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/siqVI5n20WTpE5C8u76pqRAHZxW.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 67,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1733095,
+      "imdb_id": "tt44567397",
+      "title_ru": "Almost Love",
+      "title_en": "Almost Love",
+      "title_original": "愛のごとく",
+      "genre_ids": [
+        18,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/8SmVspWzd64Xb3eVAn6ZBJLRivb.jpg",
+      "imdb_rating": 9.6,
+      "imdb_votes": 17,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1773328,
+      "imdb_id": "tt38349121",
+      "title_ru": "Cold Call",
+      "title_en": "Cold Call",
+      "title_original": "Cold Call",
+      "genre_ids": [
+        35,
+        10751
+      ],
+      "genres_ru": [
+        "комедия",
+        "семейный"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Family"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/nARglbGFgqIwxxlsIZUrJCQI4lp.jpg",
+      "imdb_rating": 8.7,
+      "imdb_votes": 1088,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1492252,
+      "imdb_id": "tt35610488",
+      "title_ru": "Cyber Protocol",
+      "title_en": "Cyber Protocol",
+      "title_original": "Cyber Protocol",
+      "genre_ids": [
+        878,
+        53
+      ],
+      "genres_ru": [
+        "фантастика",
+        "триллер"
+      ],
+      "genres_en": [
+        "Science Fiction",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "KR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/btU6HHsmB90kSlrwaQRAPp01rGk.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 7,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1819929,
+      "imdb_id": "tt44870307",
+      "title_ru": "G.O.A.T.: Muhammad Ali’s Blueprint to Greatness",
+      "title_en": "G.O.A.T.: Muhammad Ali’s Blueprint to Greatness",
+      "title_original": "G.O.A.T.: Muhammad Ali’s Blueprint to Greatness",
+      "genre_ids": [],
+      "genres_ru": [],
+      "genres_en": [],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/XTrFaS1xAaKhJLIEfzrz1hZI2l.jpg",
+      "imdb_rating": 9.3,
+      "imdb_votes": 9,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1802464,
+      "imdb_id": "tt39536070",
+      "title_ru": "Meethe Mein Kya Hai",
+      "title_en": "Meethe Mein Kya Hai",
+      "title_original": "मीठे में क्या है",
+      "genre_ids": [
+        10751,
+        35,
+        18
+      ],
+      "genres_ru": [
+        "семейный",
+        "комедия",
+        "драма"
+      ],
+      "genres_en": [
+        "Family",
+        "Comedy",
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xTJYIPjyuCbkc7zEtfAFJfVDSV5.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 142,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1339713,
+      "imdb_id": "tt37287335",
+      "title_ru": "Обсессия",
+      "title_en": "Obsession",
+      "title_original": "Obsession",
+      "genre_ids": [
+        27,
+        53
+      ],
+      "genres_ru": [
+        "ужасы",
+        "триллер"
+      ],
+      "genres_en": [
+        "Horror",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "CN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 392842,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1807303,
+      "imdb_id": "tt40384472",
+      "title_ru": "Pining for Douglas",
+      "title_en": "Pining for Douglas",
+      "title_original": "Pining for Douglas",
+      "genre_ids": [
+        10770,
+        10749
+      ],
+      "genres_ru": [
+        "телевизионный фильм",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "TV Movie",
+        "Romance"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "CA",
+      "poster_url": "https://image.tmdb.org/t/p/w500/bXKj4rQtcRbkdP8xqmgzXmTg3kc.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 16,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1618200,
+      "imdb_id": "tt45370533",
+      "title_ru": "The Dark Heaven",
+      "title_en": "The Dark Heaven",
+      "title_original": "தீ டார்க் ஹெவன்",
+      "genre_ids": [
+        80,
+        53
+      ],
+      "genres_ru": [
+        "криминал",
+        "триллер"
+      ],
+      "genres_en": [
+        "Crime",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xFr0Q7j2JmOwBJnvImIgTAWBk4U.jpg",
+      "imdb_rating": 7.4,
+      "imdb_votes": 598,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1391798,
+      "imdb_id": "tt35473512",
+      "title_ru": "Winkle Twinkle",
+      "title_en": "Winkle Twinkle",
+      "title_original": "উইঙ্কল টুইঙ্কল",
+      "genre_ids": [
+        18
+      ],
+      "genres_ru": [
+        "драма"
+      ],
+      "genres_en": [
+        "Drama"
+      ],
+      "digital_release_date": "2026-10-30",
+      "digital_release_country": "IN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/z1x8Ti2xPMOAcUlFCnUUpf9oR2M.jpg",
+      "imdb_rating": 8.0,
+      "imdb_votes": 44,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1817367,
+      "imdb_id": "tt43714804",
+      "title_ru": "Calling All Villains",
+      "title_en": "Calling All Villains",
+      "title_original": "Calling All Villains",
+      "genre_ids": [
+        28,
+        12,
+        16,
+        35,
+        14,
+        878
+      ],
+      "genres_ru": [
+        "боевик",
+        "приключения",
+        "мультфильм",
+        "комедия",
+        "фэнтези",
+        "фантастика"
+      ],
+      "genres_en": [
+        "Action",
+        "Adventure",
+        "Animation",
+        "Comedy",
+        "Fantasy",
+        "Science Fiction"
+      ],
+      "digital_release_date": "2026-10-31",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/p6ZqU6M3UIkGEoOBlGNZWQdt1PO.jpg",
+      "imdb_rating": 8.9,
+      "imdb_votes": 72,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1812018,
+      "imdb_id": "tt48643663",
+      "title_ru": "The Cat and the Hatchet",
+      "title_en": "The Cat and the Hatchet",
+      "title_original": "The Cat and the Hatchet",
+      "genre_ids": [
+        27
+      ],
+      "genres_ru": [
+        "ужасы"
+      ],
+      "genres_en": [
+        "Horror"
+      ],
+      "digital_release_date": "2026-10-31",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/8ehfOtDOf8kopSahAQCMvCRIxBq.jpg",
+      "imdb_rating": 8.1,
+      "imdb_votes": 19,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1465549,
+      "imdb_id": "tt36589896",
+      "title_ru": "Bodyguard of Lies",
+      "title_en": "Bodyguard of Lies",
+      "title_original": "Bodyguard of Lies",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "IL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/5chPJRFWC2BVdaBj87YIHnB7rTc.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 281,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1461058,
+      "imdb_id": "tt36437006",
+      "title_ru": "Цена вершины",
+      "title_en": "Girl Climber",
+      "title_original": "Girl Climber",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "AU",
+      "poster_url": "https://image.tmdb.org/t/p/w500/gy1Z9iTbAyuuf8bTgg4i36LpxGJ.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 436,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 592350,
+      "imdb_id": "tt11107074",
+      "title_ru": "Моя геройская академия: Восхождение героев",
+      "title_en": "My Hero Academia: Heroes Rising",
+      "title_original": "僕のヒーローアカデミア THE MOVIE ヒーローズ：ライジング",
+      "genre_ids": [
+        16,
+        28,
+        14,
+        12
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "боевик",
+        "фэнтези",
+        "приключения"
+      ],
+      "genres_en": [
+        "Animation",
+        "Action",
+        "Fantasy",
+        "Adventure"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "PL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/kpWsIkfXrnQ1pmR79qAHHq7DPxc.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 13361,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 505262,
+      "imdb_id": "tt7745068",
+      "title_ru": "Моя геройская академия: Два героя",
+      "title_en": "My Hero Academia: Two Heroes",
+      "title_original": "僕のヒーローアカデミア THE MOVIE ～2人の英雄～",
+      "genre_ids": [
+        16,
+        28,
+        12,
+        14
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "боевик",
+        "приключения",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Animation",
+        "Action",
+        "Adventure",
+        "Fantasy"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "PL",
+      "poster_url": "https://image.tmdb.org/t/p/w500/hC4nTxdhXqFWzgqynGvvXVMiMNp.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 16257,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 223,
+      "imdb_id": "tt0032976",
+      "title_ru": "Ребекка",
+      "title_en": "Rebecca",
+      "title_original": "Rebecca",
+      "genre_ids": [
+        9648,
+        10749,
+        53
+      ],
+      "genres_ru": [
+        "детектив",
+        "мелодрама",
+        "триллер"
+      ],
+      "genres_en": [
+        "Mystery",
+        "Romance",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "DE",
+      "poster_url": "https://image.tmdb.org/t/p/w500/1qz3qUOHnVy7dL7M7G8jSErxE4b.jpg",
+      "imdb_rating": 8.0,
+      "imdb_votes": 162382,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 49051,
+      "imdb_id": "tt0903624",
+      "title_ru": "Хоббит: Нежданное путешествие",
+      "title_en": "The Hobbit: An Unexpected Journey",
+      "title_original": "The Hobbit: An Unexpected Journey",
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "genres_ru": [
+        "приключения",
+        "фэнтези",
+        "боевик"
+      ],
+      "genres_en": [
+        "Adventure",
+        "Fantasy",
+        "Action"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/yHA9Fc37VmpUA5UncTxxo3rTGVA.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 938759,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 57158,
+      "imdb_id": "tt1170358",
+      "title_ru": "Хоббит: Пустошь Смауга",
+      "title_en": "The Hobbit: The Desolation of Smaug",
+      "title_original": "The Hobbit: The Desolation of Smaug",
+      "genre_ids": [
+        14,
+        12,
+        28
+      ],
+      "genres_ru": [
+        "фэнтези",
+        "приключения",
+        "боевик"
+      ],
+      "genres_en": [
+        "Fantasy",
+        "Adventure",
+        "Action"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "PH",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xQYiXsheRCDBA39DOrmaw1aSpbk.jpg",
+      "imdb_rating": 7.8,
+      "imdb_votes": 762803,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1124142,
+      "imdb_id": "tt27706593",
+      "title_ru": "Гнев улья",
+      "title_en": "The Rivals of Amziah King",
+      "title_original": "The Rivals of Amziah King",
+      "genre_ids": [
+        80,
+        18,
+        53
+      ],
+      "genres_ru": [
+        "криминал",
+        "драма",
+        "триллер"
+      ],
+      "genres_en": [
+        "Crime",
+        "Drama",
+        "Thriller"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "NZ",
+      "poster_url": "https://image.tmdb.org/t/p/w500/xAdcsPCcW3I0bS4zUwDHWWZjSpd.jpg",
+      "imdb_rating": 7.3,
+      "imdb_votes": 3018,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 1340449,
+      "imdb_id": "tt33055004",
+      "title_ru": "Wisdom of Happiness",
+      "title_en": "Wisdom of Happiness",
+      "title_original": "Wisdom of Happiness",
+      "genre_ids": [
+        99
+      ],
+      "genres_ru": [
+        "документальный"
+      ],
+      "genres_en": [
+        "Documentary"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "NZ",
+      "poster_url": "https://image.tmdb.org/t/p/w500/qigUDdP23FhLmMVKcy3TTdwFqQu.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 471,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    },
+    {
+      "tmdb_id": 750466,
+      "imdb_id": "tt12194006",
+      "title_ru": "Красота",
+      "title_en": "Wonderfully Beautiful",
+      "title_original": "Wunderschön",
+      "genre_ids": [
+        18,
+        35,
+        10749
+      ],
+      "genres_ru": [
+        "драма",
+        "комедия",
+        "мелодрама"
+      ],
+      "genres_en": [
+        "Drama",
+        "Comedy",
+        "Romance"
+      ],
+      "digital_release_date": "2026-11-01",
+      "digital_release_country": "RO",
+      "poster_url": "https://image.tmdb.org/t/p/w500/qTbPjy6F9HPxZkN5FO2820JaiN1.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 2957,
+      "rating_checked_at": "2026-11-18T16:55:34Z"
+    }
+  ]
+}
