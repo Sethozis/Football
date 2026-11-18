@@ -1,0 +1,32 @@
+name: Test Trakt releases
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Compare Trakt release volume
+        env:
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
+        run: python trakt_test.py
+
+      - name: Upload result
+        uses: actions/upload-artifact@v4
+        with:
+          name: trakt-test
+          path: trakt_test.json
