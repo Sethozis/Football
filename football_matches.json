@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T00:17:23.202207Z",
+  "generated_at": "2026-11-18T10:33:22.141870Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -122,7 +122,7 @@
       "id": "7853",
       "name": "AGF",
       "code": "AGF",
-      "country": "",
+      "country": "Denmark",
       "region": "",
       "is_national": false
     },
@@ -578,7 +578,7 @@
       "id": "441",
       "name": "Anderlecht",
       "code": "AND",
-      "country": "",
+      "country": "Belgium",
       "region": "",
       "is_national": false
     },
@@ -1762,7 +1762,7 @@
       "id": "570",
       "name": "Club Brugge",
       "code": "BRU",
-      "country": "",
+      "country": "Belgium",
       "region": "",
       "is_national": false
     },
@@ -45585,6 +45585,38 @@
       "away_team_code": "PUY"
     },
     {
+      "fixture_id": "401934495",
+      "kickoff_utc": "2026-11-27T19:00:00Z",
+      "tournament": "Coupe de France",
+      "country": "France",
+      "stage": "2026-27 Coupe de France, Eighth Round",
+      "season": 2026,
+      "league_id": "3952",
+      "league_slug": "fra.coupe_de_france",
+      "home_team_id": "134101",
+      "home_team": "Pays de Saint-Omer",
+      "home_team_code": "PAY",
+      "away_team_id": "2927",
+      "away_team": "Caen",
+      "away_team_code": "CAN"
+    },
+    {
+      "fixture_id": "401934500",
+      "kickoff_utc": "2026-11-27T19:00:00Z",
+      "tournament": "Coupe de France",
+      "country": "France",
+      "stage": "2026-27 Coupe de France, Eighth Round",
+      "season": 2026,
+      "league_id": "3952",
+      "league_slug": "fra.coupe_de_france",
+      "home_team_id": "134113",
+      "home_team": "Le Pays Du Valois",
+      "home_team_code": "VAL",
+      "away_team_id": "6732",
+      "away_team": "Valenciennes",
+      "away_team_code": "VAF"
+    },
+    {
       "fixture_id": "401884720",
       "kickoff_utc": "2026-11-27T19:30:00Z",
       "tournament": "Bundesliga",
@@ -45889,22 +45921,6 @@
       "away_team_code": "RSF"
     },
     {
-      "fixture_id": "401934495",
-      "kickoff_utc": "2026-11-28T12:30:00Z",
-      "tournament": "Coupe de France",
-      "country": "France",
-      "stage": "2026-27 Coupe de France, Eighth Round",
-      "season": 2026,
-      "league_id": "3952",
-      "league_slug": "fra.coupe_de_france",
-      "home_team_id": "134101",
-      "home_team": "Pays de Saint-Omer",
-      "home_team_code": "PAY",
-      "away_team_id": "2927",
-      "away_team": "Caen",
-      "away_team_code": "CAN"
-    },
-    {
       "fixture_id": "401934498",
       "kickoff_utc": "2026-11-28T12:30:00Z",
       "tournament": "Coupe de France",
@@ -45935,22 +45951,6 @@
       "away_team_id": "3267",
       "away_team": "AS Nancy Lorraine",
       "away_team_code": "ASN"
-    },
-    {
-      "fixture_id": "401934500",
-      "kickoff_utc": "2026-11-28T12:30:00Z",
-      "tournament": "Coupe de France",
-      "country": "France",
-      "stage": "2026-27 Coupe de France, Eighth Round",
-      "season": 2026,
-      "league_id": "3952",
-      "league_slug": "fra.coupe_de_france",
-      "home_team_id": "134113",
-      "home_team": "Le Pays Du Valois",
-      "home_team_code": "VAL",
-      "away_team_id": "6732",
-      "away_team": "Valenciennes",
-      "away_team_code": "VAF"
     },
     {
       "fixture_id": "401934502",
