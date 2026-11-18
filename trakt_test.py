@@ -220,6 +220,111 @@ def summarize(
     }
 
 
+def fetch_movie_releases(
+    trakt_id: int,
+    client_id: str,
+    timeout: int,
+) -> List[Dict[str, Any]]:
+    payload = request_json(
+        f"/movies/{trakt_id}/releases",
+        client_id,
+        timeout,
+    )
+    if not isinstance(payload, list):
+        return []
+    return [item for item in payload if isinstance(item, dict)]
+
+
+def summarize_digital(
+    rows: Iterable[Dict[str, Any]],
+    start: date,
+    end: date,
+    existing_tmdb_ids: set[int],
+    client_id: str,
+    timeout: int,
+) -> Dict[str, Any]:
+    movies: Dict[int, Dict[str, Any]] = {}
+    for item in rows:
+        movie = movie_from_item(item)
+        if movie is None:
+            continue
+        ids = movie.get("ids") or {}
+        if not isinstance(ids, dict):
+            continue
+        trakt_id = ids.get("trakt")
+        if isinstance(trakt_id, int) and trakt_id not in movies:
+            movies[trakt_id] = {
+                "title": movie.get("title"),
+                "year": movie.get("year"),
+                "tmdb_id": ids.get("tmdb"),
+                "trakt_id": trakt_id,
+                "imdb_id": ids.get("imdb"),
+            }
+
+    today = date.today()
+    digital_movies: Dict[int, Dict[str, Any]] = {}
+    dates: List[date] = []
+    future_dates: List[date] = []
+    first_of_month = 0
+    existing = 0
+    new = 0
+
+    for index, (trakt_id, movie) in enumerate(movies.items(), start=1):
+        releases = fetch_movie_releases(trakt_id, client_id, timeout)
+        matched_dates: List[date] = []
+        for release in releases:
+            release_type = str(
+                release.get("release_type") or ""
+            ).lower()
+            if release_type != "digital":
+                continue
+            released = parse_date(release.get("release_date"))
+            if released is None or released < start or released > end:
+                continue
+            matched_dates.append(released)
+
+        if matched_dates:
+            matched_dates.sort()
+            digital_movies[trakt_id] = {
+                **movie,
+                "digital_dates": [
+                    value.isoformat() for value in matched_dates
+                ],
+            }
+            dates.extend(matched_dates)
+            future_dates.extend(d for d in matched_dates if d >= today)
+            first_of_month += sum(1 for d in matched_dates if d.day == 1)
+            tmdb_id = movie.get("tmdb_id")
+            if isinstance(tmdb_id, int):
+                if tmdb_id in existing_tmdb_ids:
+                    existing += 1
+                else:
+                    new += 1
+
+        if index % 25 == 0:
+            logging.info(
+                "Trakt releases: %s/%s checked, %s digital",
+                index,
+                len(movies),
+                len(digital_movies),
+            )
+        time.sleep(0.12)
+
+    dates.sort()
+    return {
+        "checked_movies": len(movies),
+        "unique_movies": len(digital_movies),
+        "digital_release_dates_in_window": len(dates),
+        "future_releases": len(future_dates),
+        "first_of_month_dates": first_of_month,
+        "existing_tmdb_movies": existing,
+        "new_tmdb_movies": new,
+        "min_date": dates[0].isoformat() if dates else None,
+        "max_date": dates[-1].isoformat() if dates else None,
+        "sample": list(digital_movies.values())[:20],
+    }
+
+
 def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Compare Trakt release volume with movie_releases.json."
@@ -252,6 +357,11 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         type=int,
         default=HTTP_TIMEOUT,
         help="HTTP timeout in seconds",
+    )
+    parser.add_argument(
+        "--skip-details",
+        action="store_true",
+        help="skip per-movie digital release checks",
     )
     parser.add_argument(
         "--verbose",
@@ -302,6 +412,18 @@ def main(argv: Optional[List[str]] = None) -> int:
         args.timeout,
     )
 
+    combined_rows = streaming_rows + all_rows
+    digital = None
+    if not args.skip_details:
+        digital = summarize_digital(
+            combined_rows,
+            args.start,
+            end,
+            existing_tmdb_ids,
+            args.client_id,
+            args.timeout,
+        )
+
     summary = {
         "window": {
             "from": args.start.isoformat(),
@@ -323,6 +445,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             end,
             existing_tmdb_ids,
         ),
+        "digital_releases": digital,
     }
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(
@@ -340,6 +463,15 @@ def main(argv: Optional[List[str]] = None) -> int:
             block["release_dates_in_window"],
             block["min_date"],
             block["max_date"],
+        )
+    if digital is not None:
+        logging.info(
+            "digital: %s unique, %s future, %s dates, %s..%s",
+            digital["unique_movies"],
+            digital["future_releases"],
+            digital["digital_release_dates_in_window"],
+            digital["min_date"],
+            digital["max_date"],
         )
     logging.info("Wrote %s", args.output)
     return 0
