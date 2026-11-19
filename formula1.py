@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Collect the current Formula 1 season schedule from ESPN.
+"""Collect the current Formula 1 season schedule and standings from ESPN.
 
-The output contains only the schedule: Grand Prix name, circuit/country and
-every practice, qualifying, sprint and race session with its UTC start time.
-Results and driver information are intentionally not stored.
+The schedule contains Grand Prix name, circuit/country and every practice,
+qualifying, sprint and race session with its UTC start time. The standings
+file contains the drivers' championship and constructors' championship with
+localized Russian and English names and citizenship.
 """
 
 from __future__ import annotations
@@ -25,9 +26,90 @@ from typing import Any, Dict, List, Optional
 ESPN_SITE = "https://site.api.espn.com/apis/site/v2/sports"
 ESPN_CORE = "https://sports.core.api.espn.com/v2/sports"
 DEFAULT_OUTPUT = "f1.json"
+DEFAULT_STANDINGS_OUTPUT = "f1_standings.json"
 DEFAULT_WORKERS = 8
 HTTP_TIMEOUT = 20
 USER_AGENT = "month-calendar-f1-sync/1.0"
+
+DRIVER_NAMES_RU: Dict[str, tuple[str, str]] = {
+    "Kimi Antonelli": ("Кими", "Антонелли"),
+    "Max Verstappen": ("Макс", "Ферстаппен"),
+    "George Russell": ("Джордж", "Расселл"),
+    "Lewis Hamilton": ("Льюис", "Хэмилтон"),
+    "Charles Leclerc": ("Шарль", "Леклер"),
+    "Lando Norris": ("Ландо", "Норрис"),
+    "Oscar Piastri": ("Оскар", "Пиастри"),
+    "Isack Hadjar": ("Изак", "Аджар"),
+    "Liam Lawson": ("Лиам", "Лоусон"),
+    "Pierre Gasly": ("Пьер", "Гасли"),
+    "Arvid Lindblad": ("Арвид", "Линдблад"),
+    "Franco Colapinto": ("Франко", "Колапинто"),
+    "Oliver Bearman": ("Оливер", "Берман"),
+    "Gabriel Bortoleto": ("Габриэль", "Бортолето"),
+    "Nico Hülkenberg": ("Нико", "Хюлькенберг"),
+    "Esteban Ocon": ("Эстебан", "Окон"),
+    "Fernando Alonso": ("Фернандо", "Алонсо"),
+    "Carlos Sainz": ("Карлос", "Сайнс"),
+    "Alexander Albon": ("Александер", "Албон"),
+    "Yuki Tsunoda": ("Юки", "Цунода"),
+    "Ryo Hirakawa": ("Рё", "Хиракава"),
+    "Lance Stroll": ("Лэнс", "Стролл"),
+    "Valtteri Bottas": ("Валттери", "Боттас"),
+    "Sergio Pérez": ("Серхио", "Перес"),
+    "Rafael Câmara": ("Рафаэл", "Камара")
+}
+
+TEAM_NAMES_RU: Dict[str, str] = {
+    "Mercedes": "Мерседес",
+    "Ferrari": "Феррари",
+    "Red Bull": "Ред Булл",
+    "McLaren": "Макларен",
+    "Racing Bulls": "Рейсинг Буллз",
+    "Alpine": "Альпин",
+    "Haas": "Хаас",
+    "Audi": "Ауди",
+    "Williams": "Уильямс",
+    "Aston Martin": "Астон Мартин",
+    "Cadillac": "Кэдиллак"
+}
+
+TEAM_COUNTRIES: Dict[str, tuple[str, str, str]] = {
+    "Mercedes": ("Germany", "DEU", "Германия"),
+    "Ferrari": ("Italy", "ITA", "Италия"),
+    "Red Bull": ("Austria", "AUT", "Австрия"),
+    "McLaren": ("Britain", "GBR", "Великобритания"),
+    "Racing Bulls": ("Italy", "ITA", "Италия"),
+    "Alpine": ("France", "FRA", "Франция"),
+    "Haas": ("USA", "USA", "США"),
+    "Audi": ("Germany", "DEU", "Германия"),
+    "Williams": ("Britain", "GBR", "Великобритания"),
+    "Aston Martin": ("Britain", "GBR", "Великобритания"),
+    "Cadillac": ("USA", "USA", "США")
+}
+
+COUNTRY_NAMES_RU: Dict[str, str] = {
+    "Italy": "Италия",
+    "Netherlands": "Нидерланды",
+    "Britain": "Великобритания",
+    "United Kingdom": "Великобритания",
+    "Monaco": "Монако",
+    "Australia": "Австралия",
+    "France": "Франция",
+    "New Zealand": "Новая Зеландия",
+    "Argentina": "Аргентина",
+    "Brazil": "Бразилия",
+    "Germany": "Германия",
+    "Spain": "Испания",
+    "Thailand": "Таиланд",
+    "Japan": "Япония",
+    "Canada": "Канада",
+    "Finland": "Финляндия",
+    "Mexico": "Мексика",
+    "Austria": "Австрия",
+    "USA": "США",
+    "United States": "США",
+    "Switzerland": "Швейцария"
+}
 
 SESSION_TYPES = {
     "FP1": ("practice", "Практика 1", "Practice 1"),
@@ -239,6 +321,164 @@ def write_json(path: Path, data: Any) -> None:
     temporary.replace(path)
 
 
+def standings_url(season: int) -> str:
+    return (
+        "https://site.api.espn.com/apis/v2/sports/racing/f1/standings"
+        f"?season={season}&lang=en&region=us"
+    )
+
+
+def stat_number(entry: Dict[str, Any], name: str) -> Optional[float]:
+    for stat in entry.get("stats") or []:
+        if stat.get("name") != name:
+            continue
+        value = stat.get("value")
+        if isinstance(value, (int, float)):
+            return float(value)
+        display = stat.get("displayValue")
+        if isinstance(display, str):
+            try:
+                return float(display.replace(",", "."))
+            except ValueError:
+                return None
+    return None
+
+
+def split_driver_name(value: str) -> tuple[str, str]:
+    parts = value.strip().split()
+    if not parts:
+        return "", ""
+    if len(parts) == 1:
+        return parts[0], ""
+    return " ".join(parts[:-1]), parts[-1]
+
+
+def country_from_flag(flag: Any) -> tuple[str, str]:
+    if not isinstance(flag, dict):
+        return "", ""
+    name = flag.get("alt") or ""
+    code = country_code_from_flag(flag.get("href"))
+    return name, code
+
+
+def localized_country(name: str) -> str:
+    return COUNTRY_NAMES_RU.get(name, name)
+
+
+def parse_driver_standings(
+    payload: Dict[str, Any]
+) -> List[Dict[str, Any]]:
+    entries: List[Dict[str, Any]] = []
+    children = payload.get("children") or []
+    standings = None
+    for child in children:
+        if child.get("id") == "0" or child.get("abbreviation") == "Driver":
+            standings = (child.get("standings") or {}).get("entries") or []
+            break
+    if standings is None and children:
+        standings = (children[0].get("standings") or {}).get("entries") or []
+
+    for entry in standings:
+        athlete = entry.get("athlete") or {}
+        full_name = (
+            athlete.get("name")
+            or athlete.get("displayName")
+            or ""
+        ).strip()
+        first_name, last_name = split_driver_name(full_name)
+        translated = DRIVER_NAMES_RU.get(full_name)
+        if translated:
+            first_ru, last_ru = translated
+        else:
+            first_ru, last_ru = first_name, last_name
+            logging.warning(
+                "No Russian driver name mapping for %s", full_name
+            )
+
+        country, country_code = country_from_flag(athlete.get("flag"))
+        entries.append({
+            "position": int(stat_number(entry, "rank") or 0),
+            "athlete_id": str(athlete.get("id") or ""),
+            "first_name": first_name,
+            "last_name": last_name,
+            "first_name_ru": first_ru,
+            "last_name_ru": last_ru,
+            "full_name": full_name,
+            "full_name_ru": " ".join(
+                part for part in (first_ru, last_ru) if part
+            ),
+            "country": country,
+            "country_ru": localized_country(country),
+            "country_code": country_code,
+            "points": stat_number(entry, "championshipPts") or 0.0
+        })
+
+    entries.sort(key=lambda item: (
+        item["position"] if item["position"] > 0 else 9999,
+        -item["points"],
+        item["last_name"]
+    ))
+    return entries
+
+
+def parse_constructor_standings(
+    payload: Dict[str, Any]
+) -> List[Dict[str, Any]]:
+    entries: List[Dict[str, Any]] = []
+    children = payload.get("children") or []
+    standings = None
+    for child in children:
+        if child.get("id") == "1" or child.get("abbreviation") == "constructor":
+            standings = (child.get("standings") or {}).get("entries") or []
+            break
+    if standings is None and len(children) > 1:
+        standings = (children[1].get("standings") or {}).get("entries") or []
+
+    for entry in standings:
+        team = entry.get("team") or {}
+        name = (team.get("name") or team.get("displayName") or "").strip()
+        country, country_code, country_ru = TEAM_COUNTRIES.get(
+            name,
+            ("", "", "")
+        )
+        if not country:
+            logging.warning(
+                "No constructor country mapping for %s", name
+            )
+
+        entries.append({
+            "position": int(stat_number(entry, "rank") or 0),
+            "team_id": str(team.get("id") or ""),
+            "team_name": name,
+            "team_name_ru": TEAM_NAMES_RU.get(name, name),
+            "country": country,
+            "country_ru": country_ru or localized_country(country),
+            "country_code": country_code,
+            "points": stat_number(entry, "points") or 0.0
+        })
+
+    entries.sort(key=lambda item: (
+        item["position"] if item["position"] > 0 else 9999,
+        -item["points"],
+        item["team_name"]
+    ))
+    return entries
+
+
+def build_standings(season: int) -> Optional[Dict[str, Any]]:
+    payload = get_json(standings_url(season))
+    if not payload:
+        return None
+
+    return {
+        "generated_at": utc_iso(datetime.now(timezone.utc)),
+        "season": season,
+        "source": "ESPN",
+        "drivers": parse_driver_standings(payload),
+        "constructors": parse_constructor_standings(payload)
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Fetch the current Formula 1 season schedule from ESPN."
@@ -253,6 +493,14 @@ def main() -> int:
         "--output",
         default=DEFAULT_OUTPUT,
         help="Output JSON file (default: f1.json).",
+    )
+    parser.add_argument(
+        "--standings-output",
+        default=DEFAULT_STANDINGS_OUTPUT,
+        help=(
+            "Standings JSON file "
+            f"(default: {DEFAULT_STANDINGS_OUTPUT})."
+        ),
     )
     parser.add_argument(
         "--workers",
@@ -309,9 +557,22 @@ def main() -> int:
 
     write_json(Path(args.output), output)
     logging.info(
-        "Wrote %s Formula 1 events to %s (requests: %s)",
+        "Wrote %s Formula 1 events to %s",
         len(events),
         args.output,
+    )
+
+    standings = build_standings(args.season)
+    if standings is None:
+        logging.error("Could not load Formula 1 standings")
+        return 1
+
+    write_json(Path(args.standings_output), standings)
+    logging.info(
+        "Wrote %s drivers and %s constructors to %s (requests: %s)",
+        len(standings["drivers"]),
+        len(standings["constructors"]),
+        args.standings_output,
         _request_count,
     )
     return 0
