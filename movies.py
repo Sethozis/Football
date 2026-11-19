@@ -69,6 +69,8 @@ class Candidate:
     title_ru: str
     title_en: str
     title_original: str
+    overview_ru: str
+    overview_en: str
     year: Optional[int]
     genre_ids: List[int]
     genres_ru: List[str]
@@ -427,6 +429,31 @@ def alternative_title(detail: Dict[str, Any], country: str) -> Optional[str]:
     return None
 
 
+def localized_overview(
+    detail: Dict[str, Any],
+    language: str,
+) -> Optional[str]:
+    translations = detail.get("translations")
+    if not isinstance(translations, dict):
+        return None
+    entries = translations.get("translations")
+    if not isinstance(entries, list):
+        return None
+
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("iso_639_1") != language:
+            continue
+        data = entry.get("data")
+        if not isinstance(data, dict):
+            continue
+        overview = data.get("overview")
+        if isinstance(overview, str) and overview.strip():
+            return overview.strip()
+    return None
+
+
 def load_genres(
     language: str,
     api_key: str,
@@ -568,6 +595,11 @@ def build_candidate(
         str(detail.get("original_title") or "").strip()
         or title_en
     )
+    overview_en = (
+        localized_overview(detail, "en")
+        or str(detail.get("overview") or "").strip()
+    )
+    overview_ru = localized_overview(detail, "ru") or overview_en
 
     poster_path = detail.get("poster_path")
     poster_url = (
@@ -582,6 +614,8 @@ def build_candidate(
         title_ru=title_ru,
         title_en=title_en,
         title_original=title_original,
+        overview_ru=overview_ru,
+        overview_en=overview_en,
         year=movie.year,
         genre_ids=genre_ids,
         genres_ru=genres_ru,
@@ -592,7 +626,9 @@ def build_candidate(
     )
 
 
-def load_rating_cache(path: Path) -> Dict[str, Tuple[float, str]]:
+def load_rating_cache(
+    path: Path,
+) -> Dict[str, Tuple[float, Optional[int], str]]:
     if not path.exists():
         return {}
     try:
@@ -600,19 +636,22 @@ def load_rating_cache(path: Path) -> Dict[str, Tuple[float, str]]:
     except (OSError, ValueError):
         return {}
 
-    cache: Dict[str, Tuple[float, str]] = {}
+    cache: Dict[str, Tuple[float, Optional[int], str]] = {}
     for movie in payload.get("movies") or []:
         if not isinstance(movie, dict):
             continue
         imdb_id = movie.get("imdb_id")
         rating = movie.get("imdb_rating")
         checked_at = movie.get("rating_checked_at")
+        votes = movie.get("imdb_votes")
+        if not isinstance(votes, int):
+            votes = None
         if (
             isinstance(imdb_id, str)
             and isinstance(rating, (int, float))
             and isinstance(checked_at, str)
         ):
-            cache[imdb_id] = (float(rating), checked_at)
+            cache[imdb_id] = (float(rating), votes, checked_at)
     return cache
 
 
@@ -668,6 +707,12 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
         type=float,
         default=float(os.environ.get("MIN_IMDB_RATING", DEFAULT_MIN_RATING)),
         help=f"minimum IMDb rating (default: {DEFAULT_MIN_RATING})",
+    )
+    parser.add_argument(
+        "--min-votes",
+        type=int,
+        default=int(os.environ.get("MIN_IMDB_VOTES", "500")),
+        help="minimum IMDb vote count (default: 500)",
     )
     parser.add_argument(
         "--min-year",
@@ -729,6 +774,9 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     if not 0 <= args.min_rating <= 10:
         logging.error("Minimum rating must be between 0 and 10")
+        return 2
+    if args.min_votes < 0:
+        logging.error("Minimum vote count must be non-negative")
         return 2
     if args.months_ahead < 0 or args.min_year < 1900:
         logging.error("Invalid year/window")
@@ -816,9 +864,14 @@ def main(argv: Optional[List[str]] = None) -> int:
         votes: Optional[int] = None
         checked_at: Optional[str] = None
 
-        if cached and cached_rating_is_fresh(cached[1]):
+        if (
+            cached
+            and cached[1] is not None
+            and cached_rating_is_fresh(cached[2])
+        ):
             rating = cached[0]
-            checked_at = cached[1]
+            votes = cached[1]
+            checked_at = cached[2]
         else:
             rating_payload = fetch_omdb_rating(
                 candidate.imdb_id,
@@ -831,10 +884,15 @@ def main(argv: Optional[List[str]] = None) -> int:
                 checked_at = checked_now
             elif cached is not None:
                 rating = cached[0]
-                checked_at = cached[1]
+                votes = cached[1]
+                checked_at = cached[2]
             time.sleep(0.05)
 
         if rating is None or rating < args.min_rating:
+            continue
+        if args.min_votes > 0 and (
+            votes is None or votes < args.min_votes
+        ):
             continue
 
         movies.append(
@@ -844,6 +902,8 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "title_ru": candidate.title_ru,
                 "title_en": candidate.title_en,
                 "title_original": candidate.title_original,
+                "overview_ru": candidate.overview_ru,
+                "overview_en": candidate.overview_en,
                 "year": candidate.year,
                 "genre_ids": candidate.genre_ids,
                 "genres_ru": candidate.genres_ru,
@@ -860,6 +920,7 @@ def main(argv: Optional[List[str]] = None) -> int:
     payload = {
         "generated_at": checked_now,
         "minimum_imdb_rating": round(args.min_rating, 1),
+        "minimum_imdb_votes": args.min_votes,
         "minimum_year": args.min_year,
         "window": {
             "from": window.start.isoformat(),
