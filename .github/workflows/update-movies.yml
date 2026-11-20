@@ -29,7 +29,6 @@ jobs:
 
       - name: Fetch digital movie releases
         env:
-          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
           MIN_IMDB_RATING: "7.0"
