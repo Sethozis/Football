@@ -42,7 +42,6 @@ DISCOVERY_REGIONS = [
     "JP", "RU", "NL", "BR", "MX", "PL", "KR", "CN",
 ]
 PAGE_CAP = 10
-DISCOVERY_MONTHS_BACK = 24
 
 
 @dataclass(frozen=True)
@@ -306,7 +305,10 @@ def discover_ids_for_region(
     api_key: str,
     timeout: int,
 ) -> List[int]:
-    start = add_months(window.start, -DISCOVERY_MONTHS_BACK)
+    # Old catalogue re-releases also have type 4 dates.  Restrict the
+    # primary release year so that discovery returns new films instead of
+    # decades-old titles that got a new digital edition.
+    primary_start = date(window.start.year - 1, 1, 1)
     result: List[int] = []
     seen = set()
     page = 1
@@ -318,8 +320,8 @@ def discover_ids_for_region(
             {
                 "region": region,
                 "with_release_type": "4",
-                "release_date.gte": start.isoformat(),
-                "release_date.lte": window.end.isoformat(),
+                "primary_release_date.gte": primary_start.isoformat(),
+                "primary_release_date.lte": window.end.isoformat(),
                 "sort_by": "primary_release_date.asc",
                 "include_adult": "false",
                 "language": "en-US",
@@ -717,6 +719,21 @@ def main(argv: Optional[List[str]] = None) -> int:
                     candidates.append(candidate)
                 else:
                     build_rejected += 1
+                    if build_rejected == 1:
+                        external = detail.get("external_ids")
+                        imdb_value = (
+                            external.get("imdb_id")
+                            if isinstance(external, dict)
+                            else None
+                        )
+                        logging.info(
+                            "First candidate rejected: id=%s title=%s "
+                            "year=%s imdb=%s",
+                            tmdb_id,
+                            detail.get("title"),
+                            parse_date(detail.get("release_date")),
+                            imdb_value,
+                        )
             elif not sample_logged:
                 sample_logged = True
                 logging.info(
