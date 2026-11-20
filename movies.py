@@ -305,10 +305,10 @@ def discover_ids_for_region(
     api_key: str,
     timeout: int,
 ) -> List[int]:
-    # Old catalogue re-releases also have type 4 dates.  Restrict the
-    # primary release year so that discovery returns new films instead of
-    # decades-old titles that got a new digital edition.
-    primary_start = date(window.start.year - 1, 1, 1)
+    # Old catalogue re-releases also have type 4 dates.  Search from the
+    # previous year and sort by primary release date descending so new films
+    # appear before decades-old catalogue titles.
+    discovery_start = date(window.start.year - 1, 1, 1)
     result: List[int] = []
     seen = set()
     page = 1
@@ -320,9 +320,9 @@ def discover_ids_for_region(
             {
                 "region": region,
                 "with_release_type": "4",
-                "primary_release_date.gte": primary_start.isoformat(),
-                "primary_release_date.lte": window.end.isoformat(),
-                "sort_by": "primary_release_date.asc",
+                "release_date.gte": discovery_start.isoformat(),
+                "release_date.lte": window.end.isoformat(),
+                "sort_by": "primary_release_date.desc",
                 "include_adult": "false",
                 "language": "en-US",
                 "page": str(page),
