@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Collect upcoming digital movie releases from TMDB and OMDb.
 
-TMDB is used for the regional digital release calendar, titles, localised
-overviews, genres, posters and IMDb ids. OMDb supplies the IMDb rating and
-vote count. No Trakt client is required.
+TMDB is used for discovery, titles, localised overviews, genres, posters and
+IMDb ids. OMDb supplies the IMDb rating and vote count. Trakt is an optional
+fallback used only when TMDB has no digital release date for a film.
 """
 
 from __future__ import annotations
@@ -24,6 +24,7 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
 TMDB_BASE = "https://api.themoviedb.org/3"
+TRAKT_BASE = "https://api.trakt.tv"
 OMDB_BASE = "https://www.omdbapi.com/"
 IMAGE_BASE = "https://image.tmdb.org/t/p/w500"
 DEFAULT_OUTPUT = "movie_releases.json"
@@ -42,12 +43,24 @@ DISCOVERY_REGIONS = [
     "JP", "RU", "NL", "BR", "MX", "PL", "KR", "CN",
 ]
 PAGE_CAP = 10
+TRAKT_CHUNK_DAYS = 33
 
 
 @dataclass(frozen=True)
 class ReleaseWindow:
     start: date
     end: date
+
+
+@dataclass(frozen=True)
+class TraktDigital:
+    trakt_id: int
+    tmdb_id: Optional[int]
+    imdb_id: str
+    title: str
+    year: Optional[int]
+    digital_date: date
+    digital_country: str
 
 
 @dataclass(frozen=True)
@@ -131,6 +144,22 @@ def tmdb_get(
         url += "?" + urllib.parse.urlencode(query)
     payload = request_json(url, headers=headers, timeout=timeout)
     return payload if isinstance(payload, dict) else None
+
+
+def trakt_get(
+    path: str,
+    client_id: str,
+    timeout: int,
+) -> Optional[Any]:
+    return request_json(
+        f"{TRAKT_BASE}{path}",
+        headers={
+            "trakt-api-version": "2",
+            "trakt-api-key": client_id,
+            "Content-Type": "application/json",
+        },
+        timeout=timeout,
+    )
 
 
 def omdb_get(
@@ -386,6 +415,134 @@ def discover_movie_ids(
     return ids
 
 
+def trakt_calendar(
+    kind: str,
+    window: ReleaseWindow,
+    client_id: str,
+    timeout: int,
+) -> List[Dict[str, Any]]:
+    rows: List[Dict[str, Any]] = []
+    cursor = window.start
+    remaining = (window.end - window.start).days + 1
+
+    while remaining > 0:
+        chunk = min(TRAKT_CHUNK_DAYS, remaining)
+        payload = trakt_get(
+            f"/calendars/all/{kind}/{cursor.isoformat()}/{chunk}",
+            client_id,
+            timeout,
+        )
+        if isinstance(payload, list):
+            rows.extend(item for item in payload if isinstance(item, dict))
+        logging.info(
+            "Trakt %s %s..%s: %s items",
+            kind,
+            cursor,
+            cursor + timedelta(days=chunk - 1),
+            len(payload) if isinstance(payload, list) else 0,
+        )
+        cursor += timedelta(days=chunk)
+        remaining -= chunk
+        time.sleep(0.12)
+    return rows
+
+
+def select_trakt_digital(
+    releases: Any,
+    window: ReleaseWindow,
+) -> Optional[Tuple[date, str]]:
+    if not isinstance(releases, list):
+        return None
+    priority = {
+        "us": 0, "gb": 1, "ca": 2, "au": 3, "nz": 4,
+        "ie": 5, "de": 6, "fr": 7, "it": 8, "es": 9,
+        "jp": 10, "ru": 11,
+    }
+    best: Optional[Tuple[date, int, str]] = None
+    for release in releases:
+        if not isinstance(release, dict):
+            continue
+        release_type = str(release.get("release_type") or "").lower()
+        if release_type != "digital":
+            continue
+        released = parse_date(release.get("release_date"))
+        if released is None or released < window.start or released > window.end:
+            continue
+        country = str(release.get("country") or "").upper()
+        candidate = (
+            released,
+            priority.get(country.lower(), 99),
+            country,
+        )
+        if best is None or candidate < best:
+            best = candidate
+    if best is None:
+        return None
+    return best[0], best[2]
+
+
+def collect_trakt_digital(
+    window: ReleaseWindow,
+    client_id: str,
+    timeout: int,
+    min_year: int,
+) -> List[TraktDigital]:
+    rows = trakt_calendar(
+        "streaming", window, client_id, timeout
+    ) + trakt_calendar(
+        "movies", window, client_id, timeout
+    )
+    movies: Dict[int, Dict[str, Any]] = {}
+    for item in rows:
+        movie = item.get("movie")
+        if not isinstance(movie, dict):
+            continue
+        ids = movie.get("ids")
+        if not isinstance(ids, dict):
+            continue
+        trakt_id = ids.get("trakt")
+        if not isinstance(trakt_id, int):
+            continue
+        year = movie.get("year")
+        if isinstance(year, int) and year < min_year:
+            continue
+        movies[trakt_id] = movie
+
+    result: List[TraktDigital] = []
+    for index, (trakt_id, movie) in enumerate(movies.items(), start=1):
+        releases = trakt_get(
+            f"/movies/{trakt_id}/releases",
+            client_id,
+            timeout,
+        )
+        digital = select_trakt_digital(releases, window)
+        if digital is not None:
+            ids = movie.get("ids") if isinstance(movie.get("ids"), dict) else {}
+            tmdb_id = ids.get("tmdb")
+            result.append(
+                TraktDigital(
+                    trakt_id=trakt_id,
+                    tmdb_id=tmdb_id if isinstance(tmdb_id, int) else None,
+                    imdb_id=str(ids.get("imdb") or ""),
+                    title=str(movie.get("title") or ""),
+                    year=movie.get("year") if isinstance(movie.get("year"), int) else None,
+                    digital_date=digital[0],
+                    digital_country=digital[1],
+                )
+            )
+        if index % 25 == 0 or index == len(movies):
+            logging.info(
+                "Trakt releases: %s/%s checked, %s digital",
+                index,
+                len(movies),
+                len(result),
+            )
+        time.sleep(0.12)
+
+    logging.info("Trakt: %s movies with digital dates", len(result))
+    return result
+
+
 def fetch_tmdb_detail(
     tmdb_id: int,
     api_key: str,
@@ -636,6 +793,7 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     tmdb_key = os.environ.get("TMDB_API_KEY", "").strip()
     omdb_key = os.environ.get("OMDB_API_KEY", "").strip()
+    trakt_key = os.environ.get("TRAKT_CLIENT_ID", "").strip()
     if not tmdb_key:
         logging.error("TMDB_API_KEY is not set")
         return 2
@@ -665,13 +823,6 @@ def main(argv: Optional[List[str]] = None) -> int:
     )
     if not movie_ids:
         logging.error("TMDB discover returned no movies")
-        if args.output.exists():
-            logging.error(
-                "Keeping existing %s instead of overwriting it",
-                args.output,
-            )
-            return 0
-        return 1
     if args.limit is not None:
         movie_ids = movie_ids[: max(0, args.limit)]
 
@@ -762,8 +913,60 @@ def main(argv: Optional[List[str]] = None) -> int:
         build_rejected,
         missing_release_dates,
     )
+    if trakt_key:
+        trakt_digital = collect_trakt_digital(
+            window,
+            trakt_key,
+            args.timeout,
+            args.min_year,
+        )
+        existing_tmdb = {candidate.tmdb_id for candidate in candidates}
+        existing_imdb = {
+            candidate.imdb_id for candidate in candidates if candidate.imdb_id
+        }
+        added = 0
+        for item in trakt_digital:
+            if item.tmdb_id is not None and item.tmdb_id in existing_tmdb:
+                continue
+            if item.imdb_id and item.imdb_id in existing_imdb:
+                continue
+            if item.tmdb_id is None:
+                logging.info(
+                    "Trakt fallback without TMDB id: %s",
+                    item.title,
+                )
+                continue
+            detail = fetch_tmdb_detail(
+                item.tmdb_id,
+                tmdb_key,
+                args.timeout,
+            )
+            if not isinstance(detail, dict):
+                continue
+            digital = select_digital_release(detail, window)
+            if digital is None:
+                digital = (item.digital_date, item.digital_country)
+            candidate = build_candidate(
+                detail,
+                digital,
+                genres_ru,
+                genres_en,
+                args.min_year,
+            )
+            if candidate is None:
+                continue
+            candidates.append(candidate)
+            existing_tmdb.add(candidate.tmdb_id)
+            if candidate.imdb_id:
+                existing_imdb.add(candidate.imdb_id)
+            added += 1
+        logging.info("Trakt fallback: %s additional candidates", added)
+    else:
+        logging.info("TRAKT_CLIENT_ID is not set; Trakt fallback disabled")
+
+    logging.info("Combined candidates: %s", len(candidates))
     if not candidates:
-        logging.error("No TMDB candidates with digital dates")
+        logging.error("No candidates with digital dates")
         if args.output.exists():
             logging.error(
                 "Keeping existing %s instead of overwriting it",
