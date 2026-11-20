@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T13:11:27.181540Z",
+  "generated_at": "2026-11-20T05:46:19.890082Z",
   "season": 2026,
   "source": "ESPN",
   "drivers": [
@@ -15,6 +15,8 @@
       "country": "Italy",
       "country_ru": "Италия",
       "country_code": "ITA",
+      "team_name": "Mercedes",
+      "team_code": "MER",
       "points": 390.0
     },
     {
@@ -29,6 +31,8 @@
       "country": "Netherlands",
       "country_ru": "Нидерланды",
       "country_code": "NED",
+      "team_name": "Red Bull",
+      "team_code": "RBR",
       "points": 279.0
     },
     {
@@ -43,6 +47,8 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
+      "team_name": "Mercedes",
+      "team_code": "MER",
       "points": 262.0
     },
     {
@@ -57,6 +63,8 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
+      "team_name": "Ferrari",
+      "team_code": "FER",
       "points": 261.0
     },
     {
@@ -71,6 +79,8 @@
       "country": "Monaco",
       "country_ru": "Монако",
       "country_code": "MON",
+      "team_name": "Ferrari",
+      "team_code": "FER",
       "points": 249.0
     },
     {
@@ -85,6 +95,8 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
+      "team_name": "McLaren",
+      "team_code": "MCL",
       "points": 246.0
     },
     {
@@ -99,6 +111,8 @@
       "country": "Australia",
       "country_ru": "Австралия",
       "country_code": "AUS",
+      "team_name": "McLaren",
+      "team_code": "MCL",
       "points": 152.0
     },
     {
@@ -113,6 +127,8 @@
       "country": "France",
       "country_ru": "Франция",
       "country_code": "FRA",
+      "team_name": "Red Bull",
+      "team_code": "RBR",
       "points": 122.0
     },
     {
@@ -127,6 +143,8 @@
       "country": "New Zealand",
       "country_ru": "Новая Зеландия",
       "country_code": "NZL",
+      "team_name": "Racing Bulls",
+      "team_code": "VRB",
       "points": 89.0
     },
     {
@@ -141,6 +159,8 @@
       "country": "France",
       "country_ru": "Франция",
       "country_code": "FRA",
+      "team_name": "Alpine",
+      "team_code": "ALP",
       "points": 42.0
     },
     {
@@ -155,6 +175,8 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
+      "team_name": "Racing Bulls",
+      "team_code": "VRB",
       "points": 38.0
     },
     {
@@ -169,6 +191,8 @@
       "country": "Argentina",
       "country_ru": "Аргентина",
       "country_code": "ARG",
+      "team_name": "Alpine",
+      "team_code": "ALP",
       "points": 27.0
     },
     {
@@ -183,6 +207,8 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
+      "team_name": "Haas",
+      "team_code": "HAA",
       "points": 23.0
     },
     {
@@ -197,6 +223,8 @@
       "country": "Brazil",
       "country_ru": "Бразилия",
       "country_code": "BRA",
+      "team_name": "Audi",
+      "team_code": "AUD",
       "points": 14.0
     },
     {
@@ -211,6 +239,8 @@
       "country": "Germany",
       "country_ru": "Германия",
       "country_code": "GER",
+      "team_name": "Audi",
+      "team_code": "AUD",
       "points": 14.0
     },
     {
@@ -225,6 +255,8 @@
       "country": "France",
       "country_ru": "Франция",
       "country_code": "FRA",
+      "team_name": "Haas",
+      "team_code": "HAA",
       "points": 7.0
     },
     {
@@ -239,6 +271,8 @@
       "country": "Spain",
       "country_ru": "Испания",
       "country_code": "ESP",
+      "team_name": "Aston Martin",
+      "team_code": "AMR",
       "points": 7.0
     },
     {
@@ -253,6 +287,8 @@
       "country": "Spain",
       "country_ru": "Испания",
       "country_code": "ESP",
+      "team_name": "Williams",
+      "team_code": "WIL",
       "points": 7.0
     },
     {
@@ -267,6 +303,8 @@
       "country": "Thailand",
       "country_ru": "Таиланд",
       "country_code": "THA",
+      "team_name": "Williams",
+      "team_code": "WIL",
       "points": 5.0
     },
     {
@@ -281,6 +319,8 @@
       "country": "Japan",
       "country_ru": "Япония",
       "country_code": "JPN",
+      "team_name": "Racing Bulls",
+      "team_code": "VRB",
       "points": 1.0
     },
     {
@@ -295,6 +335,8 @@
       "country": "Japan",
       "country_ru": "Япония",
       "country_code": "JPN",
+      "team_name": "Alpine",
+      "team_code": "ALP",
       "points": 1.0
     },
     {
@@ -309,6 +351,8 @@
       "country": "Canada",
       "country_ru": "Канада",
       "country_code": "CAN",
+      "team_name": "Aston Martin",
+      "team_code": "AMR",
       "points": 0.0
     },
     {
@@ -323,6 +367,8 @@
       "country": "Finland",
       "country_ru": "Финляндия",
       "country_code": "FIN",
+      "team_name": "Cadillac",
+      "team_code": "CAD",
       "points": 0.0
     },
     {
@@ -337,6 +383,8 @@
       "country": "Mexico",
       "country_ru": "Мексика",
       "country_code": "MEX",
+      "team_name": "Cadillac",
+      "team_code": "CAD",
       "points": 0.0
     },
     {
@@ -351,6 +399,8 @@
       "country": "Brazil",
       "country_ru": "Бразилия",
       "country_code": "BRA",
+      "team_name": "Haas",
+      "team_code": "HAA",
       "points": 0.0
     }
   ],
