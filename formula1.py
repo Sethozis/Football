@@ -73,6 +73,20 @@ TEAM_NAMES_RU: Dict[str, str] = {
     "Cadillac": "Кэдиллак"
 }
 
+TEAM_CODES: Dict[str, str] = {
+    "Mercedes": "MER",
+    "Ferrari": "FER",
+    "Red Bull": "RBR",
+    "McLaren": "MCL",
+    "Racing Bulls": "VRB",
+    "Alpine": "ALP",
+    "Haas": "HAA",
+    "Audi": "AUD",
+    "Williams": "WIL",
+    "Aston Martin": "AMR",
+    "Cadillac": "CAD"
+}
+
 TEAM_COUNTRIES: Dict[str, tuple[str, str, str]] = {
     "Mercedes": ("Germany", "DEU", "Германия"),
     "Ferrari": ("Italy", "ITA", "Италия"),
@@ -321,6 +335,29 @@ def write_json(path: Path, data: Any) -> None:
     temporary.replace(path)
 
 
+def core_athlete_url(season: int, athlete_id: str) -> str:
+    return (
+        f"{ESPN_CORE}/racing/leagues/f1/seasons/{season}/athletes/"
+        f"{urllib.parse.quote(athlete_id)}?lang=en&region=us"
+    )
+
+
+def fetch_driver_team_name(
+    season: int,
+    athlete_id: str
+) -> str:
+    payload = get_json(core_athlete_url(season, athlete_id))
+    if not payload:
+        return ""
+    vehicles = payload.get("vehicles") or []
+    for vehicle in vehicles:
+        if isinstance(vehicle, dict):
+            team = vehicle.get("team")
+            if isinstance(team, str) and team.strip():
+                return team.strip()
+    return ""
+
+
 def standings_url(season: int) -> str:
     return (
         "https://site.api.espn.com/apis/v2/sports/racing/f1/standings"
@@ -410,6 +447,8 @@ def parse_driver_standings(
             "country": country,
             "country_ru": localized_country(country),
             "country_code": country_code,
+            "team_name": "",
+            "team_code": "",
             "points": stat_number(entry, "championshipPts") or 0.0
         })
 
@@ -470,11 +509,24 @@ def build_standings(season: int) -> Optional[Dict[str, Any]]:
     if not payload:
         return None
 
+    drivers = parse_driver_standings(payload)
+    for driver in drivers:
+        athlete_id = driver.get("athlete_id", "")
+        team_name = fetch_driver_team_name(season, athlete_id)
+        driver["team_name"] = team_name
+        driver["team_code"] = TEAM_CODES.get(team_name, "")
+        if team_name and not driver["team_code"]:
+            logging.warning(
+                "No team code mapping for %s (%s)",
+                team_name,
+                athlete_id
+            )
+
     return {
         "generated_at": utc_iso(datetime.now(timezone.utc)),
         "season": season,
         "source": "ESPN",
-        "drivers": parse_driver_standings(payload),
+        "drivers": drivers,
         "constructors": parse_constructor_standings(payload)
     }
 
