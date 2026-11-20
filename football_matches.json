@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T00:04:21.270486Z",
+  "generated_at": "2026-11-20T14:40:28.238301Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -45841,54 +45841,6 @@
       "away_team_code": "VER"
     },
     {
-      "fixture_id": "401934498",
-      "kickoff_utc": "2026-11-28T12:30:00Z",
-      "tournament": "Coupe de France",
-      "country": "France",
-      "stage": "2026-27 Coupe de France, Eighth Round",
-      "season": 2026,
-      "league_id": "3952",
-      "league_slug": "fra.coupe_de_france",
-      "home_team_id": "134099",
-      "home_team": "Stade Sotteville",
-      "home_team_code": "SOT",
-      "away_team_id": "7721",
-      "away_team": "US Quevilly",
-      "away_team_code": "USQ"
-    },
-    {
-      "fixture_id": "401934520",
-      "kickoff_utc": "2026-11-28T12:30:00Z",
-      "tournament": "Coupe de France",
-      "country": "France",
-      "stage": "2026-27 Coupe de France, Eighth Round",
-      "season": 2026,
-      "league_id": "3952",
-      "league_slug": "fra.coupe_de_france",
-      "home_team_id": "178",
-      "home_team": "Saint-Étienne",
-      "home_team_code": "ASS",
-      "away_team_id": "10235",
-      "away_team": "Villefranche",
-      "away_team_code": "VIL"
-    },
-    {
-      "fixture_id": "401934535",
-      "kickoff_utc": "2026-11-28T12:30:00Z",
-      "tournament": "Coupe de France",
-      "country": "France",
-      "stage": "2026-27 Coupe de France, Eighth Round",
-      "season": 2026,
-      "league_id": "3952",
-      "league_slug": "fra.coupe_de_france",
-      "home_team_id": "11895",
-      "home_team": "Bourg-Peronnas",
-      "home_team_code": "FBB",
-      "away_team_id": "10683",
-      "away_team": "Thionville",
-      "away_team_code": "THI"
-    },
-    {
       "fixture_id": "401880131",
       "kickoff_utc": "2026-11-28T12:30:00Z",
       "tournament": "EFL Championship",
@@ -46609,6 +46561,22 @@
       "away_team_code": "AVR"
     },
     {
+      "fixture_id": "401934498",
+      "kickoff_utc": "2026-11-28T17:00:00Z",
+      "tournament": "Coupe de France",
+      "country": "France",
+      "stage": "2026-27 Coupe de France, Eighth Round",
+      "season": 2026,
+      "league_id": "3952",
+      "league_slug": "fra.coupe_de_france",
+      "home_team_id": "134099",
+      "home_team": "Stade Sotteville",
+      "home_team_code": "SOT",
+      "away_team_id": "7721",
+      "away_team": "US Quevilly",
+      "away_team_code": "USQ"
+    },
+    {
       "fixture_id": "401934514",
       "kickoff_utc": "2026-11-28T17:00:00Z",
       "tournament": "Coupe de France",
@@ -46639,6 +46607,22 @@
       "away_team_id": "9011",
       "away_team": "Selongey",
       "away_team_code": "SEL"
+    },
+    {
+      "fixture_id": "401934535",
+      "kickoff_utc": "2026-11-28T17:00:00Z",
+      "tournament": "Coupe de France",
+      "country": "France",
+      "stage": "2026-27 Coupe de France, Eighth Round",
+      "season": 2026,
+      "league_id": "3952",
+      "league_slug": "fra.coupe_de_france",
+      "home_team_id": "11895",
+      "home_team": "Bourg-Peronnas",
+      "home_team_code": "FBB",
+      "away_team_id": "10683",
+      "away_team": "Thionville",
+      "away_team_code": "THI"
     },
     {
       "fixture_id": "401934536",
@@ -46895,6 +46879,22 @@
       "away_team_id": "17483",
       "away_team": "Orléans",
       "away_team_code": "ORL"
+    },
+    {
+      "fixture_id": "401934520",
+      "kickoff_utc": "2026-11-28T18:00:00Z",
+      "tournament": "Coupe de France",
+      "country": "France",
+      "stage": "2026-27 Coupe de France, Eighth Round",
+      "season": 2026,
+      "league_id": "3952",
+      "league_slug": "fra.coupe_de_france",
+      "home_team_id": "178",
+      "home_team": "Saint-Étienne",
+      "home_team_code": "ASS",
+      "away_team_id": "10235",
+      "away_team": "Villefranche",
+      "away_team_code": "VIL"
     },
     {
       "fixture_id": "401899522",
@@ -48817,6 +48817,22 @@
       "away_team_code": "DEP"
     },
     {
+      "fixture_id": "401883096",
+      "kickoff_utc": "2026-12-05T13:00:00Z",
+      "tournament": "LaLiga 2",
+      "country": "Spain",
+      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
+      "season": 2026,
+      "league_id": "3921",
+      "league_slug": "esp.2",
+      "home_team_id": "20983",
+      "home_team": "Real Sociedad II",
+      "home_team_code": "RSO",
+      "away_team_id": "17534",
+      "away_team": "Leganés",
+      "away_team_code": "LEG"
+    },
+    {
       "fixture_id": "401876676",
       "kickoff_utc": "2026-12-05T13:00:00Z",
       "tournament": "Ligue 2",
@@ -49503,6 +49519,22 @@
       "away_team_id": "89",
       "away_team": "Real Sociedad",
       "away_team_code": "RSO"
+    },
+    {
+      "fixture_id": "401882294",
+      "kickoff_utc": "2026-12-05T17:30:00Z",
+      "tournament": "LaLiga 2",
+      "country": "Spain",
+      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
+      "season": 2026,
+      "league_id": "3921",
+      "league_slug": "esp.2",
+      "home_team_id": "20179",
+      "home_team": "FC Andorra",
+      "home_team_code": "AND",
+      "away_team_id": "92",
+      "away_team": "Real Oviedo",
+      "away_team_code": "OVI"
     },
     {
       "fixture_id": "401878747",
@@ -50271,38 +50303,6 @@
       "away_team_id": "244",
       "away_team": "Real Betis",
       "away_team_code": "BET"
-    },
-    {
-      "fixture_id": "401882294",
-      "kickoff_utc": "2026-12-06T20:00:00Z",
-      "tournament": "LaLiga 2",
-      "country": "Spain",
-      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
-      "season": 2026,
-      "league_id": "3921",
-      "league_slug": "esp.2",
-      "home_team_id": "20179",
-      "home_team": "FC Andorra",
-      "home_team_code": "AND",
-      "away_team_id": "92",
-      "away_team": "Real Oviedo",
-      "away_team_code": "OVI"
-    },
-    {
-      "fixture_id": "401883096",
-      "kickoff_utc": "2026-12-06T20:00:00Z",
-      "tournament": "LaLiga 2",
-      "country": "Spain",
-      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
-      "season": 2026,
-      "league_id": "3921",
-      "league_slug": "esp.2",
-      "home_team_id": "20983",
-      "home_team": "Real Sociedad II",
-      "home_team_code": "RSO",
-      "away_team_id": "17534",
-      "away_team": "Leganés",
-      "away_team_code": "LEG"
     },
     {
       "fixture_id": "401883097",
