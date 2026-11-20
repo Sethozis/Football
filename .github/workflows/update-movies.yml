@@ -31,6 +31,7 @@ jobs:
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           OMDB_API_KEY: ${{ secrets.OMDB_API_KEY }}
+          TRAKT_CLIENT_ID: ${{ secrets.TRAKT_CLIENT_ID }}
           MIN_IMDB_RATING: "7.0"
           MIN_IMDB_VOTES: "500"
         run: python movies.py
