@@ -1,0 +1,63 @@
+name: Update chess schedule
+
+on:
+  schedule:
+    # Every day; the script updates daily around tournaments and on Mondays
+    # otherwise.
+    - cron: "40 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sports-data-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install HTML parser
+        run: pip install lxml
+
+      - name: Fetch Candidates and World Championship schedules
+        run: python chess_events.py --schedule-policy
+
+      - name: Commit generated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add chess_events.json
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          git commit -m "Update chess schedule [skip ci]"
+
+          pushed=false
+          for attempt in 1 2 3; do
+            git pull --rebase origin main
+            if git push; then
+              pushed=true
+              break
+            fi
+            echo "Push failed, retrying..."
+            sleep 5
+          done
+
+          if [ "$pushed" != "true" ]; then
+            echo "Could not push generated JSON"
+            exit 1
+          fi
