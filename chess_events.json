@@ -1,0 +1,205 @@
+{
+  "generated_at": "2026-11-20T15:03:30.452091Z",
+  "source": "Wikipedia / FIDE",
+  "schedule_windows": [
+    {
+      "tournament": "candidates",
+      "start": "2026-03-29",
+      "end": "2026-04-16"
+    },
+    {
+      "tournament": "world_championship",
+      "start": "2026-11-24",
+      "end": "2026-12-12"
+    }
+  ],
+  "events": [
+    {
+      "id": "world_championship-2026",
+      "tournament": "world_championship",
+      "name_en": "World Chess Championship Match",
+      "name_ru": "Матч за звание чемпиона мира",
+      "year": 2026,
+      "source": "https://en.wikipedia.org/wiki/World_Chess_Championship_2026",
+      "timezone": "Europe/Zurich",
+      "window_start": "2026-11-24",
+      "window_end": "2026-12-12",
+      "participants": [
+        {
+          "name_en": "Gukesh Dommaraju",
+          "name_ru": "Гукеш Доммараджу",
+          "first_name_en": "Gukesh",
+          "last_name_en": "Dommaraju",
+          "first_name_ru": "Гукеш",
+          "last_name_ru": "Доммараджу",
+          "country_code": "IND",
+          "country_en": "India",
+          "country_ru": "Индия"
+        },
+        {
+          "name_en": "Javokhir Sindarov",
+          "name_ru": "Жавохир Синдаров",
+          "first_name_en": "Javokhir",
+          "last_name_en": "Sindarov",
+          "first_name_ru": "Жавохир",
+          "last_name_ru": "Синдаров",
+          "country_code": "UZB",
+          "country_en": "Uzbekistan",
+          "country_ru": "Узбекистан"
+        }
+      ],
+      "games": [
+        {
+          "id": "world_championship-2026-game-1",
+          "tournament": "world_championship",
+          "stage": "Game 1",
+          "if_required": false,
+          "date": "2026-11-24",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-11-24T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-2",
+          "tournament": "world_championship",
+          "stage": "Game 2",
+          "if_required": false,
+          "date": "2026-11-25",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-11-25T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-3",
+          "tournament": "world_championship",
+          "stage": "Game 3",
+          "if_required": false,
+          "date": "2026-11-26",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-11-26T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-4",
+          "tournament": "world_championship",
+          "stage": "Game 4",
+          "if_required": false,
+          "date": "2026-11-28",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-11-28T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-5",
+          "tournament": "world_championship",
+          "stage": "Game 5",
+          "if_required": false,
+          "date": "2026-11-29",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-11-29T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-6",
+          "tournament": "world_championship",
+          "stage": "Game 6",
+          "if_required": false,
+          "date": "2026-11-30",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-11-30T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-7",
+          "tournament": "world_championship",
+          "stage": "Game 7",
+          "if_required": false,
+          "date": "2026-12-02",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-02T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-8",
+          "tournament": "world_championship",
+          "stage": "Game 8",
+          "if_required": false,
+          "date": "2026-12-03",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-03T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-9-if-required",
+          "tournament": "world_championship",
+          "stage": "Game 9 (If required)",
+          "if_required": true,
+          "date": "2026-12-04",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-04T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-10-if-required",
+          "tournament": "world_championship",
+          "stage": "Game 10 (If required)",
+          "if_required": true,
+          "date": "2026-12-06",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-06T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-11-if-required",
+          "tournament": "world_championship",
+          "stage": "Game 11 (If required)",
+          "if_required": true,
+          "date": "2026-12-07",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-07T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-12-if-required",
+          "tournament": "world_championship",
+          "stage": "Game 12 (If required)",
+          "if_required": true,
+          "date": "2026-12-08",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-08T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-13-if-required",
+          "tournament": "world_championship",
+          "stage": "Game 13 (If required)",
+          "if_required": true,
+          "date": "2026-12-10",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-10T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-game-14-if-required",
+          "tournament": "world_championship",
+          "stage": "Game 14 (If required)",
+          "if_required": true,
+          "date": "2026-12-11",
+          "time": "15:00",
+          "timezone": "Europe/Zurich",
+          "start_utc": "2026-12-11T14:00:00Z"
+        },
+        {
+          "id": "world_championship-2026-tie-breaks-if-required",
+          "tournament": "world_championship",
+          "stage": "Tie-breaks (If required)",
+          "if_required": true,
+          "date": "2026-12-12",
+          "time": null,
+          "timezone": "Europe/Zurich",
+          "start_utc": null
+        }
+      ]
+    }
+  ]
+}
