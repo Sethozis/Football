@@ -279,7 +279,10 @@ def select_digital_release(
         for release in dates:
             if not isinstance(release, dict):
                 continue
-            if release.get("type") != 4:
+            release_type = release.get("type")
+            if isinstance(release_type, str) and release_type.isdigit():
+                release_type = int(release_type)
+            if release_type != 4:
                 continue
             released = parse_date(release.get("release_date"))
             if released is None or released < window.start or released > window.end:
@@ -386,7 +389,7 @@ def fetch_tmdb_detail(
     api_key: str,
     timeout: int,
 ) -> Optional[Dict[str, Any]]:
-    return tmdb_get(
+    detail = tmdb_get(
         f"/movie/{tmdb_id}",
         {
             "language": "en-US",
@@ -395,6 +398,18 @@ def fetch_tmdb_detail(
         api_key,
         timeout,
     )
+    if not isinstance(detail, dict):
+        return None
+    if not isinstance(detail.get("release_dates"), dict):
+        release_dates = tmdb_get(
+            f"/movie/{tmdb_id}/release_dates",
+            {},
+            api_key,
+            timeout,
+        )
+        if isinstance(release_dates, dict):
+            detail["release_dates"] = release_dates
+    return detail
 
 
 def build_candidate(
@@ -661,6 +676,10 @@ def main(argv: Optional[List[str]] = None) -> int:
     logging.info("TMDB discover: %s unique movies", len(movie_ids))
     candidates: List[Candidate] = []
     details_done = 0
+    digital_found = 0
+    build_rejected = 0
+    missing_release_dates = 0
+    sample_logged = False
 
     with ThreadPoolExecutor(max_workers=max(1, min(args.workers, 8))) as pool:
         futures = {
@@ -682,8 +701,11 @@ def main(argv: Optional[List[str]] = None) -> int:
             if not isinstance(detail, dict):
                 continue
 
+            if not isinstance(detail.get("release_dates"), dict):
+                missing_release_dates += 1
             digital = select_digital_release(detail, window)
             if digital is not None:
+                digital_found += 1
                 candidate = build_candidate(
                     detail,
                     digital,
@@ -693,6 +715,18 @@ def main(argv: Optional[List[str]] = None) -> int:
                 )
                 if candidate is not None:
                     candidates.append(candidate)
+                else:
+                    build_rejected += 1
+            elif not sample_logged:
+                sample_logged = True
+                logging.info(
+                    "No digital date for sample TMDB id %s; release_dates=%s",
+                    tmdb_id,
+                    json.dumps(
+                        detail.get("release_dates"),
+                        ensure_ascii=False,
+                    )[:900],
+                )
 
             details_done += 1
             if details_done % 25 == 0 or details_done == len(futures):
@@ -703,7 +737,14 @@ def main(argv: Optional[List[str]] = None) -> int:
                     len(candidates),
                 )
 
-    logging.info("TMDB: %s enriched candidates", len(candidates))
+    logging.info(
+        "TMDB: %s enriched candidates, %s with digital date, "
+        "%s rejected after digital match, %s without release_dates",
+        len(candidates),
+        digital_found,
+        build_rejected,
+        missing_release_dates,
+    )
     if not candidates:
         logging.error("No TMDB candidates with digital dates")
         if args.output.exists():
