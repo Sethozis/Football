@@ -11,6 +11,7 @@ Coverage:
   * UEFA European Championship and its qualifiers
   * UEFA Nations League
   * UEFA Champions League, Europa League and Conference League
+  * AFC Champions League Elite
   * Premier League + FA Cup + EFL Cup
   * La Liga + Copa del Rey
   * Serie A + Coppa Italia
@@ -62,6 +63,7 @@ LEAGUES: Dict[str, Tuple[str, str, bool]] = {
     "concacaf.gold": ("CONCACAF Gold Cup", "North America", True),
     "caf.nations": ("Africa Cup of Nations", "Africa", True),
     "afc.asian.cup": ("AFC Asian Cup", "Asia", True),
+    "afc.champions": ("AFC Champions League Elite", "Asia", False),
     "uefa.champions": ("UEFA Champions League", "Europe", False),
     "uefa.europa": ("UEFA Europa League", "Europe", False),
     "uefa.europa.conf": ("UEFA Conference League", "Europe", False),
