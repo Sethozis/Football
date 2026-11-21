@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T19:32:05Z",
+  "generated_at": "2026-11-21T14:42:34Z",
   "minimum_imdb_rating": 7.0,
   "minimum_imdb_votes": 500,
   "minimum_year": 2025,
@@ -7,7 +7,7 @@
     "from": "2026-10-01",
     "to": "2027-11-30"
   },
-  "count": 48,
+  "count": 51,
   "movies": [
     {
       "tmdb_id": 1465563,
@@ -1010,7 +1010,7 @@
       ],
       "digital_release_date": "2026-11-03",
       "digital_release_country": "GB",
-      "poster_url": "https://image.tmdb.org/t/p/w500/pcPLnxCThCIo9JFQIMFX4kAE5Yz.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vGUAC8EOizemwwbWk9JbFrhpVz4.jpg",
       "imdb_rating": 7.2,
       "imdb_votes": 1165,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -1345,6 +1345,65 @@
       "rating_checked_at": "2026-11-20T19:32:05Z"
     },
     {
+      "tmdb_id": 1122099,
+      "imdb_id": "tt27674982",
+      "title_ru": "Баллада об острове Уоллис",
+      "title_en": "The Ballad of Wallis Island",
+      "title_original": "The Ballad of Wallis Island",
+      "overview_ru": "Экстравагантный победитель лотереи, живущий в одиночестве на удалённом острове, пытается воплотить свои фантазии в жизнь, приглашая любимых музыкантов выступить у него дома.",
+      "overview_en": "An eccentric lottery winner who lives alone on a remote island tries to make his fantasies come true by getting his favourite musicians to perform at his home.",
+      "year": 2025,
+      "genre_ids": [
+        35,
+        18,
+        10402
+      ],
+      "genres_ru": [
+        "комедия",
+        "драма",
+        "музыка"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Drama",
+        "Music"
+      ],
+      "digital_release_date": "2026-12-06",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/haS6bnqDqZoi5sYcCPJWaj2yMbB.jpg",
+      "imdb_rating": 7.4,
+      "imdb_votes": 26175,
+      "rating_checked_at": "2026-11-21T14:42:34Z"
+    },
+    {
+      "tmdb_id": 857800,
+      "imdb_id": "tt10365912",
+      "title_ru": "Становясь Led Zeppelin",
+      "title_en": "Becoming Led Zeppelin",
+      "title_original": "Becoming Led Zeppelin",
+      "overview_ru": "Документальный фильм рассказывает о формировании и головокружительном взлете культовой британской рок-группы 1960-х Led Zeppelin. Картина была создана при тесном сотрудничестве с участниками коллектива: Робертом Плантом, Джимми Пейджем и Джоном Пол Джонсоном. Они дали новые интервью, в которых поделились воспоминаниями о том, как начиналась их музыкальная карьера. Также в фильм использованы архивные интервью покойного барабанщика Джона Бонэма и ранее не опубликованные отреставрированные записи первых концертов и съемок за кулисами. Это первый случай, когда музыканты согласились сняться в фильме о своей группе.",
+      "overview_en": "The individual journeys of the four members of the band, as they move through the music scene of the 1960s, playing small clubs throughout Britain and performing some of the biggest hits of the era, until their meeting in the summer of 1968 for a rehearsal that changes their lives forever.",
+      "year": 2025,
+      "genre_ids": [
+        99,
+        10402
+      ],
+      "genres_ru": [
+        "документальный",
+        "музыка"
+      ],
+      "genres_en": [
+        "Documentary",
+        "Music"
+      ],
+      "digital_release_date": "2026-12-07",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zK67RUQeVXv01q6E1TnS4g3Hlw2.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 9712,
+      "rating_checked_at": "2026-11-21T14:42:34Z"
+    },
+    {
       "tmdb_id": 1400940,
       "imdb_id": "tt34890576",
       "title_ru": "Клэйфейс",
@@ -1436,6 +1495,37 @@
       "imdb_rating": 7.6,
       "imdb_votes": 1190,
       "rating_checked_at": "2026-11-20T19:32:05Z"
+    },
+    {
+      "tmdb_id": 1311031,
+      "imdb_id": "tt32820897",
+      "title_ru": "Истребитель демонов: Бесконечный замок",
+      "title_en": "Demon Slayer: Kimetsu no Yaiba Infinity Castle",
+      "title_original": "劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来",
+      "overview_ru": "Во время подготовки к решающему сражению с демонами члены Корпуса и столпы проходят изнурительную программу — Тренировку Хашира. Но внезапно сам Музан Кибуцудзи появляется в особняке Убуяшики. Когда глава Корпуса оказывается в смертельной опасности, Танджиро и Хашира спешат на помощь, но Музан втягивает их в таинственное пространство — замок Бесконечности, логово демонов. Так начинается финальное сражение между охотниками на демонов и силами зла.",
+      "overview_en": "The Demon Slayer Corps are drawn into the Infinity Castle, where Tanjiro, Nezuko, and the Hashira face terrifying Upper Rank demons in a desperate fight as the final battle against Muzan Kibutsuji begins.",
+      "year": 2025,
+      "genre_ids": [
+        16,
+        28,
+        14
+      ],
+      "genres_ru": [
+        "мультфильм",
+        "боевик",
+        "фэнтези"
+      ],
+      "genres_en": [
+        "Animation",
+        "Action",
+        "Fantasy"
+      ],
+      "digital_release_date": "2027-02-17",
+      "digital_release_country": "FR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/fWVSwgjpT2D78VUh6X8UBd2rorW.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 86814,
+      "rating_checked_at": "2026-11-21T14:42:34Z"
     }
   ]
 }
