@@ -56,6 +56,7 @@ LEAGUES: Tuple[League, ...] = (
     League("uefa.champions", "UEFA Champions League", "Europe"),
     League("uefa.europa", "UEFA Europa League", "Europe"),
     League("uefa.europa.conf", "UEFA Conference League", "Europe"),
+    League("afc.champions", "AFC Champions League Elite", "Asia"),
 )
 
 
