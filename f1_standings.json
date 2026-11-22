@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T10:56:13.188603Z",
+  "generated_at": "2026-11-22T11:15:09.096881Z",
   "season": 2026,
   "source": "ESPN",
   "drivers": [
@@ -17,7 +17,7 @@
       "country_code": "ITA",
       "team_name": "Mercedes",
       "team_code": "MER",
-      "points": 390.0
+      "points": 402.0
     },
     {
       "position": 2,
@@ -33,26 +33,10 @@
       "country_code": "NED",
       "team_name": "Red Bull",
       "team_code": "RBR",
-      "points": 279.0
+      "points": 304.0
     },
     {
       "position": 3,
-      "athlete_id": "5503",
-      "first_name": "George",
-      "last_name": "Russell",
-      "first_name_ru": "Джордж",
-      "last_name_ru": "Расселл",
-      "full_name": "George Russell",
-      "full_name_ru": "Джордж Расселл",
-      "country": "Britain",
-      "country_ru": "Великобритания",
-      "country_code": "GBR",
-      "team_name": "Mercedes",
-      "team_code": "MER",
-      "points": 262.0
-    },
-    {
-      "position": 4,
       "athlete_id": "868",
       "first_name": "Lewis",
       "last_name": "Hamilton",
@@ -65,26 +49,26 @@
       "country_code": "GBR",
       "team_name": "Ferrari",
       "team_code": "FER",
-      "points": 261.0
+      "points": 267.0
+    },
+    {
+      "position": 4,
+      "athlete_id": "5503",
+      "first_name": "George",
+      "last_name": "Russell",
+      "first_name_ru": "Джордж",
+      "last_name_ru": "Расселл",
+      "full_name": "George Russell",
+      "full_name_ru": "Джордж Расселл",
+      "country": "Britain",
+      "country_ru": "Великобритания",
+      "country_code": "GBR",
+      "team_name": "Mercedes",
+      "team_code": "MER",
+      "points": 264.0
     },
     {
       "position": 5,
-      "athlete_id": "5498",
-      "first_name": "Charles",
-      "last_name": "Leclerc",
-      "first_name_ru": "Шарль",
-      "last_name_ru": "Леклер",
-      "full_name": "Charles Leclerc",
-      "full_name_ru": "Шарль Леклер",
-      "country": "Monaco",
-      "country_ru": "Монако",
-      "country_code": "MON",
-      "team_name": "Ferrari",
-      "team_code": "FER",
-      "points": 249.0
-    },
-    {
-      "position": 6,
       "athlete_id": "5579",
       "first_name": "Lando",
       "last_name": "Norris",
@@ -97,7 +81,23 @@
       "country_code": "GBR",
       "team_name": "McLaren",
       "team_code": "MCL",
-      "points": 246.0
+      "points": 264.0
+    },
+    {
+      "position": 6,
+      "athlete_id": "5498",
+      "first_name": "Charles",
+      "last_name": "Leclerc",
+      "first_name_ru": "Шарль",
+      "last_name_ru": "Леклер",
+      "full_name": "Charles Leclerc",
+      "full_name_ru": "Шарль Леклер",
+      "country": "Monaco",
+      "country_ru": "Монако",
+      "country_code": "MON",
+      "team_name": "Ferrari",
+      "team_code": "FER",
+      "points": 250.0
     },
     {
       "position": 7,
@@ -113,7 +113,7 @@
       "country_code": "AUS",
       "team_name": "McLaren",
       "team_code": "MCL",
-      "points": 152.0
+      "points": 167.0
     },
     {
       "position": 8,
@@ -161,7 +161,7 @@
       "country_code": "FRA",
       "team_name": "Alpine",
       "team_code": "ALP",
-      "points": 42.0
+      "points": 52.0
     },
     {
       "position": 11,
@@ -193,7 +193,7 @@
       "country_code": "ARG",
       "team_name": "Alpine",
       "team_code": "ALP",
-      "points": 27.0
+      "points": 35.0
     },
     {
       "position": 13,
@@ -245,6 +245,22 @@
     },
     {
       "position": 16,
+      "athlete_id": "4686",
+      "first_name": "Carlos",
+      "last_name": "Sainz",
+      "first_name_ru": "Карлос",
+      "last_name_ru": "Сайнс",
+      "full_name": "Carlos Sainz",
+      "full_name_ru": "Карлос Сайнс",
+      "country": "Spain",
+      "country_ru": "Испания",
+      "country_code": "ESP",
+      "team_name": "Williams",
+      "team_code": "WIL",
+      "points": 11.0
+    },
+    {
+      "position": 17,
       "athlete_id": "4678",
       "first_name": "Esteban",
       "last_name": "Ocon",
@@ -260,7 +276,7 @@
       "points": 7.0
     },
     {
-      "position": 17,
+      "position": 18,
       "athlete_id": "348",
       "first_name": "Fernando",
       "last_name": "Alonso",
@@ -273,22 +289,6 @@
       "country_code": "ESP",
       "team_name": "Aston Martin",
       "team_code": "AMR",
-      "points": 7.0
-    },
-    {
-      "position": 18,
-      "athlete_id": "4686",
-      "first_name": "Carlos",
-      "last_name": "Sainz",
-      "first_name_ru": "Карлос",
-      "last_name_ru": "Сайнс",
-      "full_name": "Carlos Sainz",
-      "full_name_ru": "Карлос Сайнс",
-      "country": "Spain",
-      "country_ru": "Испания",
-      "country_code": "ESP",
-      "team_name": "Williams",
-      "team_code": "WIL",
       "points": 7.0
     },
     {
@@ -413,7 +413,7 @@
       "country": "Germany",
       "country_ru": "Германия",
       "country_code": "DEU",
-      "points": 652.0
+      "points": 666.0
     },
     {
       "position": 2,
@@ -423,7 +423,7 @@
       "country": "Italy",
       "country_ru": "Италия",
       "country_code": "ITA",
-      "points": 510.0
+      "points": 517.0
     },
     {
       "position": 3,
@@ -433,7 +433,7 @@
       "country": "Austria",
       "country_ru": "Австрия",
       "country_code": "AUT",
-      "points": 415.0
+      "points": 440.0
     },
     {
       "position": 4,
@@ -443,7 +443,7 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
-      "points": 398.0
+      "points": 431.0
     },
     {
       "position": 5,
@@ -463,7 +463,7 @@
       "country": "France",
       "country_ru": "Франция",
       "country_code": "FRA",
-      "points": 69.0
+      "points": 87.0
     },
     {
       "position": 7,
@@ -493,7 +493,7 @@
       "country": "Britain",
       "country_ru": "Великобритания",
       "country_code": "GBR",
-      "points": 12.0
+      "points": 16.0
     },
     {
       "position": 10,
