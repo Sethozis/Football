@@ -510,7 +510,11 @@ def collect_event_teams(
         return
     competition = competitions[0]
     season = (header.get("season") or {}).get("year")
-    venue = competition.get("venue") or {}
+    venue = (
+        competition.get("venue")
+        or (event.get("gameInfo") or {}).get("venue")
+        or {}
+    )
     venue_country = (venue.get("address") or {}).get("country") or ""
 
     for competitor in competition.get("competitors") or []:
@@ -522,7 +526,15 @@ def collect_event_teams(
                 region = league_country
             else:
                 region = NATIONAL_TEAM_REGIONS.get(country, "")
-        elif league_country not in ("Europe", "World"):
+        elif league_country not in {
+            "Europe",
+            "World",
+            "Asia",
+            "North America",
+            "South America",
+            "Africa",
+            "Oceania",
+        }:
             country = league_country
         elif competitor.get("homeAway") == "home" and venue_country:
             country = venue_country
