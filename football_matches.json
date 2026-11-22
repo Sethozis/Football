@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T04:19:22.865514Z",
+  "generated_at": "2026-11-22T13:18:07.678114Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -250,7 +250,7 @@
       "id": "8346",
       "name": "Al Ahli",
       "code": "AHL",
-      "country": "Asia",
+      "country": "Saudi Arabia",
       "region": "",
       "is_national": false
     },
@@ -258,7 +258,7 @@
       "id": "7128",
       "name": "Al Ain",
       "code": "ALN",
-      "country": "Asia",
+      "country": "United Arab Emirates",
       "region": "",
       "is_national": false
     },
@@ -330,7 +330,7 @@
       "id": "929",
       "name": "Al Hilal",
       "code": "HIL",
-      "country": "Asia",
+      "country": "Saudi Arabia",
       "region": "",
       "is_national": false
     },
@@ -338,7 +338,7 @@
       "id": "2276",
       "name": "Al Ittihad",
       "code": "ITT",
-      "country": "Asia",
+      "country": "Saudi Arabia",
       "region": "",
       "is_national": false
     },
@@ -378,7 +378,7 @@
       "id": "817",
       "name": "Al Nassr",
       "code": "NSR",
-      "country": "Asia",
+      "country": "Saudi Arabia",
       "region": "",
       "is_national": false
     },
@@ -402,7 +402,7 @@
       "id": "22022",
       "name": "Al Qadsiah",
       "code": "QAD",
-      "country": "Asia",
+      "country": "Saudi Arabia",
       "region": "",
       "is_national": false
     },
@@ -426,7 +426,7 @@
       "id": "7135",
       "name": "Al Sadd",
       "code": "ALS",
-      "country": "Asia",
+      "country": "Qatar",
       "region": "",
       "is_national": false
     },
@@ -466,7 +466,7 @@
       "id": "8365",
       "name": "Al Wasl",
       "code": "WAS",
-      "country": "Asia",
+      "country": "United Arab Emirates",
       "region": "",
       "is_national": false
     },
@@ -490,7 +490,7 @@
       "id": "7129",
       "name": "Al-Gharafa",
       "code": "ALG",
-      "country": "Asia",
+      "country": "Qatar",
       "region": "",
       "is_national": false
     },
@@ -498,7 +498,7 @@
       "id": "20912",
       "name": "Al-Quwa Al-Jawiya",
       "code": "AQA",
-      "country": "Asia",
+      "country": "Iraq",
       "region": "",
       "is_national": false
     },
@@ -506,7 +506,7 @@
       "id": "21575",
       "name": "Al-Shamal",
       "code": "ALS",
-      "country": "Asia",
+      "country": "Qatar",
       "region": "",
       "is_national": false
     },
@@ -690,7 +690,7 @@
       "id": "20024",
       "name": "Ararat-Armenia",
       "code": "ARA",
-      "country": "",
+      "country": "Armenia",
       "region": "",
       "is_national": false
     },
@@ -1018,7 +1018,7 @@
       "id": "2052",
       "name": "Beijing Guoan",
       "code": "BEI",
-      "country": "Asia",
+      "country": "China PR",
       "region": "",
       "is_national": false
     },
@@ -1138,7 +1138,7 @@
       "id": "20710",
       "name": "Borac Banja Luka",
       "code": "BBL",
-      "country": "",
+      "country": "Bosnia and Herzegovina",
       "region": "",
       "is_national": false
     },
@@ -1322,7 +1322,7 @@
       "id": "7138",
       "name": "Buriram United",
       "code": "BUR",
-      "country": "Asia",
+      "country": "Thailand",
       "region": "",
       "is_national": false
     },
@@ -1514,7 +1514,7 @@
       "id": "10834",
       "name": "CSKA Sofia",
       "code": "CSK",
-      "country": "",
+      "country": "Bulgaria",
       "region": "",
       "is_national": false
     },
@@ -1522,7 +1522,7 @@
       "id": "8089",
       "name": "CSU Craiova",
       "code": "UCR",
-      "country": "",
+      "country": "Romania",
       "region": "",
       "is_national": false
     },
@@ -1882,7 +1882,7 @@
       "id": "131375",
       "name": "Cong An Ha Noi",
       "code": "CAH",
-      "country": "Asia",
+      "country": "Vietnam",
       "region": "",
       "is_national": false
     },
@@ -2050,7 +2050,7 @@
       "id": "133171",
       "name": "Daejeon Hana Citizen FC",
       "code": "DHC",
-      "country": "Asia",
+      "country": "South Korea",
       "region": "",
       "is_national": false
     },
@@ -2114,7 +2114,7 @@
       "id": "597",
       "name": "Dinamo Zagreb",
       "code": "DZG",
-      "country": "",
+      "country": "Croatia",
       "region": "",
       "is_national": false
     },
@@ -2218,7 +2218,7 @@
       "id": "21943",
       "name": "Egnatia",
       "code": "EGN",
-      "country": "",
+      "country": "Albania",
       "region": "",
       "is_national": false
     },
@@ -2330,7 +2330,7 @@
       "id": "7525",
       "name": "Esteghlal FC",
       "code": "EST",
-      "country": "Asia",
+      "country": "Iraq",
       "region": "",
       "is_national": false
     },
@@ -2682,7 +2682,7 @@
       "id": "7102",
       "name": "Gamba Osaka",
       "code": "GAM",
-      "country": "Asia",
+      "country": "Japan",
       "region": "",
       "is_national": false
     },
@@ -2858,7 +2858,7 @@
       "id": "489",
       "name": "Hajduk Split",
       "code": "HAJ",
-      "country": "",
+      "country": "Croatia",
       "region": "",
       "is_national": false
     },
@@ -2898,7 +2898,7 @@
       "id": "13083",
       "name": "Hapoel Be'er",
       "code": "HBE",
-      "country": "Israel",
+      "country": "Romania",
       "region": "",
       "is_national": false
     },
@@ -3018,7 +3018,7 @@
       "id": "20025",
       "name": "Iberia 1999",
       "code": "IBE",
-      "country": "",
+      "country": "Georgia",
       "region": "",
       "is_national": false
     },
@@ -3042,7 +3042,7 @@
       "id": "20703",
       "name": "Inter D'Escaldes",
       "code": "IDE",
-      "country": "",
+      "country": "Andorra",
       "region": "",
       "is_national": false
     },
@@ -3106,7 +3106,7 @@
       "id": "7922",
       "name": "Jablonec",
       "code": "JAB",
-      "country": "",
+      "country": "Czechia",
       "region": "",
       "is_national": false
     },
@@ -3114,7 +3114,7 @@
       "id": "11505",
       "name": "Jagiellonia Bialystok",
       "code": "JAG",
-      "country": "",
+      "country": "Poland",
       "region": "",
       "is_national": false
     },
@@ -3138,7 +3138,7 @@
       "id": "7119",
       "name": "Jeonbuk Hyundai Motors",
       "code": "JHM",
-      "country": "Asia",
+      "country": "South Korea",
       "region": "",
       "is_national": false
     },
@@ -3146,7 +3146,7 @@
       "id": "17689",
       "name": "Johor Darul Ta'zim",
       "code": "JDT",
-      "country": "Asia",
+      "country": "Malaysia",
       "region": "",
       "is_national": false
     },
@@ -3194,7 +3194,7 @@
       "id": "2528",
       "name": "Kairat Almaty",
       "code": "KAI",
-      "country": "",
+      "country": "Kazakhstan",
       "region": "",
       "is_national": false
     },
@@ -3218,7 +3218,7 @@
       "id": "7115",
       "name": "Kashima Antlers",
       "code": "KAN",
-      "country": "Asia",
+      "country": "Japan",
       "region": "",
       "is_national": false
     },
@@ -3226,7 +3226,7 @@
       "id": "7476",
       "name": "Kashiwa Reysol",
       "code": "KRE",
-      "country": "Asia",
+      "country": "Japan",
       "region": "",
       "is_national": false
     },
@@ -3234,7 +3234,7 @@
       "id": "20028",
       "name": "Kauno Zalgiris",
       "code": "ZAL",
-      "country": "",
+      "country": "Lithuania",
       "region": "",
       "is_national": false
     },
@@ -3290,7 +3290,7 @@
       "id": "8169",
       "name": "KuPS Kuopio",
       "code": "KUP",
-      "country": "",
+      "country": "Finland",
       "region": "",
       "is_national": false
     },
@@ -3306,7 +3306,7 @@
       "id": "21361",
       "name": "Kyoto Sanga",
       "code": "KYO",
-      "country": "Asia",
+      "country": "Japan",
       "region": "",
       "is_national": false
     },
@@ -3498,7 +3498,7 @@
       "id": "490",
       "name": "Levski Sofia",
       "code": "LEV",
-      "country": "",
+      "country": "Bulgaria",
       "region": "",
       "is_national": false
     },
@@ -3546,7 +3546,7 @@
       "id": "17856",
       "name": "Lincoln Red Imps",
       "code": "LRI",
-      "country": "",
+      "country": "Gibraltar",
       "region": "",
       "is_national": false
     },
@@ -3978,7 +3978,7 @@
       "id": "7530",
       "name": "Neftchi Fergana",
       "code": "NEF",
-      "country": "Asia",
+      "country": "Uzbekistan",
       "region": "",
       "is_national": false
     },
@@ -4026,7 +4026,7 @@
       "id": "5323",
       "name": "Newcastle Jets",
       "code": "NEW",
-      "country": "Asia",
+      "country": "Australia",
       "region": "",
       "is_national": false
     },
@@ -4290,7 +4290,7 @@
       "id": "7123",
       "name": "Pakhtakor",
       "code": "PAK",
-      "country": "Asia",
+      "country": "Uzbekistan",
       "region": "",
       "is_national": false
     },
@@ -4450,7 +4450,7 @@
       "id": "9693",
       "name": "Pohang Steelers",
       "code": "POH",
-      "country": "Asia",
+      "country": "South Korea",
       "region": "",
       "is_national": false
     },
@@ -4498,7 +4498,7 @@
       "id": "17757",
       "name": "Port FC",
       "code": "POR",
-      "country": "Asia",
+      "country": "Thailand",
       "region": "",
       "is_national": false
     },
@@ -4642,7 +4642,7 @@
       "id": "17760",
       "name": "Ratchaburi FC",
       "code": "RCH",
-      "country": "Asia",
+      "country": "Thailand",
       "region": "",
       "is_national": false
     },
@@ -4770,7 +4770,7 @@
       "id": "2290",
       "name": "Red Star Belgrade",
       "code": "RSB",
-      "country": "",
+      "country": "Serbia",
       "region": "",
       "is_national": false
     },
@@ -4834,7 +4834,7 @@
       "id": "19246",
       "name": "Riga FC",
       "code": "RIG",
-      "country": "",
+      "country": "Latvia",
       "region": "",
       "is_national": false
     },
@@ -5082,7 +5082,7 @@
       "id": "21922",
       "name": "Sabah FK",
       "code": "SAB",
-      "country": "",
+      "country": "Azerbaijan",
       "region": "",
       "is_national": false
     },
@@ -5338,7 +5338,7 @@
       "id": "790",
       "name": "Shabab Al Ahli",
       "code": "SAA",
-      "country": "Asia",
+      "country": "United Arab Emirates",
       "region": "",
       "is_national": false
     },
@@ -5346,7 +5346,7 @@
       "id": "493",
       "name": "Shakhtar Donetsk",
       "code": "SHK",
-      "country": "",
+      "country": "England",
       "region": "",
       "is_national": false
     },
@@ -5354,7 +5354,7 @@
       "id": "15515",
       "name": "Shanghai Port FC",
       "code": "SHP",
-      "country": "Asia",
+      "country": "China PR",
       "region": "",
       "is_national": false
     },
@@ -5418,7 +5418,7 @@
       "id": "494",
       "name": "Slavia Prague",
       "code": "SLP",
-      "country": "",
+      "country": "Czechia",
       "region": "",
       "is_national": false
     },
@@ -5434,7 +5434,7 @@
       "id": "521",
       "name": "Slovan Bratislava",
       "code": "SLB",
-      "country": "",
+      "country": "Slovakia",
       "region": "",
       "is_national": false
     },
@@ -5898,7 +5898,7 @@
       "id": "21615",
       "name": "Torreense",
       "code": "TOR",
-      "country": "",
+      "country": "Portugal",
       "region": "",
       "is_national": false
     },
@@ -5938,7 +5938,7 @@
       "id": "15107",
       "name": "Tractor",
       "code": "TRA",
-      "country": "Asia",
+      "country": "Oman",
       "region": "",
       "is_national": false
     },
@@ -6362,7 +6362,7 @@
       "id": "11706",
       "name": "Viktoria Plzen",
       "code": "PLZ",
-      "country": "",
+      "country": "Czechia",
       "region": "",
       "is_national": false
     },
@@ -6402,7 +6402,7 @@
       "id": "7477",
       "name": "Vissel Kobe",
       "code": "VIS",
-      "country": "Asia",
+      "country": "Japan",
       "region": "",
       "is_national": false
     },
