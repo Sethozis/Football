@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T14:42:34Z",
+  "generated_at": "2026-11-22T14:38:09Z",
   "minimum_imdb_rating": 7.0,
   "minimum_imdb_votes": 500,
   "minimum_year": 2025,
@@ -7,7 +7,7 @@
     "from": "2026-10-01",
     "to": "2027-11-30"
   },
-  "count": 51,
+  "count": 53,
   "movies": [
     {
       "tmdb_id": 1465563,
@@ -94,7 +94,7 @@
       ],
       "digital_release_date": "2026-10-01",
       "digital_release_country": "FR",
-      "poster_url": "https://image.tmdb.org/t/p/w500/5mD1wVMawcq7a10ypT37NDUaP64.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ylXQDz9eAQuC785UQaz5wum2GSe.jpg",
       "imdb_rating": 7.8,
       "imdb_votes": 2804,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -923,7 +923,7 @@
       ],
       "digital_release_date": "2026-10-29",
       "digital_release_country": "FR",
-      "poster_url": "https://image.tmdb.org/t/p/w500/vyI8RnUy0tV7F0rj0WUjlNKIIHx.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/297x0HIqSCp19pN9wlduK9PONRv.jpg",
       "imdb_rating": 8.0,
       "imdb_votes": 1748,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -1010,7 +1010,7 @@
       ],
       "digital_release_date": "2026-11-03",
       "digital_release_country": "GB",
-      "poster_url": "https://image.tmdb.org/t/p/w500/vGUAC8EOizemwwbWk9JbFrhpVz4.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/pcPLnxCThCIo9JFQIMFX4kAE5Yz.jpg",
       "imdb_rating": 7.2,
       "imdb_votes": 1165,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -1404,6 +1404,34 @@
       "rating_checked_at": "2026-11-21T14:42:34Z"
     },
     {
+      "tmdb_id": 1515899,
+      "imdb_id": "tt39018643",
+      "title_ru": "Билли Айлиш: Тур «Hit Me Hard and Soft»",
+      "title_en": "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)",
+      "title_original": "Billie Eilish - Hit Me Hard and Soft: The Tour (Live in 3D)",
+      "overview_ru": "Сопутствующий 3D-концертный фильм, запечатлевший выступления в Манчестере и снятый в качестве сорежиссёров Айлиш и Джеймсом Кэмероном.",
+      "overview_en": "Captured during Billie Eilish's sold-out world tour, a concert experience from one of the most celebrated and successful artists of her generation, presented in immersive 3D.",
+      "year": 2026,
+      "genre_ids": [
+        10402,
+        99
+      ],
+      "genres_ru": [
+        "музыка",
+        "документальный"
+      ],
+      "genres_en": [
+        "Music",
+        "Documentary"
+      ],
+      "digital_release_date": "2026-12-07",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/zfFvltKHntGBupFuubx3r61v48e.jpg",
+      "imdb_rating": 7.5,
+      "imdb_votes": 3823,
+      "rating_checked_at": "2026-11-22T14:38:09Z"
+    },
+    {
       "tmdb_id": 1400940,
       "imdb_id": "tt34890576",
       "title_ru": "Клэйфейс",
@@ -1469,11 +1497,39 @@
       "rating_checked_at": "2026-11-20T19:32:05Z"
     },
     {
+      "tmdb_id": 1405769,
+      "imdb_id": "tt34888646",
+      "title_ru": "Можно только представить 2",
+      "title_en": "I Can Only Imagine 2",
+      "title_original": "I Can Only Imagine 2",
+      "overview_ru": "2012 год. Барт Миллард, вокалист христианской рок-группы MercyMe, находится на пике карьеры после выхода самой популярной песни коллектива, однако в семейной жизни он сталкивается с проблемами. Домашняя жизнь Барта и его жены Шеннон теперь постоянно связана с заботой об их юном сыне Сэме, который страдает сахарным диабетом 1-го типа и нуждается в частых инъекциях инсулина.\r Когда группе выпадает шанс возглавить новое турне, вокалист прежде всего волнуется за сына, который недостаточно серьёзно относится к своему здоровью и обижается на родителей из-за их постоянного внимания. Барт предлагает взять с собой Сэма в гастроли, и, неожиданно для него, Шеннон и менеджер группы соглашаются с идеей. Тем временем к турне также присоединяется сольный певец Тим Тиммонс, которому предстоит выступать на разогреве.",
+      "overview_en": "Following the breakout success of the song 'I Can Only Imagine', MercyMe's Bart Millard is living the dream—sold-out arenas, a devoted fanbase, and a thriving career. But behind the spotlight, Bart's past threatens the family he's built, especially the fragile bond with his son Sam. When hopeful newcomer Tim Timmons joins the band for their biggest tour yet, he unknowingly brings a renewed gratitude to Bart's life through their unlikely friendship. Bart soon discovers that Tim carries hardships—and secrets—of his own, forcing him to face his past and repair his relationships with Sam and his wife Shannon before fame costs him what matters most.",
+      "year": 2026,
+      "genre_ids": [
+        10402,
+        18
+      ],
+      "genres_ru": [
+        "музыка",
+        "драма"
+      ],
+      "genres_en": [
+        "Music",
+        "Drama"
+      ],
+      "digital_release_date": "2026-12-21",
+      "digital_release_country": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/qYBCs9nBmdNCLduw5BTlendq89z.jpg",
+      "imdb_rating": 7.1,
+      "imdb_votes": 1786,
+      "rating_checked_at": "2026-11-22T14:38:09Z"
+    },
+    {
       "tmdb_id": 1061798,
       "imdb_id": "tt36955518",
       "title_ru": "Джим Куин",
       "title_en": "Jim Queen",
-      "title_original": "Jim Queen",
+      "title_original": "Jim Queen à la Recherche de la Chloroqueer",
       "overview_ru": "Когда по парижским гей-клубам распространяется гетерозис — загадочный вирус, превращающий геев в натуралов, — Джим, шестикубиковый предводитель «Королев спортзала», превращается из звезды гей-прайда в социального изгоя. Рядом с ним остается только Люсьен, новоиспечённый твинк, у которого больше сердца, чем кубиков пресса. Джиму нужно срочно найти лекарство, пока болезнь не уничтожила сообщество, которое когда-то боготворило его.",
       "overview_en": "When Heterosis, a mysterious virus that turns gay men straight, sweeps through the Parisian gay scene, Jim, the six-packed sovereign of the Gym Queens, goes from Pride royalty to social outcast. With only Lucien, a freshly-out twink with more heart than abs, still by his side, Jim must race to find a cure before the disease erases the community that once worshipped him.",
       "year": 2026,
