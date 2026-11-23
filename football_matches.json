@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T23:01:40.989761Z",
+  "generated_at": "2026-11-23T04:56:43.739323Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -6130,7 +6130,7 @@
       "id": "5807",
       "name": "Union St.-Gilloise",
       "code": "USG",
-      "country": "Belgium",
+      "country": "Germany",
       "region": "",
       "is_national": false
     },
