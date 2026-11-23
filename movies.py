@@ -619,21 +619,27 @@ def build_candidate(
         if isinstance(genre, dict) and isinstance(genre.get("id"), int):
             genre_ids.append(genre["id"])
 
-    production_country_code: Optional[str] = None
+    # For co-productions TMDB may put the UK first even when the film is
+    # primarily an American production.  Prefer the US when it appears in
+    # the origin/production countries, otherwise use the first origin country.
+    country_codes: List[str] = []
+    origin_countries = detail.get("origin_country")
+    if isinstance(origin_countries, list):
+        for code in origin_countries:
+            if isinstance(code, str) and code.strip():
+                country_codes.append(code.strip().upper())
     for country in detail.get("production_countries") or []:
         if not isinstance(country, dict):
             continue
         code = country.get("iso_3166_1")
         if isinstance(code, str) and code.strip():
-            production_country_code = code.strip().upper()
-            break
-    if production_country_code is None:
-        origin_countries = detail.get("origin_country")
-        if isinstance(origin_countries, list):
-            for code in origin_countries:
-                if isinstance(code, str) and code.strip():
-                    production_country_code = code.strip().upper()
-                    break
+            country_codes.append(code.strip().upper())
+
+    production_country_code: Optional[str] = None
+    if "US" in country_codes:
+        production_country_code = "US"
+    elif country_codes:
+        production_country_code = country_codes[0]
 
     poster_path = detail.get("poster_path")
     poster_url = (
