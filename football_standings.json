@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T04:58:06.105855Z",
+  "generated_at": "2026-11-23T16:58:15.625069Z",
   "tables": [
     {
       "league_id": "eng.1",
@@ -5904,14 +5904,14 @@
           "team_name": "Al Hilal",
           "team_code": "HIL",
           "team_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/929.png",
-          "played": 4,
+          "played": 5,
           "wins": 3,
-          "draws": 0,
+          "draws": 1,
           "losses": 1,
-          "goals_for": 7,
-          "goals_against": 4,
+          "goals_for": 9,
+          "goals_against": 6,
           "goal_difference": 3,
-          "points": 9,
+          "points": 10,
           "note": null
         },
         {
@@ -6016,14 +6016,14 @@
           "team_name": "Neftchi Fergana",
           "team_code": "NEF",
           "team_logo": null,
-          "played": 4,
+          "played": 5,
           "wins": 1,
-          "draws": 1,
+          "draws": 2,
           "losses": 2,
-          "goals_for": 5,
-          "goals_against": 7,
+          "goals_for": 7,
+          "goals_against": 9,
           "goal_difference": -2,
-          "points": 4,
+          "points": 5,
           "note": null
         },
         {
