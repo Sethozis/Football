@@ -78,6 +78,7 @@ class Candidate:
     genres_en: List[str]
     digital_date: date
     digital_country: str
+    production_country_code: Optional[str]
     poster_url: Optional[str]
 
 
@@ -618,6 +619,22 @@ def build_candidate(
         if isinstance(genre, dict) and isinstance(genre.get("id"), int):
             genre_ids.append(genre["id"])
 
+    production_country_code: Optional[str] = None
+    for country in detail.get("production_countries") or []:
+        if not isinstance(country, dict):
+            continue
+        code = country.get("iso_3166_1")
+        if isinstance(code, str) and code.strip():
+            production_country_code = code.strip().upper()
+            break
+    if production_country_code is None:
+        origin_countries = detail.get("origin_country")
+        if isinstance(origin_countries, list):
+            for code in origin_countries:
+                if isinstance(code, str) and code.strip():
+                    production_country_code = code.strip().upper()
+                    break
+
     poster_path = detail.get("poster_path")
     poster_url = (
         f"{IMAGE_BASE}{poster_path}"
@@ -639,6 +656,7 @@ def build_candidate(
         genres_en=[genres_en[g] for g in genre_ids if g in genres_en],
         digital_date=digital[0],
         digital_country=digital[1],
+        production_country_code=production_country_code,
         poster_url=poster_url,
     )
 
@@ -1037,6 +1055,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "genres_en": candidate.genres_en,
                 "digital_release_date": candidate.digital_date.isoformat(),
                 "digital_release_country": candidate.digital_country,
+                "production_country_code": candidate.production_country_code,
                 "poster_url": candidate.poster_url,
                 "imdb_rating": round(rating, 1),
                 "imdb_votes": votes,
