@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T18:10:33Z",
+  "generated_at": "2026-11-24T17:47:31Z",
   "minimum_imdb_rating": 7.0,
   "minimum_imdb_votes": 500,
   "minimum_year": 2025,
@@ -7,7 +7,7 @@
     "from": "2026-10-01",
     "to": "2027-11-30"
   },
-  "count": 55,
+  "count": 56,
   "movies": [
     {
       "tmdb_id": 1465563,
@@ -1332,7 +1332,7 @@
       "title_en": "Fjord",
       "title_original": "Fjord",
       "overview_ru": "В глухую норвежскую деревню на берегу фьорда переезжает семья из Румынии. Они быстро находят общий язык с соседями, а дети обеих семей становятся лучшими друзьями. Но идиллия рушится, когда румынская девочка приходит в школу с синяками и по деревне начинают ползти тревожные слухи.",
-      "overview_en": "Following the deaths of Mihai's parents, Mihai and Lisbet Gheorghiu leave their life behind in Romania and move with their children to a remote village in Norway, hoping to rebuild their lives near Lisbet's family. There, they grow close to their neighbors, the Halbergs, whose warmth gives them hope for a fresh start. But the fragile peace begins to unravel when the Gheorghiu family’s young daughter, Elia, arrives at school covered in bruises.",
+      "overview_en": "An immigrant Romanian family living in Norway is subject to an investigation and faces the scrutiny of the local judicial system.",
       "year": 2026,
       "genre_ids": [
         18
@@ -1346,7 +1346,7 @@
       "digital_release_date": "2026-11-24",
       "digital_release_country": "US",
       "production_country_code": "US",
-      "poster_url": "https://image.tmdb.org/t/p/w500/bD6ynFDUP3PZvdIBjPi9VGhyi5a.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3PPPIeSdeivjUn3O9RahGiaJ9b8.jpg",
       "imdb_rating": 7.6,
       "imdb_votes": 4193,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -1581,19 +1581,16 @@
       "genre_ids": [
         16,
         12,
-        18,
         14
       ],
       "genres_ru": [
         "мультфильм",
         "приключения",
-        "драма",
         "фэнтези"
       ],
       "genres_en": [
         "Animation",
         "Adventure",
-        "Drama",
         "Fantasy"
       ],
       "digital_release_date": "2026-12-08",
@@ -1603,6 +1600,35 @@
       "imdb_rating": 8.7,
       "imdb_votes": 15186,
       "rating_checked_at": "2026-11-20T19:32:05Z"
+    },
+    {
+      "tmdb_id": 1432474,
+      "imdb_id": "tt34895535",
+      "title_ru": "Нимроды",
+      "title_en": "Nimrods",
+      "title_original": "Nimrods",
+      "overview_ru": "Мечтая об аншлагах и мировой славе, трое амбициозных подростков-музыкантов получают «приглашение» сыграть на разогреве у легендарных Green Day. На крыльях вдохновения ребята бросают всё и отправляются через всю страну прямо в Калифорнию. Они ещё не знают, что долгожданный прорыв — лишь жестокий розыгрыш старшего брата, а главная проверка их дружбы и таланта ждёт их в конце пути.",
+      "overview_en": "Three friends journey from Kansas City to Los Angeles, mistakenly believing that their band is opening for Green Day on New Year’s Eve.",
+      "year": 2026,
+      "genre_ids": [
+        35,
+        10402
+      ],
+      "genres_ru": [
+        "комедия",
+        "музыка"
+      ],
+      "genres_en": [
+        "Comedy",
+        "Music"
+      ],
+      "digital_release_date": "2026-12-18",
+      "digital_release_country": "US",
+      "production_country_code": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/4h2WtFCLZPXbydbpi248uqOT9yz.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 1188,
+      "rating_checked_at": "2026-11-24T17:47:31Z"
     },
     {
       "tmdb_id": 1405769,
