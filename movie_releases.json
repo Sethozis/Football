@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T17:47:31Z",
+  "generated_at": "2026-11-25T17:16:26Z",
   "minimum_imdb_rating": 7.0,
   "minimum_imdb_votes": 500,
   "minimum_year": 2025,
@@ -7,7 +7,7 @@
     "from": "2026-10-01",
     "to": "2027-11-30"
   },
-  "count": 56,
+  "count": 57,
   "movies": [
     {
       "tmdb_id": 1465563,
@@ -1198,7 +1198,7 @@
       "digital_release_date": "2026-11-06",
       "digital_release_country": "DE",
       "production_country_code": "US",
-      "poster_url": "https://image.tmdb.org/t/p/w500/pkppk6J9ieH4VU9g5ISDY7XFKjK.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/oWr91tk4m8YS77sGY64Tg7KQsIb.jpg",
       "imdb_rating": 7.6,
       "imdb_votes": 567,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -1332,7 +1332,7 @@
       "title_en": "Fjord",
       "title_original": "Fjord",
       "overview_ru": "В глухую норвежскую деревню на берегу фьорда переезжает семья из Румынии. Они быстро находят общий язык с соседями, а дети обеих семей становятся лучшими друзьями. Но идиллия рушится, когда румынская девочка приходит в школу с синяками и по деревне начинают ползти тревожные слухи.",
-      "overview_en": "An immigrant Romanian family living in Norway is subject to an investigation and faces the scrutiny of the local judicial system.",
+      "overview_en": "Following the deaths of Mihai's parents, Mihai and Lisbet Gheorghiu leave their life behind in Romania and move with their children to a remote village in Norway, hoping to rebuild their lives near Lisbet's family. There, they grow close to their neighbors, the Halbergs, whose warmth gives them hope for a fresh start. But the fragile peace begins to unravel when the Gheorghiu family’s young daughter, Elia, arrives at school covered in bruises.",
       "year": 2026,
       "genre_ids": [
         18
@@ -1629,6 +1629,38 @@
       "imdb_rating": 7.0,
       "imdb_votes": 1188,
       "rating_checked_at": "2026-11-24T17:47:31Z"
+    },
+    {
+      "tmdb_id": 1061474,
+      "imdb_id": "tt5950044",
+      "title_ru": "Супермен",
+      "title_en": "Superman",
+      "title_original": "Superman",
+      "overview_ru": "Кларк Кент, родившийся на планете Криптон, но выросший в простой американской семье, считает своим долгом служение человечеству в качестве Супермена. Он предотвращает вторжение сил Боравии в соседнюю страну, чем навлекает на себя гнев Лекса Лютора, который со своими приспешниками проникает в Крепость Одиночества Супермена и очерняет его перед общественностью.",
+      "overview_en": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+      "year": 2025,
+      "genre_ids": [
+        878,
+        12,
+        28
+      ],
+      "genres_ru": [
+        "фантастика",
+        "приключения",
+        "боевик"
+      ],
+      "genres_en": [
+        "Science Fiction",
+        "Adventure",
+        "Action"
+      ],
+      "digital_release_date": "2026-12-19",
+      "digital_release_country": "PH",
+      "production_country_code": "US",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
+      "imdb_rating": 7.0,
+      "imdb_votes": 443733,
+      "rating_checked_at": "2026-11-25T17:16:26Z"
     },
     {
       "tmdb_id": 1405769,
