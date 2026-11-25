@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T01:46:37.280924Z",
+  "generated_at": "2026-11-25T16:33:37.257581Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -54137,6 +54137,22 @@
       "away_team_code": "S04"
     },
     {
+      "fixture_id": "401883094",
+      "kickoff_utc": "2026-12-11T19:30:00Z",
+      "tournament": "LaLiga 2",
+      "country": "Spain",
+      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
+      "season": 2026,
+      "league_id": "3921",
+      "league_slug": "esp.2",
+      "home_team_id": "6832",
+      "home_team": "Almería",
+      "home_team_code": "ALM",
+      "away_team_id": "2737",
+      "away_team": "Albacete",
+      "away_team_code": "ALB"
+    },
+    {
       "fixture_id": "401876375",
       "kickoff_utc": "2026-12-11T19:45:00Z",
       "tournament": "Ligue 1",
@@ -54681,6 +54697,22 @@
       "away_team_code": "RAY"
     },
     {
+      "fixture_id": "401883093",
+      "kickoff_utc": "2026-12-12T15:15:00Z",
+      "tournament": "LaLiga 2",
+      "country": "Spain",
+      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
+      "season": 2026,
+      "league_id": "3921",
+      "league_slug": "esp.2",
+      "home_team_id": "3842",
+      "home_team": "Cádiz",
+      "home_team_code": "CAD",
+      "away_team_id": "11487",
+      "away_team": "CD Sabadell",
+      "away_team_code": "CDS"
+    },
+    {
       "fixture_id": "401876370",
       "kickoff_utc": "2026-12-12T16:15:00Z",
       "tournament": "Ligue 1",
@@ -54759,6 +54791,22 @@
       "away_team_id": "83",
       "away_team": "Barcelona",
       "away_team_code": "BAR"
+    },
+    {
+      "fixture_id": "401882288",
+      "kickoff_utc": "2026-12-12T17:30:00Z",
+      "tournament": "LaLiga 2",
+      "country": "Spain",
+      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
+      "season": 2026,
+      "league_id": "3921",
+      "league_slug": "esp.2",
+      "home_team_id": "92",
+      "home_team": "Real Oviedo",
+      "home_team_code": "OVI",
+      "away_team_id": "20983",
+      "away_team": "Real Sociedad II",
+      "away_team_code": "RSO"
     },
     {
       "fixture_id": "401878742",
@@ -54935,6 +54983,22 @@
       "away_team_id": "87",
       "away_team": "Racing Santander",
       "away_team_code": "RAC"
+    },
+    {
+      "fixture_id": "401883301",
+      "kickoff_utc": "2026-12-12T20:00:00Z",
+      "tournament": "LaLiga 2",
+      "country": "Spain",
+      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
+      "season": 2026,
+      "league_id": "3921",
+      "league_slug": "esp.2",
+      "home_team_id": "98",
+      "home_team": "Las Palmas",
+      "home_team_code": "LPA",
+      "away_team_id": "131858",
+      "away_team": "RC Celta Fortuna",
+      "away_team_code": "CEL"
     },
     {
       "fixture_id": "401875007",
@@ -55385,22 +55449,6 @@
       "away_team_code": "OSA"
     },
     {
-      "fixture_id": "401882288",
-      "kickoff_utc": "2026-12-13T20:00:00Z",
-      "tournament": "LaLiga 2",
-      "country": "Spain",
-      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
-      "season": 2026,
-      "league_id": "3921",
-      "league_slug": "esp.2",
-      "home_team_id": "92",
-      "home_team": "Real Oviedo",
-      "home_team_code": "OVI",
-      "away_team_id": "20983",
-      "away_team": "Real Sociedad II",
-      "away_team_code": "RSO"
-    },
-    {
       "fixture_id": "401882289",
       "kickoff_utc": "2026-12-13T20:00:00Z",
       "tournament": "LaLiga 2",
@@ -55511,54 +55559,6 @@
       "away_team_id": "4438",
       "away_team": "Castellón",
       "away_team_code": "CAS"
-    },
-    {
-      "fixture_id": "401883093",
-      "kickoff_utc": "2026-12-13T20:00:00Z",
-      "tournament": "LaLiga 2",
-      "country": "Spain",
-      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
-      "season": 2026,
-      "league_id": "3921",
-      "league_slug": "esp.2",
-      "home_team_id": "3842",
-      "home_team": "Cádiz",
-      "home_team_code": "CAD",
-      "away_team_id": "11487",
-      "away_team": "CD Sabadell",
-      "away_team_code": "CDS"
-    },
-    {
-      "fixture_id": "401883094",
-      "kickoff_utc": "2026-12-13T20:00:00Z",
-      "tournament": "LaLiga 2",
-      "country": "Spain",
-      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
-      "season": 2026,
-      "league_id": "3921",
-      "league_slug": "esp.2",
-      "home_team_id": "6832",
-      "home_team": "Almería",
-      "home_team_code": "ALM",
-      "away_team_id": "2737",
-      "away_team": "Albacete",
-      "away_team_code": "ALB"
-    },
-    {
-      "fixture_id": "401883301",
-      "kickoff_utc": "2026-12-13T20:00:00Z",
-      "tournament": "LaLiga 2",
-      "country": "Spain",
-      "stage": "2026-27 Spanish LALIGA 2, Regular Season",
-      "season": 2026,
-      "league_id": "3921",
-      "league_slug": "esp.2",
-      "home_team_id": "98",
-      "home_team": "Las Palmas",
-      "home_team_code": "LPA",
-      "away_team_id": "131858",
-      "away_team": "RC Celta Fortuna",
-      "away_team_code": "CEL"
     },
     {
       "fixture_id": "401875032",
