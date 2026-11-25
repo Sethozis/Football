@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-24T15:16:25.199228Z",
+  "generated_at": "2026-11-25T14:56:41.455694Z",
   "source": "Wikipedia / FIDE",
   "schedule_windows": [
     {
@@ -49,16 +49,6 @@
         }
       ],
       "games": [
-        {
-          "id": "world_championship-2026-game-2",
-          "tournament": "world_championship",
-          "stage": "Game 2",
-          "if_required": false,
-          "date": "2026-11-25",
-          "time": "15:00",
-          "timezone": "Europe/Zurich",
-          "start_utc": "2026-11-25T14:00:00Z"
-        },
         {
           "id": "world_championship-2026-game-3",
           "tournament": "world_championship",
