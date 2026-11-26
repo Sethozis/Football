@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T17:16:26Z",
+  "generated_at": "2026-11-26T16:56:47Z",
   "minimum_imdb_rating": 7.0,
   "minimum_imdb_votes": 500,
   "minimum_year": 2025,
@@ -7,7 +7,7 @@
     "from": "2026-10-01",
     "to": "2027-11-30"
   },
-  "count": 57,
+  "count": 59,
   "movies": [
     {
       "tmdb_id": 1465563,
@@ -161,7 +161,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/jcGvB76v8p1sqYXXkBetWASV0uM.jpg",
       "imdb_rating": 7.1,
       "imdb_votes": 10079,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1429348,
@@ -437,7 +437,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/bjiS5ipwxb9JFy3XRRN4OAilSeX.jpg",
       "imdb_rating": 8.0,
       "imdb_votes": 327986,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1084244,
@@ -472,7 +472,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/sfQtVlIHljToOwYjhe21KPGzZWK.jpg",
       "imdb_rating": 7.4,
       "imdb_votes": 81658,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1088166,
@@ -533,7 +533,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/5XoHhKZ1IROW6f5UlRpADHnTL2l.jpg",
       "imdb_rating": 8.6,
       "imdb_votes": 801,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1796809,
@@ -788,7 +788,7 @@
       "digital_release_date": "2026-10-24",
       "digital_release_country": "RO",
       "production_country_code": "JP",
-      "poster_url": "https://image.tmdb.org/t/p/w500/a15F5KJ4mleusJR1YKP4zUyZaxG.jpg",
+      "poster_url": "https://image.tmdb.org/t/p/w500/8fHBOSOIUKNkQVsZvC7lfUDJo1W.jpg",
       "imdb_rating": 7.5,
       "imdb_votes": 6403,
       "rating_checked_at": "2026-11-20T19:32:05Z"
@@ -1012,7 +1012,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/bRwnj8WEKBCvmfeUNOukJPwB43K.jpg",
       "imdb_rating": 7.8,
       "imdb_votes": 392842,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1124142,
@@ -1105,7 +1105,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/lmrulvLbmaejTix1YaMxo1oGhH1.jpg",
       "imdb_rating": 7.0,
       "imdb_votes": 31970,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1419406,
@@ -1230,7 +1230,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/6sYemVUn79UPKz1ZsSG6kPU4RVy.jpg",
       "imdb_rating": 7.1,
       "imdb_votes": 44562,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1368337,
@@ -1382,6 +1382,67 @@
       "imdb_rating": 7.4,
       "imdb_votes": 4315,
       "rating_checked_at": "2026-11-20T19:32:05Z"
+    },
+    {
+      "tmdb_id": 1220564,
+      "imdb_id": "tt27847051",
+      "title_ru": "Секретный агент",
+      "title_en": "The Secret Agent",
+      "title_original": "O Agente Secreto",
+      "overview_ru": "1977 год. Вдовец и бывший научный сотрудник приезжает в Ресифи, где проходит карнавал. Он селится в гостевом доме у радушной пожилой хозяйки и навещает маленького сына, который живёт с дедушкой и бабушкой. Также мужчина устраивается на работу в городское бюро по выдаче удостоверений личности, где надеется отыскать документы своей матери, и, похоже, он от кого-то скрывается.",
+      "overview_en": "Brazil, 1977. Marcelo, a technology expert in his early 40s, is on the run. Hoping to reunite with his son, he travels to Recife during Carnival but soon realizes that the city is not the safe haven he was expecting.",
+      "year": 2025,
+      "genre_ids": [
+        53,
+        18,
+        80
+      ],
+      "genres_ru": [
+        "триллер",
+        "драма",
+        "криминал"
+      ],
+      "genres_en": [
+        "Thriller",
+        "Drama",
+        "Crime"
+      ],
+      "digital_release_date": "2026-11-25",
+      "digital_release_country": "CN",
+      "production_country_code": "BR",
+      "poster_url": "https://image.tmdb.org/t/p/w500/iLE2YOmeboeTDC7GlOp1dzh1VFo.jpg",
+      "imdb_rating": 7.2,
+      "imdb_votes": 63958,
+      "rating_checked_at": "2026-11-26T16:56:47Z"
+    },
+    {
+      "tmdb_id": 1391021,
+      "imdb_id": "tt34386754",
+      "title_ru": "Однажды на Ближнем Востоке",
+      "title_en": "Once Upon a Time in the Middle East",
+      "title_original": "欢迎来龙餐馆",
+      "overview_ru": "Китайцы открывают на Ближнем Востоке ресторан, который становится невероятно популярным, но в дело вмешивается война.",
+      "overview_en": "Seeking a fresh start, chef Xu Fu travels to the Middle East to support his family and repay his debts. Alongside restaurant manager Ma Junsheng, he transforms the struggling Dragon Restaurant into a thriving business. But when war engulfs the city, their hard-won success is shattered and the restaurant becomes a refuge for those caught in the conflict. As danger closes in, Xu Fu must risk everything to protect his newfound community and preserve a small beacon of hope amid the devastation.",
+      "year": 2026,
+      "genre_ids": [
+        18,
+        10752
+      ],
+      "genres_ru": [
+        "драма",
+        "военный"
+      ],
+      "genres_en": [
+        "Drama",
+        "War"
+      ],
+      "digital_release_date": "2026-11-27",
+      "digital_release_country": "CN",
+      "production_country_code": "CN",
+      "poster_url": "https://image.tmdb.org/t/p/w500/uS5RSCYHw9DJFZ0mMLJaPnuKNjA.jpg",
+      "imdb_rating": 8.3,
+      "imdb_votes": 1083,
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 1422041,
@@ -1567,7 +1628,7 @@
       "poster_url": "https://image.tmdb.org/t/p/w500/9l1NuFjel2j89hiuiJbsxfblqjy.jpg",
       "imdb_rating": 7.5,
       "imdb_votes": 37372,
-      "rating_checked_at": "2026-11-19T10:18:28Z"
+      "rating_checked_at": "2026-11-26T16:56:47Z"
     },
     {
       "tmdb_id": 791523,
