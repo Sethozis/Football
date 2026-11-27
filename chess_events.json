@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T14:26:40.901004Z",
+  "generated_at": "2026-11-27T14:19:34.538120Z",
   "source": "Wikipedia / FIDE",
   "schedule_windows": [
     {
@@ -100,10 +100,10 @@
           "start_utc": "2026-12-03T14:00:00Z"
         },
         {
-          "id": "world_championship-2026-game-9-if-required",
+          "id": "world_championship-2026-game-9",
           "tournament": "world_championship",
-          "stage": "Game 9 (If required)",
-          "if_required": true,
+          "stage": "Game 9",
+          "if_required": false,
           "date": "2026-12-04",
           "time": "15:00",
           "timezone": "Europe/Zurich",
