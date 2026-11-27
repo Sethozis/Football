@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T01:22:11.026135Z",
+  "generated_at": "2026-11-27T15:55:13.993506Z",
   "tables": [
     {
       "league_id": "eng.1",
@@ -3693,13 +3693,13 @@
           "team_name": "Al Khaleej",
           "team_code": "KHA",
           "team_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21829.png",
-          "played": 12,
+          "played": 13,
           "wins": 3,
           "draws": 6,
-          "losses": 3,
-          "goals_for": 14,
-          "goals_against": 19,
-          "goal_difference": -5,
+          "losses": 4,
+          "goals_for": 15,
+          "goals_against": 21,
+          "goal_difference": -6,
           "points": 15,
           "note": null
         },
@@ -3709,14 +3709,14 @@
           "team_name": "Al Kholood",
           "team_code": "KHO",
           "team_logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22028.png",
-          "played": 11,
-          "wins": 3,
+          "played": 12,
+          "wins": 4,
           "draws": 3,
           "losses": 5,
-          "goals_for": 17,
-          "goals_against": 26,
-          "goal_difference": -9,
-          "points": 12,
+          "goals_for": 19,
+          "goals_against": 27,
+          "goal_difference": -8,
+          "points": 15,
           "note": null
         },
         {
