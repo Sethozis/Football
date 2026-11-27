@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T16:05:56.629007Z",
+  "generated_at": "2026-11-27T01:20:57.233054Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -1515,14 +1515,6 @@
       "name": "CSKA Sofia",
       "code": "CSK",
       "country": "Bulgaria",
-      "region": "",
-      "is_national": false
-    },
-    {
-      "id": "8089",
-      "name": "CSU Craiova",
-      "code": "UCR",
-      "country": "Romania",
       "region": "",
       "is_national": false
     },
@@ -6157,6 +6149,14 @@
       "country": "United States",
       "region": "North America",
       "is_national": true
+    },
+    {
+      "id": "8089",
+      "name": "Universitatea Craiova",
+      "code": "CRA",
+      "country": "Romania",
+      "region": "",
+      "is_national": false
     },
     {
       "id": "212",
@@ -28754,8 +28754,8 @@
       "league_id": "20296",
       "league_slug": "uefa.europa.conf",
       "home_team_id": "8089",
-      "home_team": "CSU Craiova",
-      "home_team_code": "UCR",
+      "home_team": "Universitatea Craiova",
+      "home_team_code": "CRA",
       "away_team_id": "2922",
       "away_team": "Getafe",
       "away_team_code": "GET"
@@ -31589,8 +31589,8 @@
       "home_team": "Inter D'Escaldes",
       "home_team_code": "IDE",
       "away_team_id": "8089",
-      "away_team": "CSU Craiova",
-      "away_team_code": "UCR"
+      "away_team": "Universitatea Craiova",
+      "away_team_code": "CRA"
     },
     {
       "fixture_id": "401915840",
@@ -38450,8 +38450,8 @@
       "league_id": "20296",
       "league_slug": "uefa.europa.conf",
       "home_team_id": "8089",
-      "home_team": "CSU Craiova",
-      "home_team_code": "UCR",
+      "home_team": "Universitatea Craiova",
+      "home_team_code": "CRA",
       "away_team_id": "21943",
       "away_team": "Egnatia",
       "away_team_code": "EGN"
@@ -46533,8 +46533,8 @@
       "home_team": "Brighton & Hove Albion",
       "home_team_code": "BHA",
       "away_team_id": "8089",
-      "away_team": "CSU Craiova",
-      "away_team_code": "UCR"
+      "away_team": "Universitatea Craiova",
+      "away_team_code": "CRA"
     },
     {
       "fixture_id": "401915815",
@@ -53381,8 +53381,8 @@
       "home_team": "Kairat Almaty",
       "home_team_code": "KAI",
       "away_team_id": "8089",
-      "away_team": "CSU Craiova",
-      "away_team_code": "UCR"
+      "away_team": "Universitatea Craiova",
+      "away_team_code": "CRA"
     },
     {
       "fixture_id": "401900856",
@@ -55858,8 +55858,8 @@
       "league_id": "20296",
       "league_slug": "uefa.europa.conf",
       "home_team_id": "8089",
-      "home_team": "CSU Craiova",
-      "home_team_code": "UCR",
+      "home_team": "Universitatea Craiova",
+      "home_team_code": "CRA",
       "away_team_id": "909",
       "away_team": "F.C. København",
       "away_team_code": "KBH"
@@ -64377,38 +64377,6 @@
       "away_team_code": "STK"
     },
     {
-      "fixture_id": "401876642",
-      "kickoff_utc": "2027-01-22T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "171",
-      "home_team": "Guingamp",
-      "home_team_code": "EAG",
-      "away_team_id": "3267",
-      "away_team": "AS Nancy Lorraine",
-      "away_team_code": "ASN"
-    },
-    {
-      "fixture_id": "401876645",
-      "kickoff_utc": "2027-01-22T20:00:00Z",
-      "tournament": "Ligue 2",
-      "country": "France",
-      "stage": "2026-27 Ligue 2",
-      "season": 2026,
-      "league_id": "3926",
-      "league_slug": "fra.2",
-      "home_team_id": "3171",
-      "home_team": "Clermont Foot",
-      "home_team_code": "CLE",
-      "away_team_id": "178",
-      "away_team": "Saint-Étienne",
-      "away_team_code": "ASS"
-    },
-    {
       "fixture_id": "401884994",
       "kickoff_utc": "2027-01-23T12:00:00Z",
       "tournament": "2. Bundesliga",
@@ -64951,6 +64919,22 @@
       "away_team_id": "2734",
       "away_team": "Sampdoria",
       "away_team_code": "SAM"
+    },
+    {
+      "fixture_id": "401876645",
+      "kickoff_utc": "2027-01-23T19:00:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "3171",
+      "home_team": "Clermont Foot",
+      "home_team_code": "CLE",
+      "away_team_id": "178",
+      "away_team": "Saint-Étienne",
+      "away_team_code": "ASS"
     },
     {
       "fixture_id": "401885001",
@@ -65815,6 +65799,22 @@
       "away_team_id": "115",
       "away_team": "Parma",
       "away_team_code": "PAR"
+    },
+    {
+      "fixture_id": "401876642",
+      "kickoff_utc": "2027-01-25T19:45:00Z",
+      "tournament": "Ligue 2",
+      "country": "France",
+      "stage": "2026-27 Ligue 2",
+      "season": 2026,
+      "league_id": "3926",
+      "league_slug": "fra.2",
+      "home_team_id": "171",
+      "home_team": "Guingamp",
+      "home_team_code": "EAG",
+      "away_team_id": "3267",
+      "away_team": "AS Nancy Lorraine",
+      "away_team_code": "ASN"
     },
     {
       "fixture_id": "401872280",
