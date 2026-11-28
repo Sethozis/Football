@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T15:53:38.127678Z",
+  "generated_at": "2026-11-28T00:54:05.506420Z",
   "timezone": "UTC",
   "source": "ESPN",
   "upcoming_days": 365,
@@ -3393,7 +3393,7 @@
     {
       "id": "134113",
       "name": "Le Pays Du Valois",
-      "code": "VAL",
+      "code": "USP",
       "country": "France",
       "region": "",
       "is_national": false
@@ -42438,7 +42438,7 @@
       "home_team_code": "CHA",
       "away_team_id": "134113",
       "away_team": "Le Pays Du Valois",
-      "away_team_code": "VAL"
+      "away_team_code": "USP"
     },
     {
       "fixture_id": "401932828",
@@ -47091,7 +47091,7 @@
       "league_slug": "fra.coupe_de_france",
       "home_team_id": "134113",
       "home_team": "Le Pays Du Valois",
-      "home_team_code": "VAL",
+      "home_team_code": "USP",
       "away_team_id": "6732",
       "away_team": "Valenciennes",
       "away_team_code": "VAF"
